@@ -29,6 +29,8 @@ Article - opinion and interview, with the actual article and a history you can s
 
 Musicians & co Database
 
+Track der Woche - a random track from a local band, changing every week
+
 About us
 
 Contact

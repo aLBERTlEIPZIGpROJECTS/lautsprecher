@@ -1,6 +1,3 @@
-    Tag 2
-B.  Wireframes
-    
     Tag 3
 C.  Material
     

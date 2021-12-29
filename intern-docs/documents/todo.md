@@ -1,6 +1,3 @@
-    Tag 3
-C.  Material
-    
     Tag 4 - 5
 D.  HTML (JSX) + SCSS
     

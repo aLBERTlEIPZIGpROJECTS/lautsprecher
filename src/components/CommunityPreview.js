@@ -1,6 +1,11 @@
+import Button from "./Button"
+
 const CommunityPreview = () => {
     return(
-        <h3>Community Preview</h3>
+        <div className="community-preview">
+            <h3>Community</h3>
+            <Button />
+        </div>
     )
 }
 

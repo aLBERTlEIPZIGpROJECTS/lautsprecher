@@ -1,6 +1,20 @@
+import BurgerMenu from "./BurgerMenu"
+import { Link } from "react-router-dom"
+
 const Header = () => {
     return(
-        <h1>Header</h1>
+        <div className="header">
+            <div className="header__superior">
+                <div className="logo">
+                    <h2>Lautsprecher</h2>
+                    <p>Web Musik Magazine Leipzig</p>
+                </div>
+                <BurgerMenu />
+            </div>
+            <div className="header__inferior">
+                {/* hier müssen die Links sein */}
+            </div>
+        </div>
     )
 }
 

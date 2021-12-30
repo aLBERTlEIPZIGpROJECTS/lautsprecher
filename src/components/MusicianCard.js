@@ -1,6 +1,14 @@
 const MusicianCard = () => {
     return(
-        <h3>Musician Card</h3>
+        <div className="musician-card">
+            <img src="" alt="" className="img-profile"/>
+            <div className="musician-card__txt">
+                <h3>Name</h3>
+                <p>Instrument</p>
+                <p>Style</p>
+            </div>
+            <img src="../materials/icons/icons8-vynil-49.png" alt="" />
+        </div>
     )
 }
 

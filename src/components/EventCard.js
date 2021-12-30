@@ -1,6 +1,11 @@
+import Button from "./Button"
+
 const EventCard = () => {
     return(
-        <h3>Event Card</h3>
+        <div className="event-card">
+            <h3>Band Name</h3>
+            <Button />
+        </div>
     )
 }
 

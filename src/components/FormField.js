@@ -1,6 +1,10 @@
 const FormField = () => {
     return(
-        <h3>Form Field</h3>
+        <div className="form-field">
+            <label htmlFor="">
+                <input type="text" />
+            </label>
+        </div>
     )
 }
 

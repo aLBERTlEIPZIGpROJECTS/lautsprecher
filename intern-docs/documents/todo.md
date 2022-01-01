@@ -1,9 +1,3 @@
-About
-Events
-Home
-Musicians
-
-
 // questions
 
     how do you add more fields for musicians with the same attributes (fname, lname, instrument) wo knowing in beforehand how many musicians are there? (same problem is for social media: one doesn't know how many and which social media do they have)
@@ -12,6 +6,9 @@ Musicians
     
     There must be the option to link an already existing musician's profile to the band
 
+    do "pestañas"
+
+    do calendar (look <Events />)
 
 //substitute hard coded content for dynamic one
     Articles

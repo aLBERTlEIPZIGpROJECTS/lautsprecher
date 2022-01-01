@@ -1,9 +1,9 @@
 import ArticleCard from "../components/ArticleEntryCard"
 
-const Articles = () => {
+const HistoryArticles = () => {
     return(
         <div className="articles_container">
-            <h1>Alle Artikel</h1>
+            <h1>Alle History Artikel</h1>
             <ArticleCard />
             <ArticleCard />
             <ArticleCard />
@@ -15,4 +15,4 @@ const Articles = () => {
     )
 }
 
-export default Articles
+export default HistoryArticles

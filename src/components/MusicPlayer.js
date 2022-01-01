@@ -1,6 +1,8 @@
+import musicplayer from "../materials/icons/trumpet.gif"
+
 const MusicPlayer = () => {
     return(
-        <h3>Music Player</h3>
+        <img src={ musicplayer } alt="test" className="icon" />
     )
 }
 

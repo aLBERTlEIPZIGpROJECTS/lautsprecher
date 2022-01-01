@@ -1,4 +1,5 @@
 import BurgerMenu from "./BurgerMenu"
+import ArrowDown from "../materials/icons/arrow-down.svg"
 import { Link } from "react-router-dom"
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
             </div>
             <div className="header__inferior">
                 {/* hier müssen die Links sein */}
+                <img src={ ArrowDown } alt="" className="icon" />
             </div>
         </div>
     )

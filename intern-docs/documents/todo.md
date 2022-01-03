@@ -1,3 +1,5 @@
+scss : composition
+
 // questions
 
     how do you add more fields for musicians with the same attributes (fname, lname, instrument) wo knowing in beforehand how many musicians are there? (same problem is for social media: one doesn't know how many and which social media do they have)
@@ -10,6 +12,8 @@
 
     do calendar (look <Events />)
 
+    wie so ist "font-size" im Impressum 2.4+rem?
+    
 //substitute hard coded content for dynamic one
     Articles
     Events

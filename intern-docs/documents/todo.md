@@ -1,6 +1,42 @@
+// ON THE TABLE
+
 scss : composition
 
-// questions
+    Landing Page (Home)
+    About
+    HistoryArticles / Articles
+    Send Event Form / NonMusicianFormSignForm / MusicianSignForm /Contact
+    MusicianCard
+    Events
+
+
+    //substitute hard coded content for dynamic one
+        Articles
+        Events
+        History
+        Musicians
+        Single article
+
+// HOUSTON Stage
+
+    Single Article / HistorySingleArticle / Impressum
+
+
+// PROBLEMS
+
+    text-block in Single Article / HistorySingleArticle / Impressum zu breit
+
+    blob in header must be different (work with different border radius)
+
+    wie so funktioniert z-index in Footer nicht?
+
+    how to make a calendar (=> events)?
+
+    structure for the "Single Article / History Single Article" Component
+
+    structure for the "Articles / History Articles" Component
+
+// QUESTIONS
 
     how do you add more fields for musicians with the same attributes (fname, lname, instrument) wo knowing in beforehand how many musicians are there? (same problem is for social media: one doesn't know how many and which social media do they have)
     
@@ -13,19 +49,21 @@ scss : composition
     do calendar (look <Events />)
 
     wie so ist "font-size" im Impressum 2.4+rem?
-    
-//substitute hard coded content for dynamic one
-    Articles
-    Events
-    History
-    Musicians
-    Single article
 
-// links between pages (beware buttons!!)
+    ein Form - Component, oder 3 Components (ein für jede Variante)?
 
-// to publish an event you must to log in somehow
 
-// it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile
+// TASKS
+
+
+    // links between pages (beware buttons!!)
+
+    // to publish an event you must to log in somehow
+
+    // it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile
+
+
+// TIMING
 
     Tag 4 - 5
 D.  HTML (JSX) + SCSS

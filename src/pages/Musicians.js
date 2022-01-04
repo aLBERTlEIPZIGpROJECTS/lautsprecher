@@ -4,7 +4,7 @@ const Musicians = () => {
     return(
         <div className="musicians">
             <h1>Musicians</h1>
-            <MusicianCard />
+            <MusicianCard fname = "Karl" lname = "Cox" instrument = "sax" style = "blues"  />
             <MusicianCard />
             <MusicianCard />
             <MusicianCard />

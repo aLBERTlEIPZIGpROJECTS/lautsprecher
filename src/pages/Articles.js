@@ -1,4 +1,4 @@
-import ArticleCard from "../components/ArticleEntryCard"
+import ArticleCard from "../components/ArticleCard"
 import { useState, useEffect } from "react"
 
 /* fetch("http://localhost:4000/musicians")
@@ -23,17 +23,14 @@ const Articles = () => {
     }, [])
 
     return(
-        <div className="articles_container">
+        <div className="articles_container content">
             <h1>Alle Artikel</h1>
-
-          
-           <ArticleCard title = {"hello"} />
-            <ArticleCard title = {"bye"} />
-            <ArticleCard title = {"today"} />
-            <ArticleCard title = {"hello"} />
-            <ArticleCard title = {"hello"} />
-            <ArticleCard title = {"hello"} />
-            <ArticleCard title = {"hello"} />
+            <ArticleCard title = {"First Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
+            <ArticleCard title = {"Second Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
+            <ArticleCard title = {"Third Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
+            <ArticleCard title = {"Fourth Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
+            <ArticleCard title = {"Fifth Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
+            <ArticleCard title = {"Sixth Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
         </div>
     )
 }

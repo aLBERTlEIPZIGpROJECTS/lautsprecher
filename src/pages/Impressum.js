@@ -3,7 +3,7 @@ const Impressum = () => {
         <div className="impressum">
             <h1>Impressum</h1>
 
-            <p>Impressum
+            <p className="text-block">Impressum
 Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.
 Lautsprecher
 Musterstrasse 1, Stiege 1 Tür 1, 

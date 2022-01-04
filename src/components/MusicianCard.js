@@ -1,13 +1,13 @@
-const MusicianCard = () => {
+const MusicianCard = (props) => {
     return(
         <div className="musician-card">
-            <img src="" alt="" className="img-profile"/>
+            <img src={ props.img } alt={ props.name } className="img-profile"/>
             <div className="musician-card__txt">
-                <h3>Name</h3>
-                <p>Instrument</p>
-                <p>Style</p>
+                <h3>{ props.fname } { props.lname }</h3>
+                <p>{ props.instrument }</p>
+                <p>{ props.style }</p>
             </div>
-            <img src="../materials/icons/icons8-vynil-49.png" alt="" />
+            
         </div>
     )
 }

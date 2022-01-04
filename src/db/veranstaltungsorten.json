@@ -1,0 +1,73 @@
+{
+    "veranstaltungsorte" : [
+    {
+      "id" : 0,
+      "name" : "Gewandhaus",
+      "address" : "Augustuspl. 8, 04109 Leipzig",
+      "phone" : 493411270280,
+      "site" : "http://www.gewandhaus.de/"
+    },
+    {
+      "id" : 1,
+      "name" : "Opernhaus Leipzig",
+      "address" : "Augustuspl. 12, 04109 Leipzig",
+      "phone" : 493411261261,
+      "site" : "http://www.oper-leipzig.de/de/"
+    },
+    {
+      "id" : 2,
+      "name" : "Thomaskirche",
+      "address" : "Thomaskirchhof 18, 04109 Leipzig",
+      "phone" : 49341222240,
+      "site" : "https://www.thomaskirche.org/"
+    },
+    {
+      "id" : 3,
+      "name" : "Tonelli's",
+      "address" : "Lindenauer Markt 21, 04177 Leipzig",
+      "phone" : 493414866016,
+      "site" : "http://www.tonellis.de/"
+    },
+    {
+      "id" : 4,
+      "name" : "Theater der Junge Welt",
+      "address" : "Lindenauer Markt 21, 04177 Leipzig",
+      "phone" : 493414866016,
+      "site" : "https://www.theaterderjungenweltleipzig.de/"
+    },
+    {
+      "id" : 5,
+      "name" : "Telegraph",
+      "address" : "Neumarkt 9, 04109 Leipzig",
+      "phone" : "",
+      "site" : "https://cafetelegraph.eatbu.com"
+    },
+    {
+      "id" : 6,
+      "name" : "Horns und Erben",
+      "address" : "Arndtstraße 33, 04275 Leipzig",
+      "phone" : 4934126426029,
+      "site" : "http://www.horns-erben.de/"
+    },
+    {
+      "id" : 7,
+      "name" : "Villakeller",
+      "address" : "Soziokulturelles Zentrum Die VILLA, Lessingstraße 7, 04109 Leipzig",
+      "phone" : 493413552040,
+      "site" : ""
+    },
+    {
+      "id" : 8,
+      "name" : "Parkbühne",
+      "address" : "Karl-Tauchnitz-Straße 28, 04107 Leipzig",
+      "phone" : 49341484000,
+      "site" : "http://www.parkbuehne-leipzig.de/"
+    },
+    {
+      "id" : 9,
+      "name" : "Westbad Leipzig",
+      "address" : "Odermannstraße 15, 04177 Leipzig",
+      "phone" : 4934139295460,
+      "site" : "https://www.westbad-leipzig.de/"
+    }    
+  ]}

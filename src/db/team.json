@@ -1,0 +1,39 @@
+{
+    "team" : [
+        {
+            "id" : 0,
+            "fname" : "Carl",
+            "lname" : "Sagan",
+            "position" : "er liegt",
+            "links" : "https://www.youtube.com/"
+        },
+        {
+            "id" : 1,
+            "fname" : "Isaac",
+            "lname" : "Asimov",
+            "position" : "er lacht",
+            "links" : "https://www.youtube.com/"
+        },
+        {
+            "id" : 2,
+            "fname" : "Isaac",
+            "lname" : "Newton",
+            "position" : "er schaut",
+            "links" : "https://www.youtube.com/"
+        },
+        {
+            "id" : 3,
+            "fname" : "P. K.",
+            "lname" : "Dick",
+            "position" : "er cchweigt",
+            "links" : "https://www.youtube.com/"
+        },
+        {
+            "id" : 4,
+            "fname" : "Terry",
+            "lname" : "Pratchet",
+            "position" : "er schreibt",
+            "links" : "https://www.youtube.com/"
+        }
+    ]
+}

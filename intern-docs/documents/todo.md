@@ -1,5 +1,12 @@
 // ON THE TABLE
 
+// link - fetch content to 
+        Articles
+        Events
+        History
+        Musicians
+        Single article
+        
 scss : composition
 
     Landing Page (Home)
@@ -10,16 +17,9 @@ scss : composition
     Events
 
 
-    // link - fetch content to 
-        Articles
-        Events
-        History
-        Musicians
-        Single article
-
 // HOUSTON Stage
 
-    Single Article / HistorySingleArticle / Impressum
+    Single Article / HistorySingleArticle / Impressum => Problem #1 : text-block in Single Article / HistorySingleArticle / Impressum zu breit
 
 
 // PROBLEMS
@@ -51,6 +51,8 @@ scss : composition
     wie so ist "font-size" im Impressum 2.4+rem?
 
     ein Form - Component, oder 3 Components (ein für jede Variante)?
+
+    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie?
 
 
 // TASKS

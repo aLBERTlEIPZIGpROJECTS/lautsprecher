@@ -1,7 +1,7 @@
-const FormField = () => {
+const FormField = (props) => {
     return(
         <div className="form-field">
-            <label htmlFor="">label
+            <label htmlFor="">{ props.label }
                 <input type="text" />
             </label>
         </div>

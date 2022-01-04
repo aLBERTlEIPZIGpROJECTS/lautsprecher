@@ -1,10 +1,10 @@
 import Button from "./Button"
 
-const ArticlePreview = () => {
+const ArticlePreview = (props) => {
     return(
         <div className="article-preview">
-            <h3>Article Preview</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure perferendis eius vitae doloribus ut impedit architecto quae modi quasi officiis?</p>
+            <h3>{ props.title }</h3>
+            <p>{ props.body }</p>
             <Button />            
         </div>
     )

@@ -10,7 +10,7 @@ scss : composition
     Events
 
 
-    //substitute hard coded content for dynamic one
+    // link - fetch content to 
         Articles
         Events
         History
@@ -61,6 +61,17 @@ scss : composition
     // to publish an event you must to log in somehow
 
     // it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile
+
+    // substitute "eventsNow" and "eventsToday" for "eventsList", when you know how to pass nested info
+
+
+// UNUSED COMPONENTS - Beware
+
+
+    Tag =>  for every day in the calendar (=> events)
+    Search Bar
+    BurgerMenu
+    Body
 
 
 // TIMING

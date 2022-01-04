@@ -1,6 +1,6 @@
 import Button from "../components/Button"
 import EventsNow from "../components/EventsNov"
-import ArticleCard from "../components/ArticleCard"
+import ArticlePreview from "../components/ArticlePreview"
 
 const Home = () => {
     return(
@@ -8,16 +8,16 @@ const Home = () => {
             <h1>Lautsprecher</h1>
             <EventsNow />
             <div className="content">
-                <ArticleCard title = "Article Titel" body = "lorem ipsum tralarum lapsumlorem ipsum tralarum lapsumlorem ipsum tralarum lapsumlorem ipsum tralarum lapsum"/>
-                    <Button />
+                <ArticlePreview title = "Article Preview" body = "lorem ipsum tralarum lapsumlorem ipsum tralarum lapsumlorem ipsum tralarum lapsumlorem ipsum tralarum lapsum"/>
+                    <Button txt = "Zum Artikel" />
                 <div className="community">
                     <h2>Community</h2>
-                    <Button />
+                    <Button txt = "Finde einen Musikern" />
                 </div>
             </div>
             <div className="content-sec">
-                <Button />
-                <Button />
+                <Button txt = "Hi there" link = "https://www.youtube.com/" />
+                <Button txt = "About us" link = "https://www.youtube.com/"  />
             </div>
         </div>
     )

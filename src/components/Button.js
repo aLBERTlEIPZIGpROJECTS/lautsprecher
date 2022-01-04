@@ -1,6 +1,8 @@
-const Button = () => {
+const Button = (props) => {
     return(
-            <button className="button">Button</button>
+            <button className="button">{ props.txt }
+                <a href={ props.link }></a>
+            </button>
     )
 }
 

@@ -14,7 +14,7 @@ const Contact = () => {
                 <FormField /> {/* Phone */}
                 <FormField /> {/* Message */}
                 <FormField /> {/* I want to subscribe */}
-                <Button /> {/* Send */}
+                <Button txt = "Send" />
             </form>
         </div>
     )

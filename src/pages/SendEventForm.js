@@ -18,7 +18,7 @@ const SendEventForm = () => {
                 <FormField /> {/* Linkt to tickets */}
                 <FormField /> {/* + Info */}
                 <FormField /> {/* Event Img */}
-                <Button /> {/* Send Event */}
+                <Button txt = "Send" />
             </form>
         </div>
     )

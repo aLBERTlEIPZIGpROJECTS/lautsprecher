@@ -16,7 +16,7 @@ const MusicianSignForm = () => {
                 <FormField /> {/* Image */}
                 <FormField /> {/* About you */}
                 <FormField /> {/* I want to subscribe */}
-                <Button /> {/* Send */}
+                <Button txt = "Send" />
             </form>
         </div>
 )}

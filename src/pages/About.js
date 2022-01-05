@@ -1,6 +1,7 @@
 import TeamCard from "../components/TeamCard"
 
 const About = () => {
+
     return(
         <div className="about">
             <h1>About Us</h1>
@@ -25,5 +26,32 @@ const About = () => {
         </div>
     )
 }
+
+/* output.appendChild(name)
+output.appendChild(state) */
+
+/*
+{
+                    fetch("./db.json")
+                    .then((res) => {
+                        return res.json()
+                    })
+                    .then(data => {
+                       const text = data.team
+                       text.map((item, id) => {
+                            const nameA = item.fname
+                            const nameB = item.lname
+                            const position = item.position
+                            console.log(nameA)
+                            console.log(nameB)
+                            console.log(position)
+                       })
+                    })
+                    
+                    .catch((err) => {
+                        console.log(err)
+                })
+                }
+*/
 
 export default About

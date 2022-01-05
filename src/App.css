@@ -370,10 +370,9 @@ template {
 
 /* === go to colors === */
 /* HUE */
-/* 
-h1 {
-    color: #;
-} */
+/* .test {
+    color: red;
+}  */
 /* saturation */
 /* brightness */
 /* === go to subAtoms === */
@@ -386,7 +385,7 @@ $secondFont */
 */
 /* go to typography */
 h1 {
-  color: #4f5445;
+  color: #4d4d4d;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5em;
@@ -394,7 +393,7 @@ h1 {
 }
 
 h2 {
-  color: #4f5445;
+  color: #4d4d4d;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5em;
@@ -402,13 +401,13 @@ h2 {
 }
 
 h3 {
-  color: #848c73;
+  color: gray;
   font-size: 2rem;
   margin-bottom: 0.5em;
 }
 
 p, label, textarea {
-  color: #4f5445;
+  color: #4d4d4d;
   font-size: 2rem;
   margin-bottom: 0.5em;
   line-height: 1.6em;
@@ -421,7 +420,7 @@ a, textarea, figcaption {
 }
 
 blockquote {
-  color: #848c73;
+  color: gray;
   font-size: 2.5rem;
   font-style: italic;
   margin-bottom: 0.5em;
@@ -434,23 +433,23 @@ blockquote ::after {
 }
 
 a {
-  color: #848c73;
+  color: gray;
   font-size: 2.1333333333rem;
   text-decoration: none;
 }
 a:hover {
-  color: #e6e8e3;
-  background-color: #4f5445;
+  color: #e6e6e6;
+  background-color: #4d4d4d;
 }
 a :active {
-  color: #848c73;
-  background-color: #e6e8e3;
-  border: 3px solid #848c73;
+  color: gray;
+  background-color: #e6e6e6;
+  border: 3px solid gray;
 }
 a :focus {
-  color: #e6e8e3;
+  color: #e6e6e6;
   background-color: #AA8000;
-  border: 3px solid #848c73;
+  border: 3px solid gray;
 }
 
 .img__profile {
@@ -498,7 +497,7 @@ a :focus {
 }
 
 .form-field {
-  background-color: #e6e8e3;
+  background-color: #e6e6e6;
 }
 
 :root {
@@ -512,7 +511,7 @@ a :focus {
 }
 
 .header__top {
-  background-color: #b5baab;
+  background-color: #b3b3b3;
   width: 200vw;
   height: 20vh;
   position: absolute;
@@ -547,7 +546,7 @@ a :focus {
 .footer__bot {
   position: absolute;
   border-radius: 50%;
-  background-color: #b5baab;
+  background-color: #b3b3b3;
   width: 200vw;
   height: 20vh;
   bottom: -12vh;
@@ -570,4 +569,4 @@ section {
 
 } */
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

@@ -26,7 +26,7 @@ scss : composition
 
     text-block in Single Article / HistorySingleArticle / Impressum zu breit
 
-    blob in header must be different (work with different border radius)
+    blob in header must have a different form (work with different border radius)
 
     wie so funktioniert z-index in Footer nicht?
 
@@ -47,8 +47,6 @@ scss : composition
     do "pestañas"
 
     do calendar (look <Events />)
-
-    wie so ist "font-size" im Impressum 2.4+rem?
 
     ein Form - Component, oder 3 Components (ein für jede Variante)?
 

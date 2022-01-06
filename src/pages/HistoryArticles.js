@@ -21,7 +21,7 @@ const HistoryArticles = () => {
             <h1>Alle History Article</h1>
             <div className="articles__cards">
                 {
-                    articles.map((article) => (
+                   articles && articles.map((article) => (
                         <ArticleCard title = { article.title } id = { article.id } author = { article.author } />
                     ))
                 }

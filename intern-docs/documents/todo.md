@@ -1,11 +1,4 @@
 // ON THE TABLE
-
-// link - fetch content to 
-        Articles
-        Events
-        History
-        Musicians
-        Single article
         
 scss : composition
 
@@ -17,12 +10,9 @@ scss : composition
     Events
 
 
-// HOUSTON Stage
+// PROBLEMS
 
     Single Article / HistorySingleArticle / Impressum => Problem #1 : text-block in Single Article / HistorySingleArticle / Impressum zu breit
-
-
-// PROBLEMS
 
     text-block in Single Article / HistorySingleArticle / Impressum zu breit
 
@@ -52,20 +42,24 @@ scss : composition
 
     Header-BG-Color must be different for every page. Als Prop weitergeben? Wie?
 
+    Why is not every component working the same??
+
+    How it's connected a Form with a POST request to db? (this changes how the component is written { props & co })
+
+    Link to concrete :id (articles)
+
 
 // TASKS
 
-
     // links between pages (beware buttons!!)
 
-    // to publish an event you must to log in somehow
-
-    // it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile
+    // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
 
     // substitute "eventsNow" and "eventsToday" for "eventsList", when you know how to pass nested info
 
     // re-structure "article" + "history-articles" & "single-article" + "single-history-articles", so you ONLY HAVE ONE COMPONENT!!
     
+    // to publish an event you must to log in somehow (to login you must have a BE, etc)
 
 // UNUSED COMPONENTS - Beware
 

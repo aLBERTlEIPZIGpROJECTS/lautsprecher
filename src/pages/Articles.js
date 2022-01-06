@@ -4,35 +4,27 @@ import { useState, useEffect } from "react"
         
 const Articles = () => {
 
-    const [articles, setArticles ] = useState([
-        {
-            id : 0,
-            title : "First Article",
-            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
-        },
-        {
-            id : 1,
-            title : "First Article",
-            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
-        },
-        {
-            id : 2,
-            title : "First Article",
-            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
-        },
-        {
-            id : 3,
-            title : "First Article",
-            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
-        }
-    ])
+    const [articles, setArticles ] = useState(null)
 
+    useEffect(() => {
+        fetch("http://localhost:8000/articles")
+            .then(res => {
+                return res.json()
+            })
+            .then(data => {
+                setArticles(data)
+            })
+    }, [])
+     
     return (
         <div className="articles_container content">
             <h1>Alle Artikel</h1>
             {
-                articles.map((article) => (
-                    <ArticleCard title = { article.title} id = { article.id } body = { article.body } />
+
+              articles && articles.map((article) => (
+
+                  <ArticleCard title = { article.title} id = { article.id } />
+                    
                 ))
             }
         </div>

@@ -1,5 +1,5 @@
-import './App.css';
 import { Routes, Route } from "react-router-dom"
+import './App.css';
 import About from "./pages/About"
 import Articles from "./pages/Articles"
 import SingleArticle from './pages/SingleArticle';
@@ -39,7 +39,7 @@ function App() {
           <Route path="/impressum" element={<Impressum />} />
         </Routes>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

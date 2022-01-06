@@ -7,16 +7,17 @@ const NonMusicianSignForm = () => {
             
             <h1>Sign Form for "Non-Musicians"</h1>
             <form action="">
-                <FormField /> {/* Company Name */}
-                <FormField /> {/* Inhaber Vorname */}
-                <FormField /> {/* Inhaber Nachname */}
-                <FormField /> {/* Activity */}
-                <FormField /> {/* Company Mail */}
-                <FormField /> {/* Company Phone */}
-                <FormField /> {/* Webs and Social Media */}
-                <FormField /> {/* Profile Image */}
-                <FormField /> {/* Txt About you */}
-                <FormField /> {/* Subscribe to newsletter */}
+                <FormField label = "Company Name" />
+                <FormField label = "Inhaber fname" />
+                <FormField label = "Inhaber lname" />
+                <FormField label = "Activity" />
+                <FormField label = "Company Mail" />
+                <FormField label = "Company Phone" />
+                <FormField label = "Company Site" />
+                <FormField label = "Company Social Media" />
+                <FormField label = "Company Profile Image" />
+                <FormField label = "Company Txt About You" />
+                <FormField label = "Subscribe to Newsletter" />
                 <Button txt = "Send" />
             </form>
         </div>

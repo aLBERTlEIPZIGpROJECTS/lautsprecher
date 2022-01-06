@@ -18,7 +18,7 @@ const Musicians = () => {
         <div className="musicians">
             <h1>Musicians</h1>
             {
-                musicians.map((musician) => (
+              musicians &&  musicians.map((musician) => (
                     <MusicianCard bandName = { musician.bandName } fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } socialLink = { musician.socialLink }/>
                 ))
             }

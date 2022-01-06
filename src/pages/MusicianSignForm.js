@@ -1,21 +1,22 @@
 import Button from "../components/Button"
 import FormField from "../components/FormField"
+import { useState } from "react"
 
 const MusicianSignForm = () => {
     return(
         <div className="contact">
             <h1>Sign Form for Musicians</h1>
             <form action="">
-                <FormField /> {/* Band Name */}
-                <FormField /> {/* Musician 1, 2, 3, ... Vorname */}
-                <FormField /> {/* Musician 1, 2, 3, ... Nachname */}
-                <FormField /> {/* Musician 1, 2, 3, ... Instrument */}
-                <FormField /> {/* Band Mail */}
-                <FormField /> {/* Band Phone */}
-                <FormField /> {/* Band Site / Social Media */}
-                <FormField /> {/* Image */}
-                <FormField /> {/* About you */}
-                <FormField /> {/* I want to subscribe */}
+                <FormField label = "Band Name" /> 
+                <FormField label = "Musician Reference"  /> 
+                <FormField label = "Musician Reference"  /> 
+                <FormField label = "Musician Reference"  /> 
+                <FormField label = "Mail"  /> 
+                <FormField label = "Phone"  /> 
+                <FormField label = "Band Site and Social Media"  /> 
+                <FormField label = "Image"  /> 
+                <FormField label = "About"  /> 
+                <FormField label = "I want to subscribe"  />
                 <Button txt = "Send" />
             </form>
         </div>

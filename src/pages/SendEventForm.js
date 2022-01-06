@@ -4,6 +4,7 @@ import Button from "../components/Button"
 import FormField from "../components/FormField"
 
 const SendEventForm = () => {
+
     return(
         <div className="eventform">
             <h1>Send us your event</h1>

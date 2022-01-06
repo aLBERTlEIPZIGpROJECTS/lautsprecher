@@ -1,36 +1,40 @@
 import ArticleCard from "../components/ArticleCard"
 import { useState, useEffect } from "react"
 
-/* fetch("http://localhost:4000/musicians")
-    .then(res => res.json())
-    .then(json => 
-        json.map(data => {
-            <ArticleCard title = {data.bandName}/>
-        })) */
-        
         
 const Articles = () => {
-    
-    useEffect(() => {
-        fetch("http://localhost:4000/musicians")
-            .then(res => {
-                return res.json()
-            })
-            .then(data => {
-                console.log(data)
-            })
-    
-    }, [])
 
-    return(
+    const [articles, setArticles ] = useState([
+        {
+            id : 0,
+            title : "First Article",
+            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
+        },
+        {
+            id : 1,
+            title : "First Article",
+            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
+        },
+        {
+            id : 2,
+            title : "First Article",
+            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
+        },
+        {
+            id : 3,
+            title : "First Article",
+            body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"
+        }
+    ])
+
+    return (
         <div className="articles_container content">
             <h1>Alle Artikel</h1>
-            <ArticleCard title = {"First Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
-            <ArticleCard title = {"Second Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
-            <ArticleCard title = {"Third Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
-            <ArticleCard title = {"Fourth Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
-            <ArticleCard title = {"Fifth Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
-            <ArticleCard title = {"Sixth Article"} body = {"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit delectus similique culpa?"} />
+            {
+                articles.map((article) => (
+                    <ArticleCard title = { article.title} id = { article.id } body = { article.body } />
+                ))
+            }
         </div>
     )
 }

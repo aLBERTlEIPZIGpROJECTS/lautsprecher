@@ -1,9 +1,42 @@
 import TeamCard from "../components/TeamCard"
+import { useState } from "react"
 
 const About = () => {
+    
+    const [team, setTeam] = useState([
+        {
+            id: 0,
+            fname: "Carl",
+            lname: "Sagan",
+            position: "er liegt",
+            links: "https://www.youtube.com/"
+          },
+          {
+            id: 1,
+            fname: "Isaac",
+            lname: "Asimov",
+            position: "er lacht",
+            links: "https://www.youtube.com/"
+          },
+          {
+            id: 2,
+            fname: "Isaac",
+            lname: "Newton",
+            position: "er schaut",
+            links: "https://www.youtube.com/"
+          },
+          {
+            id: 3,
+            fname: "P. K.",
+            lname: "Dick",
+            position: "er cchweigt",
+            links: "https://www.youtube.com/"
+          }
+    ])
 
     return(
         <div className="about">
+            
             <h1>About Us</h1>
             <div className="mission">
                 <h2>Mission</h2>
@@ -16,42 +49,16 @@ const About = () => {
                 <p>Third Objective Lorem Ipsum</p>
                 <p>Fourth Objective Lorem Ipsum</p>
             </div>
-            <div className="team">
-                <TeamCard fname = "Johann Sebastian" lname = "Bach" position = "il putto amo" />
-                <TeamCard fname = "Antonio" lname = "Vivaldi" position = "il prette Rosso" />
-                <TeamCard fname = "G. P. " lname = "Teleman" position = "life's too short" />
-                <TeamCard fname = "G. F." lname = "Händel" position = "agent and musician" />
-                <TeamCard fname = "Arcangelo" lname = "Corelli" position = "life's too unfair" />
+
+           <div className="team">
+                {
+                    team.map((person) => (
+                        <TeamCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id } />
+                    ))}       
             </div>
         </div>
     )
 }
 
-/* output.appendChild(name)
-output.appendChild(state) */
-
-/*
-{
-                    fetch("./db.json")
-                    .then((res) => {
-                        return res.json()
-                    })
-                    .then(data => {
-                       const text = data.team
-                       text.map((item, id) => {
-                            const nameA = item.fname
-                            const nameB = item.lname
-                            const position = item.position
-                            console.log(nameA)
-                            console.log(nameB)
-                            console.log(position)
-                       })
-                    })
-                    
-                    .catch((err) => {
-                        console.log(err)
-                })
-                }
-*/
 
 export default About

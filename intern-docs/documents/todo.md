@@ -36,6 +36,8 @@ scss : composition
 
     structure for the "Articles / History Articles" Component
 
+    Back-End Data Structure deffinieren (weil sonst Probleme mit dem Front End gibt)
+
 // QUESTIONS
 
     how do you add more fields for musicians with the same attributes (fname, lname, instrument) wo knowing in beforehand how many musicians are there? (same problem is for social media: one doesn't know how many and which social media do they have)
@@ -64,6 +66,7 @@ scss : composition
 
     // substitute "eventsNow" and "eventsToday" for "eventsList", when you know how to pass nested info
 
+    // re-structure "article" + "history-articles" & "single-article" + "single-history-articles", so you ONLY HAVE ONE COMPONENT!!
 
 // UNUSED COMPONENTS - Beware
 
@@ -72,6 +75,7 @@ scss : composition
     Search Bar
     BurgerMenu
     Body
+    EventsNov
 
 
 // TIMING

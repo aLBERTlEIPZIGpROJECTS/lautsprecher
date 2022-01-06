@@ -49,7 +49,7 @@
           "id": 5,
           "bandName" : "Les gh0u13s",
           "style" : "Electro rockabilly",
-          "member" : ["Jenna Sans Souci (Gesang und Kontraass), Martha McIntyre (Gitarre), Tina V (Schlagzeug)"],
+          "member" : ["Jenna Sans Souci (Gesang und Kontrabass), Martha McIntyre (Gitarre), Tina V (Schlagzeug)"],
           "mail" : "ghoul@ghoul.de",
           "phone" : "0123456789",
           "socialLink": "@ghoul"
@@ -69,7 +69,7 @@
           "style" : "Songwriter & Chanson Française",
           "member" : [""],
           "mail" : "mail@hammerstein.de",
-          "phone" : "0123 456789",
+          "phone" : "",
           "socialLink": "@fhchanson"
         },
         {

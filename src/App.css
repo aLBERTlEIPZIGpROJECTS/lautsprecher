@@ -411,12 +411,12 @@ p, label, textarea {
   font-size: 2rem;
   margin-bottom: 0.5em;
   line-height: 1.6em;
-  width: clamp(45ch, 50%, 75ch);
+  /* width: clamp(45ch, 50%, 75ch); */
 }
 
 a, textarea, figcaption {
   line-height: 1.5em;
-  width: clamp(45ch, 50%, 75ch);
+  /* width: clamp(45ch, 50%, 75ch); */
 }
 
 blockquote {
@@ -493,7 +493,6 @@ a :focus {
 
 .button {
   padding: 1em 1.5em;
-  background-color: red;
 }
 
 .form-field {
@@ -560,6 +559,36 @@ section {
 
 .content {
   margin: 0 5vw;
+}
+
+.landingEvents {
+  background-color: turquoise;
+}
+
+.content-main {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5vh 0;
+}
+
+.article-preview {
+  max-width: 45vw;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 45vw;
+}
+
+.content-sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-sec__btn {
+  width: 40vw;
 }
 
 /* @media screen and (min-width: 768px){

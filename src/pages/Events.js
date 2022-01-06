@@ -1,5 +1,5 @@
 import EventCard from "../components/EventCard"
-import EventsNow from "../components/EventsNov"
+import EventsNow from "../components/EventsNow"
 import { useState } from "react"
 
 const Events = () => {

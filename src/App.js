@@ -39,7 +39,7 @@ function App() {
           <Route path="/impressum" element={<Impressum />} />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

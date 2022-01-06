@@ -1,38 +1,20 @@
 import TeamCard from "../components/TeamCard"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const About = () => {
     
-    const [team, setTeam] = useState([
-        {
-            id: 0,
-            fname: "Carl",
-            lname: "Sagan",
-            position: "er liegt",
-            links: "https://www.youtube.com/"
-          },
-          {
-            id: 1,
-            fname: "Isaac",
-            lname: "Asimov",
-            position: "er lacht",
-            links: "https://www.youtube.com/"
-          },
-          {
-            id: 2,
-            fname: "Isaac",
-            lname: "Newton",
-            position: "er schaut",
-            links: "https://www.youtube.com/"
-          },
-          {
-            id: 3,
-            fname: "P. K.",
-            lname: "Dick",
-            position: "er cchweigt",
-            links: "https://www.youtube.com/"
-          }
-    ])
+    const [team, setTeam] = useState(null)
+
+    useEffect(() => {
+        fetch("http://localhost:8000/team")
+            .then(res => {
+                return res.json()
+            })
+            .then (data => {
+                setTeam(data)
+            })
+    }, [])
+
 
     return(
         <div className="about">
@@ -51,11 +33,11 @@ const About = () => {
             </div>
 
            <div className="team">
-                {
+                 {
                     team.map((person) => (
                         <TeamCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id } />
                     ))}       
-            </div>
+             </div>
         </div>
     )
 }

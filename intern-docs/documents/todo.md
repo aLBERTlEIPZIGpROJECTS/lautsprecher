@@ -39,16 +39,14 @@ scss : composition
     Back-End Data Structure deffinieren (weil sonst Probleme mit dem Front End gibt)
 
 // QUESTIONS
-
-    how do you add more fields for musicians with the same attributes (fname, lname, instrument) wo knowing in beforehand how many musicians are there? (same problem is for social media: one doesn't know how many and which social media do they have)
     
     other problem is : the three fields must be linked by an id. Can you provide multiple id to a single element?
     
     There must be the option to link an already existing musician's profile to the band
 
-    do "pestañas"
+    do "tabs" (=>  community)
 
-    do calendar (look <Events />)
+    do calendar (look <Events />) (=> look library)
 
     ein Form - Component, oder 3 Components (ein für jede Variante)?
 
@@ -67,6 +65,7 @@ scss : composition
     // substitute "eventsNow" and "eventsToday" for "eventsList", when you know how to pass nested info
 
     // re-structure "article" + "history-articles" & "single-article" + "single-history-articles", so you ONLY HAVE ONE COMPONENT!!
+    
 
 // UNUSED COMPONENTS - Beware
 

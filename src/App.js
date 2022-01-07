@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom"
+/* import './assets/css/fonts.css'; */
 import './App.css';
 import About from "./pages/About"
 import Articles from "./pages/Articles"

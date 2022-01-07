@@ -390,6 +390,7 @@ h1 {
   font-weight: 700;
   margin-bottom: 0.5em;
   line-height: 0.8em;
+  font-family: "Rubik Mono One", sans-serif;
 }
 
 h2 {
@@ -398,28 +399,33 @@ h2 {
   font-weight: 700;
   margin-bottom: 0.5em;
   line-height: 0.8em;
+  font-family: "Rubik Mono One", sans-serif;
 }
 
 h3 {
   color: gray;
   font-size: 2rem;
   margin-bottom: 0.5em;
+  font-family: "Roboto", sans-serif;
 }
 
 p, label, textarea {
   color: #4d4d4d;
   font-size: 2rem;
   margin-bottom: 0.5em;
-  line-height: 1.6em;
+  line-height: 1.8em;
+  font-family: "Roboto", sans-serif;
   /* width: clamp(45ch, 50%, 75ch); */
 }
 
 a, textarea, figcaption {
   line-height: 1.5em;
+  font-family: "Roboto", sans-serif;
   /* width: clamp(45ch, 50%, 75ch); */
 }
 
 blockquote {
+  font-family: "Roboto", sans-serif;
   color: gray;
   font-size: 2.5rem;
   font-style: italic;
@@ -492,11 +498,21 @@ a :focus {
 }
 
 .button {
-  padding: 1em 1.5em;
+  padding: 0.5em 1em;
+  font-size: 2.1333333333rem;
+  font-family: "Roboto", sans-serif;
 }
 
-.form-field {
-  background-color: #e6e6e6;
+/* .form-field{
+    background-color: $white;
+} */
+label {
+  border: 1px solid red;
+  background-color: tomato;
+}
+
+input {
+  margin: 2vh 0;
 }
 
 :root {
@@ -589,6 +605,10 @@ section {
 
 .content-sec__btn {
   width: 40vw;
+}
+
+.img__article {
+  margin: 5vh 0;
 }
 
 /* @media screen and (min-width: 768px){

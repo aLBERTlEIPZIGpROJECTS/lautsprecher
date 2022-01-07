@@ -32,12 +32,12 @@ const About = () => {
                 <p>Fourth Objective Lorem Ipsum</p>
             </div>
 
-           <div className="team">
+                 <div className="team">
                  {
                     team.map((person) => (
-                        <TeamCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id } />
+                        <TeamCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id }/>
                     ))}       
-             </div>
+                </div>
         </div>
     )
 }

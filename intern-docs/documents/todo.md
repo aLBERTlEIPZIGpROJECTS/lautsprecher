@@ -2,13 +2,22 @@
         
 scss : composition
 
-    ## Send Event Form / NonMusicianFormSignForm / MusicianSignForm /Contact
-
-    Landing Page (Home)
-    About
-    HistoryArticles / Articles
+    
     MusicianCard
+    
+    ## some problems
+
+    Send Event Contact/ Form / MusicianSignForm / NonMusicianFormSignForm => input / label / lock width / lock btn width
+    
+    About => dynamic images
+
+
     Events
+    Landing Page (Home)
+    
+
+    IT'S OK => 
+        HistoryArticles / Articles
 
 
 // PROBLEMS
@@ -28,6 +37,8 @@ scss : composition
     structure for the "Articles / History Articles" Component
 
     Back-End Data Structure deffinieren (weil sonst Probleme mit dem Front End gibt)
+
+    Strange aboutus loading behaviour
 
 // QUESTIONS
     

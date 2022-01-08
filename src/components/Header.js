@@ -11,7 +11,7 @@ const Header = () => {
                     <h2>Lautsprecher</h2>
                     <p>Web Musik Magazine Leipzig</p>
                 </div>
-                <BurgerMenu />
+                {/* <BurgerMenu /> */}
             </div>
             <div className="header__bot">
                 {/* hier müssen die Links sein */}

@@ -1,23 +1,4 @@
 // ON THE TABLE
-        
-scss : composition
-
-    
-    MusicianCard
-    
-    ## some problems
-
-    Send Event Contact/ Form / MusicianSignForm / NonMusicianFormSignForm => input / label / lock width / lock btn width
-    
-    About => dynamic images
-
-
-    Events
-    Landing Page (Home)
-    
-
-    IT'S OK => 
-        HistoryArticles / Articles
 
 
 // PROBLEMS
@@ -28,8 +9,6 @@ scss : composition
 
     blob in header must have a different form (work with different border radius)
 
-    wie so funktioniert z-index in Footer nicht?
-
     how to make a calendar (=> events)?
 
     structure for the "Single Article / History Single Article" Component
@@ -39,6 +18,16 @@ scss : composition
     Back-End Data Structure deffinieren (weil sonst Probleme mit dem Front End gibt)
 
     Strange aboutus loading behaviour
+    
+    Send Event Contact/ Form / MusicianSignForm / NonMusicianFormSignForm => input / label / lock width / lock btn width
+    
+    About => dynamic images
+
+
+    Events
+    Landing Page (Home)
+    
+
 
 // QUESTIONS
     

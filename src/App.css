@@ -465,6 +465,14 @@ a :focus {
   border-radius: 50%;
 }
 
+.img__band {
+  height: 60vw;
+  width: 33vw;
+  margin-right: 7.5vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 .img__article {
   height: 45vw;
   width: 90vw;
@@ -474,18 +482,26 @@ a :focus {
 .icon {
   height: 40px;
   width: 40px;
+  z-index: 100;
+  margin: 0 10px;
 }
 
 .iconSmall {
   height: 20px;
+  z-index: 100;
+  margin: 0 10px;
 }
 
 .iconMed {
   height: 40px;
+  z-index: 100;
+  margin: 0 10px;
 }
 
 .iconBig {
   height: 60px;
+  z-index: 100;
+  margin: 0 10px;
 }
 
 .social-media {
@@ -522,7 +538,6 @@ input {
 
 .header {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -543,20 +558,29 @@ input {
 
 .header__bot {
   z-index: 100;
+  margin-top: 5vh;
+}
+
+.burger-menu {
+  background-color: red;
+  display: none;
+}
+
+.body {
+  margin: 12vh 0;
 }
 
 .footer {
   position: fixed;
   inset: auto 0 0 0;
-  background-color: red;
 }
 
 .footer__top {
-  background-color: orange;
   height: 10vh;
   display: flex;
   justify-content: end;
   z-index: 100;
+  margin-right: 5vw;
 }
 
 .footer__bot {
@@ -590,6 +614,15 @@ section {
 
 .social {
   display: flex;
+}
+
+.musician-card {
+  display: flex;
+  margin: 3vh 0;
+  /* 
+  &__txt{
+      margin-left: ;
+  } */
 }
 
 .alt-contact {

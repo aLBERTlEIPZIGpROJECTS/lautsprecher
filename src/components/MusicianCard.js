@@ -3,7 +3,7 @@ import portrait from "../materials/img/team/cezanne.jpg"
 const MusicianCard = (props) => {
     return(
         <div className="musician-card">
-            <img src={ portrait } alt={ props.name } className="img__profile"/>
+            <img src={ portrait } alt={ props.name } className="img__band"/>
             <div className="musician-card__txt">
                 <h3>{ props.fname } { props.lname }</h3>
                 <h2>{ props.bandName }</h2>

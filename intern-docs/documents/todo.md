@@ -2,9 +2,9 @@
 
 // TASKS
 
-    blob in header must have a different form (work with different border radius)
+    blob in header must have a different form (work with different border radius).
 
-    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben)
+    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component?
 
 
 // Back-End Herausforderungen

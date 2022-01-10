@@ -3,9 +3,10 @@ import ArrowDown from "../materials/icons/arrow-down.svg"
 import { Link } from "react-router-dom"
 
 const Header = () => {
+
     return(
         <div className="header">
-            <div className="header__top"></div>
+            <div className="header__top bg__orange"></div>
             <div className="header__med">
                 <div className="logo">
                     <h2>Lautsprecher</h2>

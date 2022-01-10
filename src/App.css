@@ -562,13 +562,37 @@ input {
   justify-content: space-between;
 }
 
+.bg__white {
+  background-color: white;
+}
+.bg__orange {
+  background-color: #AA8000;
+}
+.bg__purple {
+  background-color: #AA0080;
+}
+.bg__lightBlue {
+  background-color: #00AAAA;
+}
+.bg__red {
+  background-color: #AA0000;
+}
+.bg__blue {
+  background-color: #002BAA;
+}
+.bg__green {
+  background-color: #00AA2A;
+}
+.bg__black {
+  background-color: #1a1a1a;
+}
+
 .header__top {
-  background-color: #b3b3b3;
   width: 200vw;
-  height: 20vh;
+  height: 25vh;
   position: absolute;
-  top: -10vh;
-  left: -100vw;
+  top: -15vh;
+  left: -90vw;
   border-radius: 50%;
 }
 

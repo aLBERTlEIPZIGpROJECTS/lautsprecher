@@ -37,17 +37,18 @@ const Events = () => {
         <div className="events">
             <h1>Events</h1>
             <h2>Right Now</h2>
+            <div className="events__container">
                 {
                     events.map((event) => (
                         <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } />
                         
                         ))}
-            <div className="events-today">
+            </div>
             <h2>Heute</h2>
+            <div className="events__container">
             {
             events.map((event) => (
                 <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } />
-
             ))}
             </div>
             <div className="events-month">

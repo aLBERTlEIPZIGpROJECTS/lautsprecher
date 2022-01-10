@@ -8,8 +8,8 @@ const SendEventForm = () => {
     return(
         <div className="eventform">
             <h1>Send us your event</h1>
-            <Button /> {/* Bist Du Musiker? Wir hören gerne über dich! */}
-            <Button /> {/* Bist du Veranstalter oder arbeitest du in der Musikbranche? */}
+            <Button link = "/musician-sign-form" linkName = "melde dich gerne" /> {/* Bist Du Musiker? Wir hören gerne über dich! */}
+            <Button link = "/non-musician-sign-form" linkName = "melde dich gerne" /> {/* Bist du Veranstalter oder arbeitest du in der Musikbranche? */}
             <form action="">
                 <FormField /> {/* Event Name */}
                 <FormField /> {/* Date */}
@@ -19,7 +19,7 @@ const SendEventForm = () => {
                 <FormField /> {/* Linkt to tickets */}
                 <FormField /> {/* + Info */}
                 <FormField /> {/* Event Img */}
-                <Button txt = "Send" />
+                <Button txt = "Send" linkName = "send"  />
             </form>
         </div>
     )

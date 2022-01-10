@@ -7,11 +7,11 @@ const Contact = () => {
             <h1>Contact</h1>
             <div className="alt-contact">
                 <p>Bist Du Musiker? Wir hören gerne über dich!</p>
-                <Button txt ="Melde Dich gerne"  /> {/* einen unterschiedlichen Text ist erfordelich */}
+                <Button txt ="Melde Dich gerne" linkName = "melde dich gerne"  /> {/* einen unterschiedlichen Text ist erfordelich */}
             </div>
             <div className="alt-contact">
                 <p>Bist du Veranstalter oder arbeitest du in der Musikbranche?</p>
-                <Button txt ="Melde Dich gerne"  /> {/* einen unterschiedlichen Text ist erfordelich */}
+                <Button txt ="Melde Dich gerne" linkName = "melde dich gerne"  /> {/* einen unterschiedlichen Text ist erfordelich */}
             </div>
 
             <form action="">
@@ -21,7 +21,7 @@ const Contact = () => {
                 <FormField label = "phone"  /> 
                 <FormField label = "message"  />
                 <FormField label = "I want to subscribe"  />
-                <Button txt = "Send" />
+                <Button txt = "Send"  linkName = "send" />
             </form>
         </div>
     )

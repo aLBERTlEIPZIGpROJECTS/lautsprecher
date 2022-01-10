@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom"
 const Button = (props) => {
     return(
-            <button className="button">{ props.txt }
-                <a href={ props.link }></a>
-            </button>
+        <div className="button">
+             {/* <Link to= {props.link} >{ props.linkName }</Link> */}
+            <button className="button" >{ props.txt } Link </button>
+        </div>
     )
 }
 

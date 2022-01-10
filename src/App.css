@@ -391,6 +391,7 @@ h1 {
   margin-bottom: 0.5em;
   line-height: 0.8em;
   font-family: "Rubik Mono One", sans-serif;
+  text-align: center;
 }
 
 h2 {
@@ -400,6 +401,7 @@ h2 {
   margin-bottom: 1.5em;
   line-height: 0.8em;
   font-family: "Rubik Mono One", sans-serif;
+  text-align: center;
 }
 
 h3 {
@@ -407,6 +409,7 @@ h3 {
   font-size: 2rem;
   margin-bottom: 0.5em;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 
 p, label, textarea {
@@ -532,6 +535,24 @@ input {
   margin: 3.5vh 0;
 }
 
+.event-card {
+  background: url("./materials/img/musicians/choir.jpg");
+  /* margin: 5vh 1vw; */
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10vw;
+}
+.event-card__txt {
+  background-color: rgba(255, 128, 0, 0.5);
+  padding: 0 10vw;
+  margin: 0;
+  /*         display: flex;
+          flex-direction: column;
+          align-items: center; */
+}
+
 :root {
   font-size: 10px;
 }
@@ -567,7 +588,8 @@ input {
 }
 
 .body {
-  margin: 12vh 0;
+  margin-bottom: 12vh;
+  overflow: hidden;
 }
 
 .footer {
@@ -614,6 +636,11 @@ section {
 
 .social {
   display: flex;
+}
+
+.events__container {
+  display: flex;
+  margin: 5vh 0 10vh;
 }
 
 .musician-card {

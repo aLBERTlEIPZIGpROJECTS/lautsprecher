@@ -34,7 +34,7 @@ const About = () => {
 
                  <div className="team">
                  {
-                    team.map((person) => (
+                    team && team.map((person) => (
                         <TeamCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id }/>
                     ))}       
                 </div>

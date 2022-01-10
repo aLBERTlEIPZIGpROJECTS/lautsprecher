@@ -24,7 +24,7 @@
           "style" : "Acid Funk",
           "member" : ["Sylvie Hammerding (Gesang und Keyboard), Louis Vutton (Gitarre), Karl Laggersfeld (Bass), Edd Morton (Schlagzeug), Lukas Sommerfeld (Trompette)"],
           "mail" : "mail@papamidnight.com",
-          "phone": "",
+          "phone": null,
           "site" : null,
           "social media" : {
             "fb" : null,

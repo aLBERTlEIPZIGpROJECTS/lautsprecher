@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import CommunityTab from "../components/CommunityTab";
+import MusiciansTab from "../components/MusiciansTab";
+import BandsTab from "../components/BandsTab";
+import OtherTab from "../components/OtherTab";
 
 
 
@@ -18,14 +21,9 @@ const Community = () => {
     return(
         <div className="community">
             <h1>Community</h1>
-            {
-                tabs && tabs.map((tab) => {
-                    <CommunityTab title = {tab.title} url = { tab.url } key = { tab.id } />
-                })
-            }
-            <CommunityTab title = "Musicians" />
-            <CommunityTab title = "Bands" />
-            <CommunityTab title = "Other" />
+            <MusiciansTab title = "Musicians" />
+            <BandsTab title = "Bands" />
+            <OtherTab title = "Other" />
         </div>
     )
 }

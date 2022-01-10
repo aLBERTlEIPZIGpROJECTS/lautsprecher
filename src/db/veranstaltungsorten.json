@@ -5,13 +5,13 @@
       "name" : "Gewandhaus",
       "inhaber" : [
         {
-          "fname" : null,
+          "fname" : "Stadt Leipzig",
           "lname" : null
         }
       ],
       "address" : "Augustuspl. 8, 04109 Leipzig",
       "phone" : 493411270280,
-      "mail" : null,
+      "mail" : "mail@gewandhaus.com",
       "site" : "http://www.gewandhaus.de/",
       "social media" : {
         "fb" : null,

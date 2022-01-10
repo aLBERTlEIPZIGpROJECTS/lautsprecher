@@ -19,7 +19,7 @@ const Musicians = () => {
             <h1>Musicians</h1>
             {
               musicians &&  musicians.map((musician) => (
-                    <MusicianCard bandName = { musician.bandName } fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } socialLink = { musician.socialLink }/>
+                    <MusicianCard bandName = { musician.bandName } fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } socialLink = { musician.socialLink }  key = { musician.id }/>
                 ))
             }
         </div>

@@ -14,7 +14,7 @@
         "yt" : null,
         "sc" : null
       },
-      "img" : null
+      "img" : "../img/placeholder-img.jpg"
     },
     {
       "id": 1,
@@ -30,7 +30,7 @@
         "yt" : null,
         "sc" : null
       },
-      "img" : null
+      "img" : "../img/placeholder-img.jpg"
     },
     {
       "id": 2,
@@ -46,7 +46,7 @@
         "yt" : null,
         "sc" : null
       },
-      "img" : null
+      "img" : "../img/placeholder-img.jpg"
     },
     {
       "id": 3,
@@ -62,7 +62,7 @@
         "yt" : null,
         "sc" : null
       },
-      "img" : null
+      "img" : "../img/placeholder-img.jpg"
     },
     
     {
@@ -79,7 +79,7 @@
         "yt" : null,
         "sc" : null
       },
-      "img" : null
+      "img" : "../img/placeholder-img.jpg"
     }
   ]
 }

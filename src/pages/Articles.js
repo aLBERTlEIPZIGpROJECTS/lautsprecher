@@ -23,7 +23,7 @@ const Articles = () => {
 
               articles && articles.map((article) => (
 
-                  <ArticleCard title = { article.title} id = { article.id } />
+                  <ArticleCard title = { article.title} id = { article.id } key = { article. id } />
                     
                 ))
             }

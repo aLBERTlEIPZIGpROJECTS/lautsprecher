@@ -1,54 +1,39 @@
 import EventCard from "../components/EventCard"
-import EventsNow from "../components/EventsNow"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Events = () => {
 
-    const [events, setEvents ] = useState([
-        {
-            id : 0,
-            title : "concert 1",
-            musician : "Papa Jones",
-            date : "10.02.2022, 22:00",
-            venue : "Tonellis",
-            cost : 10,
-            info : null
-        },
-        {
-            id : 1,
-            title : "concert 2",
-            musician : "Sally Garden's",
-            date : "3.02.2022, 18:00",
-            venue : "Clara Zetkin Park",
-            cost : 0,
-            info : null
-        },
-        {
-            id : 2,
-            title : "concert 3",
-            musician : "Silvia Dellatastiera",
-            date : "07.02.2022, 21:00",
-            venue : "KuApo",
-            cost : 5,
-            info : null
-        }
-    ])
+    const [events, setEvents ] = useState(null)
+
+    useEffect(() => {
+        fetch("http://localhost:8000/concerts")
+            .then(res => {
+                return res.json()
+            })
+            .then (data => {
+                setEvents(data)
+            })
+    })
+
+
+
+
     return(
         <div className="events">
             <h1>Events</h1>
             <h2>Right Now</h2>
             <div className="events__container">
                 {
-                    events.map((event) => (
-                        <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } />
+                   events && events.map((event) => (
+                        <EventCard title = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } links = { event.links } id = { event.id } img = { event.img } />
                         
                         ))}
             </div>
             <h2>Heute</h2>
             <div className="events__container">
             {
-            events.map((event) => (
-                <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } />
+            events && events.map((event) => (
+                <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } key = { event.id } />
             ))}
             </div>
             <div className="events-month">

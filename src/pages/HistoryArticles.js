@@ -22,7 +22,7 @@ const HistoryArticles = () => {
             <div className="articles__cards">
                 {
                    articles && articles.map((article) => (
-                        <ArticleCard title = { article.title } id = { article.id } author = { article.author } />
+                        <ArticleCard title = { article.title } id = { article.id } author = { article.author } key = { article.id } />
                     ))
                 }
         </div>

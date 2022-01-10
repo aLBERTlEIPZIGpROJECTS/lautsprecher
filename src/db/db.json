@@ -826,5 +826,22 @@
               "img" : null,
               "links" : null
           }
-      ]   
+        ],
+        "tabs" :[
+          {
+            "id" : 0,
+            "title" : "musicians",
+            "url" : "http://localhost:8000/musicians"
+        },
+        {
+            "id" : 1,
+            "title" : "bands",
+            "url" : "http://localhost:8000/bands"
+        },
+        {
+            "id" : 2,
+            "title" : "veranstaltungsorte",
+            "url" : "http://localhost:8000/veranstaltungsorte"
+        }
+        ]   
 }

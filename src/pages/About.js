@@ -35,7 +35,7 @@ const About = () => {
                  <div className="team">
                  {
                     team && team.map((person) => (
-                        <TeamCard fname = { person.fname } lname = { person.lname } rol = { person.rol } id = { person.id }/>
+                        <TeamCard fname = { person.fname } lname = { person.lname } rol = { person.rol } id = { person.id } img = { person.img } key = { person.id }/>
                     ))}       
                 </div>
         </div>

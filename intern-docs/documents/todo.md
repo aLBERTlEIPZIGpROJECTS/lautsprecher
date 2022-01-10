@@ -2,16 +2,17 @@
 
 // TASKS
 
-
-
+CommunityTab into
+    Musician
+    Bands
+    Other
+                Tab
 
 // Back-End Herausforderungen
 
-        // Back-End Data Structure deffinieren { festmachen } (weil sonst Probleme mit dem Front End gibt)
-
         // Link to concrete :id (articles)
 
-        // pictures in json
+        // pictures in json => problem is: react component must import img in order to be able to render them. So: how do you run a "conditional import" based in a db?
 
         // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
 
@@ -19,9 +20,9 @@
                 musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }.
             ]
 
-        // substitute "eventsNow" and "eventsToday" for "eventsList", when you know how to pass nested info
+        // re-structure     
 
-        // re-structure "article" + "history-articles" & "single-article" + "single-history-articles", so you ONLY HAVE ONE COMPONENT!!
+                "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig, 
         
         // to publish an event you must to log in somehow (to login you must have a BE, etc)
 
@@ -81,6 +82,7 @@
     BurgerMenu
     Body
     EventsNov
+    EventsList
 
 
 // TIMING

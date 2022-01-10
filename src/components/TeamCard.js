@@ -7,7 +7,7 @@ const TeamCard = (props) => {
             <img src= { portrait }  alt={ props.fname } className="img__profile" />
             <div className="team__info">
                 <p>{ props.fname } { props.lname }</p>
-                <p>{ props.position }</p>
+                <p>{ props.rol }</p>
             </div>
             <div className="social">
                 <img src={ fbIcon } alt="" className="icon">{/* <a href=""></a> */}</img>

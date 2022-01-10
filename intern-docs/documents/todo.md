@@ -11,6 +11,8 @@
 
         // Link to concrete :id (articles)
 
+        // pictures in json
+
         // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
 
             [ 
@@ -28,7 +30,7 @@
 
 // PROBLEMS
 
-    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component?
+    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
 
     Single Article / HistorySingleArticle / Impressum => Problem #1 : text-block in Single Article / HistorySingleArticle / Impressum zu breit
 
@@ -50,6 +52,8 @@
 
 
 // Back-End Herausforderungen
+
+        // Office-work : most of musicians from "bands" to "musicians"
 
         // Back-End Data Structure deffinieren { festmachen } (weil sonst Probleme mit dem Front End gibt)
 

@@ -1,0 +1,166 @@
+{
+    "bands": [
+        {
+          "id": 0,
+          "bandName" : "Rot Krokodilen",
+          "style" : "Blues",
+          "member" : ["James Hurl (harmonica und Gesang), Pierre Delàs (gitarre), Wolfgang Stunz (Bass), Simone Peri (Schlagzeug)"],
+          "mail" : "mail@rotkrokodilen.band",
+          "phone": "",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 1,
+          "bandName" : "Papa Midnight",
+          "style" : "Acid Funk",
+          "member" : ["Sylvie Hammerding (Gesang und Keyboard), Louis Vutton (Gitarre), Karl Laggersfeld (Bass), Edd Morton (Schlagzeug), Lukas Sommerfeld (Trompette)"],
+          "mail" : "mail@papamidnight.com",
+          "phone": "",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 2,
+          "bandName" : "nega sionist",
+          "style" : "garage klezmer punk",
+          "member" : ["Michael, Gabriel, Raphael, Uriel"],
+          "mail" : "p-r3q@yahoo.de",
+          "phone": "",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 3,
+          "bandName" : "Les gh0u13s",
+          "style" : "Electro rockabilly",
+          "member" : ["Jenna Sans Souci (Gesang und Kontrabass), Martha McIntyre (Gitarre), Tina V (Schlagzeug)"],
+          "mail" : "ghoul@ghoul.de",
+          "phone" : "0123456789",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 4,
+          "bandName" : "Apfelzimmt",
+          "style" : "Electroswing",
+          "member" : ["Lydia G (Geige), Andrea Gstrandther (Gitarre), Ferdinand Miroux (Kontrabass)"],
+          "phone" : "0123 456789",
+          "mail" : "mail@azimmt",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 5,
+          "bandName" : "Junge Sächsiche Philarmonie",
+          "style" : "Klassisch",
+          "member" : ["Dirigent : Maia Delanoff"],
+          "mail" : "jsp@mail.de",
+          "phone": "0123 456789",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 6,
+          "bandName" : "Quartet Milhaud",
+          "style" : "Klassisch",
+          "member" : ["Peter Baumgartner (Geige), Franka Oddensen (Geige), Sarah Stutzman (Bratsche), Olsen Strahlsun (Cello)"],
+          "mail" : "mail@qmilhaud.de",
+          "phone": "0123 456789",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 7,
+          "bandName" : "Tarantos",
+          "style" : "Flamenco",
+          "member" : ["Jimeno Iriarte (Gitarre), Juanjo “Sencho” Iriarte (Cajón)"],
+          "mail" : "tarantos@tarantos.es",
+          "phone": "0123 456789",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        },
+        {
+          "id": 8,
+          "bandName" : "Seeds of freedom",
+          "style" : "Reggae & Ska",
+          "member" : ["Andy Milano (Gesang), Ute Semper (Gitarre), Ulrich Loewe (Bass), Aiko Takahashi (Schlagzeug), Roberto Alacrino (Schlagzeug), Pierre Desmestres (Trompete), Olga Rostropowitch (Saxo), Dmitri Starionoff (Posaune)"],
+          "mail" : "seedsoffreedom@gmail.com",
+          "phone": "0123 456789",
+          "site" : null,
+          "social media" : {
+            "fb" : null,
+            "tw" : null,
+            "ig" : null,
+            "yt" : null,
+            "sc" : null
+          },
+          "infos" : null,
+          "img" : null
+        }
+      ]
+}

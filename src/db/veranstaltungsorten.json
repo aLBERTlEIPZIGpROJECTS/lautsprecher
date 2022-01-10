@@ -3,71 +3,211 @@
     {
       "id" : 0,
       "name" : "Gewandhaus",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Augustuspl. 8, 04109 Leipzig",
       "phone" : 493411270280,
-      "site" : "http://www.gewandhaus.de/"
+      "mail" : null,
+      "site" : "http://www.gewandhaus.de/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 1,
       "name" : "Opernhaus Leipzig",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Augustuspl. 12, 04109 Leipzig",
       "phone" : 493411261261,
-      "site" : "http://www.oper-leipzig.de/de/"
+      "mail" : null,
+      "site" : "http://www.oper-leipzig.de/de/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 2,
       "name" : "Thomaskirche",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Thomaskirchhof 18, 04109 Leipzig",
       "phone" : 49341222240,
-      "site" : "https://www.thomaskirche.org/"
+      "mail" : null,
+      "site" : "https://www.thomaskirche.org/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 3,
       "name" : "Tonelli's",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Lindenauer Markt 21, 04177 Leipzig",
       "phone" : 493414866016,
-      "site" : "http://www.tonellis.de/"
+      "mail" : null,
+      "site" : "http://www.tonellis.de/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 4,
       "name" : "Theater der Junge Welt",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Lindenauer Markt 21, 04177 Leipzig",
       "phone" : 493414866016,
-      "site" : "https://www.theaterderjungenweltleipzig.de/"
+      "mail" : null,
+      "site" : "https://www.theaterderjungenweltleipzig.de/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 5,
       "name" : "Telegraph",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Neumarkt 9, 04109 Leipzig",
       "phone" : "",
-      "site" : "https://cafetelegraph.eatbu.com"
+      "mail" : null,
+      "site" : "https://cafetelegraph.eatbu.com",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 6,
       "name" : "Horns und Erben",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Arndtstraße 33, 04275 Leipzig",
       "phone" : 4934126426029,
-      "site" : "http://www.horns-erben.de/"
+      "mail" : null,
+      "site" : "http://www.horns-erben.de/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 7,
       "name" : "Villakeller",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Soziokulturelles Zentrum Die VILLA, Lessingstraße 7, 04109 Leipzig",
       "phone" : 493413552040,
-      "site" : ""
+      "mail" : null,
+      "site" : "",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 8,
       "name" : "Parkbühne",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Karl-Tauchnitz-Straße 28, 04107 Leipzig",
       "phone" : 49341484000,
-      "site" : "http://www.parkbuehne-leipzig.de/"
+      "mail" : null,
+      "site" : "http://www.parkbuehne-leipzig.de/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     },
     {
       "id" : 9,
       "name" : "Westbad Leipzig",
+      "inhaber" : [
+        {
+          "fname" : null,
+          "lname" : null
+        }
+      ],
       "address" : "Odermannstraße 15, 04177 Leipzig",
       "phone" : 4934139295460,
-      "site" : "https://www.westbad-leipzig.de/"
+      "mail" : null,
+      "site" : "https://www.westbad-leipzig.de/",
+      "social media" : {
+        "fb" : null,
+        "tw" : null,
+        "ig" : null,
+        "yt" : null,
+        "sc" : null
+      }
     }    
   ]}

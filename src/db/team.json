@@ -4,36 +4,82 @@
       "id": 0,
       "fname": "Carl",
       "lname": "Sagan",
-      "position": "er liegt",
-      "links": "https://www.youtube.com/"
+      "rol": "er liegt",
+      "mail" : "c.sagan@lautsprecher.com",
+      "site": "csagan.com",
+      "social media" : {
+        "fb" : "@csagan",
+        "tw" : "https://twitter.com/csagan",
+        "ig" : "@csagan",
+        "yt" : null,
+        "sc" : null
+      },
+      "img" : null
     },
     {
       "id": 1,
       "fname": "Isaac",
       "lname": "Asimov",
-      "position": "er lacht",
-      "links": "https://www.youtube.com/"
+      "rol": "er lacht",
+      "mail" : "i.asimov@lautsprecher.com",
+      "site": "iasimov.com",
+      "social media" : {
+        "fb" : "@iasimov",
+        "tw" : "https://twitter.com/iasimov",
+        "ig" : "@iasimov",
+        "yt" : null,
+        "sc" : null
+      },
+      "img" : null
     },
     {
       "id": 2,
       "fname": "Isaac",
       "lname": "Newton",
-      "position": "er schaut",
-      "links": "https://www.youtube.com/"
+      "rol": "er schaut",
+      "mail" : "i.newton@lautsprecher.com",
+      "site": "inewton.com",
+      "social media" : {
+        "fb" : "@inewton",
+        "tw" : "https://twitter.com/inewton",
+        "ig" : "@inewton",
+        "yt" : null,
+        "sc" : null
+      },
+      "img" : null
     },
     {
       "id": 3,
       "fname": "P. K.",
       "lname": "Dick",
-      "position": "er cchweigt",
-      "links": "https://www.youtube.com/"
+      "rol": "er schweigt",
+      "mail" : "pk.dick@lautsprecher.com",
+      "site": "pkdick.com",
+      "social media" : {
+        "fb" : "@pkdick",
+        "tw" : "https://twitter.com/pkdick",
+        "ig" : "@pkdick",
+        "yt" : null,
+        "sc" : null
+      },
+      "img" : null
     },
+    
     {
       "id": 4,
       "fname": "Terry",
       "lname": "Pratchet",
-      "position": "er schreibt",
-      "links": "https://www.youtube.com/"
+      "rol": "er schreibt",
+      "mail" : "t.pratchet@lautsprecher.com",
+      "site": "tpratchet.com",
+      "social media" : {
+        "fb" : "@tpractchet",
+        "tw" : "https://twitter.com/tpratchet",
+        "ig" : "@tpratchet",
+        "yt" : null,
+        "sc" : null
+      },
+      "img" : null
     }
   ]
 }

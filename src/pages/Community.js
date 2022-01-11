@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
 import CommunityTab from "../components/CommunityTab";
-import MusiciansTab from "../components/MusiciansTab";
-import BandsTab from "../components/BandsTab";
-import OtherTab from "../components/OtherTab";
-
-
 
 const Community = () => {
     const [tabs, setTabs] = useState(null)
@@ -18,12 +13,15 @@ const Community = () => {
                 setTabs(data)
             })
     })
+
     return(
         <div className="community">
             <h1>Community</h1>
-            <MusiciansTab />
-            <BandsTab />
-            <OtherTab />
+            <div className="tabs-container">
+                <CommunityTab url = "http://localhost:8000/musicians" title = "Musicians" />
+                <CommunityTab url = "http://localhost:8000/bands" title = "Bands" />
+                <CommunityTab url = "http://localhost:8000/veranstaltungsorte" title = "Other" />
+            </div>
         </div>
     )
 }

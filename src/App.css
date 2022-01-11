@@ -726,6 +726,15 @@ section {
   margin: 5vh 0 10vh;
 }
 
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  padding: 0 0.25em;
+}
+
 @keyframes alt-contact {
   0% {
     left: -100vw;

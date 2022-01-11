@@ -3,7 +3,6 @@
 SCSS!!
 
     Community
-    Events
     LandingPage
 
 
@@ -73,6 +72,8 @@ SCSS!!
     Articles => "Architechture and acoustic" ???
 
     { inhaber[fname] } {inhaber[lname] }
+
+    why is body in events overflowing?
     
 
 // QUESTIONS

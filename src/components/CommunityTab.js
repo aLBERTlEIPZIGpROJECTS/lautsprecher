@@ -15,14 +15,14 @@ const CommunityTab = (props) => {
     }, [])
 
     return(
-        <div className="musicians">
-            <h1>{ props.title }</h1>
-            {
-                persons && persons.map((person) => (
-                    <p key = { person.id }>{ person.fname }</p>
-                ))
-            }
-        </div>
+      <div className="musicians">
+      <h2>{ props.title }</h2>
+      {
+        persons &&  persons.map((person) => (
+              <MusicianCard bandName = { person.bandName } fname = {person.fname} lname = { person.lname} instrument = { person.instrument } style = { person.style} mail = { person.mail } phone = { person.phone } socialLink = { person.socialLink }  key = { person.id }/>
+          ))
+      }
+  </div>
     )
 }
 

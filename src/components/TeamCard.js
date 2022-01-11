@@ -1,4 +1,8 @@
 import fbIcon from "../materials/icons/fbIcon.svg"
+import twIcon from "../materials/icons/twIcon.svg"
+import igIcon from "../materials/icons/igIcon.svg"
+import mailIcon from "../materials/icons/mailIcon.svg"
+
 import portrait from "../materials/img/team/cezanne.jpg"
 
 const TeamCard = (props) => {
@@ -11,6 +15,9 @@ const TeamCard = (props) => {
             </div>
             <div className="social">
                 <img src={ fbIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
+                <img src={ twIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
+                <img src={ igIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
+                <img src={ mailIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
             </div>
         </div>
     )

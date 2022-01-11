@@ -33,6 +33,7 @@ const About = () => {
             </div>
 
                  <div className="team">
+                     <h2>Team</h2>
                  {
                     team && team.map((person) => (
                         <TeamCard fname = { person.fname } lname = { person.lname } rol = { person.rol } id = { person.id } img = { person.img } key = { person.id }/>

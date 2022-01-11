@@ -32,7 +32,7 @@ function App() {
           <Route path="/articles" element={<Articles />} />
           <Route path="/single-article" element = {<SingleArticle />} />
           <Route path="/community" element = {<Community />}/>
-          <Route path="/musicians" element={<Musicians />} />
+          {/* <Route path="/musicians" element={<Musicians />} /> */}
           <Route path="/history-articles" element = {<HistoryArticles />} />
           <Route path="/history-single-article" element = {<HistorySingleArticle />} />
           <Route path="/about" element={<About />} />

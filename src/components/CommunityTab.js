@@ -1,11 +1,11 @@
 import MusicianCard from "../components/MusicianCard"
 import { useState, useEffect } from "react"
 
-const CommunityTab = (props, { url }) => {
+const CommunityTab = (props) => {
     const [persons, setPersons] = useState(null)
 
     useEffect(() => {
-      fetch( { url } )
+      fetch( props.url )
         .then(res => {
           return res.json()
         })

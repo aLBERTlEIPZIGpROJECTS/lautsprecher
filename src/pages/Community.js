@@ -21,9 +21,9 @@ const Community = () => {
     return(
         <div className="community">
             <h1>Community</h1>
-            <MusiciansTab title = "Musicians" />
-            <BandsTab title = "Bands" />
-            <OtherTab title = "Other" />
+            <MusiciansTab />
+            <BandsTab />
+            <OtherTab />
         </div>
     )
 }

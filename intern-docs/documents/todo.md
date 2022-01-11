@@ -1,12 +1,40 @@
 // ON THE TABLE
 
+SCSS!!
+
+    Community
+    Contact
+    Events
+    Musicians
+    LandingPage
+    Impressum
+
+
+@media    
+    About
+    Articles
+    SingleArticle / HistorySingleArticle
+    Community
+    Contact
+    Events
+    Musicians
+    LandingPage
+    Impressum
+
+
+
+    MusiciansSignForm
+    NonMusiciansSignForm
+    SendEventForm
+
+
+
+
 // TASKS
 
-CommunityTab into
-    Musician
-    Bands
-    Other
-                Tab
+    We need a system to pick max (3?) links / icons
+
+    When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
 
 // Back-End Herausforderungen
 
@@ -31,17 +59,30 @@ CommunityTab into
 
 // PROBLEMS
 
+    Scss NOT CLONED! :O
+
     Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
+
+    Use State im Parent hin und zurück zu Child // useReducer
 
     Single Article / HistorySingleArticle / Impressum => Problem #1 : text-block in Single Article / HistorySingleArticle / Impressum zu breit
 
     Strange aboutus loading behaviour
     
     Send Event Contact/ Form / MusicianSignForm / NonMusicianFormSignForm => input / label / lock width / lock btn width
+
+    LandingPage => setArticleSnippet(data[0].slice(10)) NOT WORKING
+
+    Articles => "Architechture and acoustic" ???
+
+    { inhaber[fname] } {inhaber[lname] }
     
 
 // QUESTIONS
     
+    Write start-instructions in package-json
+
+    Intern Links in a website
 
     In case a musician already have a profile in the website, there's a link => if(musician.profile === true) => print link into an href (a)
     

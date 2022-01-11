@@ -388,7 +388,7 @@ h1 {
   color: #4d4d4d;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
   line-height: 0.8em;
   font-family: "Rubik Mono One", sans-serif;
   text-align: center;
@@ -405,7 +405,7 @@ h2 {
 }
 
 h3 {
-  color: gray;
+  color: #4d4d4d;
   font-size: 2rem;
   margin-bottom: 0.5em;
   font-family: "Roboto", sans-serif;
@@ -413,7 +413,7 @@ h3 {
 }
 
 p, label, textarea {
-  color: #4d4d4d;
+  color: gray;
   font-size: 2rem;
   margin-bottom: 0.5em;
   line-height: 1.8em;
@@ -553,6 +553,27 @@ input {
           align-items: center; */
 }
 
+.community-card {
+  display: flex;
+  margin: 7.5vh 0;
+}
+.community-card__title {
+  text-align: left;
+  margin-left: 2.5vh;
+}
+.community-card__content {
+  margin-left: 2.5vh;
+}
+.community-card__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-media-container {
+  display: flex;
+}
+
 :root {
   font-size: 10px;
 }
@@ -619,6 +640,7 @@ input {
 .footer {
   position: fixed;
   inset: auto 0 0 0;
+  z-index: 200;
 }
 
 .footer__top {
@@ -649,17 +671,36 @@ section {
 }
 
 .mission, .objectives {
-  margin: 10vh 0;
+  margin: 5vh 0 7.5vh;
 }
 
 .teamCard {
   display: flex;
   justify-content: space-between;
-  margin: 2em 0;
+  margin: 6.5vh 0;
 }
 
 .social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1vh;
+}
+
+.article-card {
+  margin: 2vh 0;
+  padding: 0.5em 0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-card__title {
+  color: gray;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+  font-family: "Roboto", sans-serif;
+  align-items: left;
 }
 
 .events__container {
@@ -667,20 +708,20 @@ section {
   margin: 5vh 0 10vh;
 }
 
-.musician-card {
-  display: flex;
-  margin: 3vh 0;
-  /* 
-  &__txt{
-      margin-left: ;
-  } */
+@keyframes alt-contact {
+  0% {
+    left: -100vw;
+  }
+  15% {
+    left: 0;
+  }
+  35% {
+    left: 0;
+  }
+  50% {
+    left: -100vw;
+  }
 }
-
-.alt-contact {
-  display: flex;
-  margin: 2vh 0;
-}
-
 .landingEvents {
   background-color: turquoise;
 }
@@ -712,7 +753,7 @@ section {
 }
 
 .img__article {
-  margin: 5vh 0;
+  margin: 2.5vh 0;
 }
 
 /* @media screen and (min-width: 768px){

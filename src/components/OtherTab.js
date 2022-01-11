@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import OtherCard from "../components/BandCard"
+import OtherCard from "../components/OtherCard"
 
 const OtherTab = () => {
     const [other, setOther] = useState(null)
@@ -19,7 +19,8 @@ const OtherTab = () => {
             <h1>Other</h1>
             {
               other &&  other.map((place) => (
-                    <OtherCard key = { place.id } name = { place.name } fname = { place.fname } lname = { place.lname} address = { place.instrument } phone = { place.phone} mail = { place.mail } site = { place.site } />
+                <OtherCard key = { place.id } name = { place.name } address = { place.address } phone = { place.phone } mail = { place.mail } site = { place.site } />
+                    
                 ))
             }
         </div>

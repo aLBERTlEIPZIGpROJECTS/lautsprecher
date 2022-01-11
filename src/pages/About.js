@@ -1,5 +1,6 @@
 import TeamCard from "../components/TeamCard"
 import { useState, useEffect } from "react"
+import CommunityCard from "../components/CommunityCard"
 
 const About = () => {
     
@@ -36,7 +37,7 @@ const About = () => {
                      <h2>Team</h2>
                  {
                     team && team.map((person) => (
-                        <TeamCard fname = { person.fname } lname = { person.lname } rol = { person.rol } id = { person.id } img = { person.img } key = { person.id }/>
+                        <CommunityCard fname = { person.fname } lname = { person.lname } rol = { person.rol } id = { person.id } img = { person.img } key = { person.id }/>
                     ))}       
                 </div>
         </div>

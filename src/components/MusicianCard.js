@@ -9,6 +9,7 @@ const MusicianCard = (props) => {
     return(
         <div className="community-card">
             <img src={ portrait } alt={ props.name } className="img__band"/>
+            
             <div className="community-card__txt">
                 <h3 className="community-card__title">{ props.fname } { props.lname }</h3>
                 <div className="community-card__content">

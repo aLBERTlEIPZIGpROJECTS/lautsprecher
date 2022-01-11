@@ -527,12 +527,30 @@ a :focus {
     background-color: $white;
 } */
 label {
-  border: 1px solid #4d4d4d;
-  padding: 0.5em 0.25em;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
 }
 
 input {
-  margin: 3.5vh 0;
+  padding: 1em 0;
+  width: 90vw;
+}
+
+.border {
+  border: 1px solid #b3b3b3;
+}
+
+.txt-field {
+  height: 20vh;
+  width: 90vw;
+}
+
+.contact-option {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5vh 0;
 }
 
 .event-card {

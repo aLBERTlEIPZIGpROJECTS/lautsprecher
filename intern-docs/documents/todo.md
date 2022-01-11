@@ -3,11 +3,8 @@
 SCSS!!
 
     Community
-    Contact
     Events
-    Musicians
     LandingPage
-    Impressum
 
 
 @media    

@@ -37,8 +37,6 @@
 
     Single Article / HistorySingleArticle / Impressum => Problem #1 : text-block in Single Article / HistorySingleArticle / Impressum zu breit
 
-    Strange aboutus loading behaviour
-    
     Send Event Contact/ Form / MusicianSignForm / NonMusicianFormSignForm => input / label / lock width / lock btn width
 
     LandingPage => setArticleSnippet(data[0].slice(10)) NOT WORKING

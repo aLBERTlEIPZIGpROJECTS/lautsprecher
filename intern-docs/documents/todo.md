@@ -1,11 +1,5 @@
 // ON THE TABLE
 
-SCSS!!
-
-    Community
-    LandingPage
-
-
 @media    
     About
     Articles
@@ -24,33 +18,13 @@ SCSS!!
     SendEventForm
 
 
-
-
 // TASKS
 
-    We need a system to pick max (3?) links / icons
+    We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
+
+        {"tw" : ["@handle", true]}
 
     When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
-
-// Back-End Herausforderungen
-
-        // Link to concrete :id (articles)
-
-        // pictures in json => problem is: react component must import img in order to be able to render them. So: how do you run a "conditional import" based in a db?
-
-        // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
-
-            [ 
-                musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }.
-            ]
-
-        // re-structure     
-
-                "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig, 
-        
-        // to publish an event you must to log in somehow (to login you must have a BE, etc)
-
-        // How it's connected a Form with a POST request to db? (this changes how the component is written { props & co })
 
 
 // PROBLEMS
@@ -93,11 +67,9 @@ SCSS!!
 
 // Back-End Herausforderungen
 
-        // Office-work : most of musicians from "bands" to "musicians"
-
-        // Back-End Data Structure deffinieren { festmachen } (weil sonst Probleme mit dem Front End gibt)
-
         // Link to concrete :id (articles)
+
+        // pictures in json => problem is: react component must import img in order to be able to render them. So: how do you run a "conditional import" based in a db?
 
         // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
 
@@ -105,9 +77,9 @@ SCSS!!
                 musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }.
             ]
 
-        // substitute "eventsNow" and "eventsToday" for "eventsList", when you know how to pass nested info
+        // re-structure     
 
-        // re-structure "article" + "history-articles" & "single-article" + "single-history-articles", so you ONLY HAVE ONE COMPONENT!!
+                "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig, 
         
         // to publish an event you must to log in somehow (to login you must have a BE, etc)
 

@@ -29,12 +29,12 @@ const Home = () => {
                 }
                 <div className="community">
                     <h2>Community</h2>
-                    <Button txt = "Finde einen Musikern" link = "/musicians" />
+                    <Button txt = "Finde einen Musikern" link = "/musicians" className="bg-red"/>
                 </div>
             </div>
             <div className="content-sec">
-                <Button txt = "Hi there" linkName = "Hi there"  link = "/" className ="content-sec__btn" />
-                <Button txt = "About us" linkName = "About us"  link = "/about" className ="content-sec__btn"  />
+                <Button txt = "Hi there" linkName = "Hi there"  link = "/" className ="content-sec__btn bg-lightblue" />
+                <Button txt = "About us" linkName = "About us"  link = "/about" className ="content-sec__btn bg-lightgreen"  />
             </div>
         </div>
     )

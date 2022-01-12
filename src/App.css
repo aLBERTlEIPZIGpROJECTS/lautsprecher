@@ -388,7 +388,7 @@ h1 {
   color: #4d4d4d;
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1.5em;
+  /* margin-bottom: 1.5em; */
   line-height: 0.8em;
   font-family: "Rubik Mono One", sans-serif;
   text-align: center;
@@ -458,6 +458,14 @@ a :focus {
   color: #e6e6e6;
   background-color: #ffbf00;
   border: 3px solid gray;
+}
+
+.web-title {
+  margin-bottom: 0.5em;
+}
+
+.web-subtitle {
+  font-size: 1.6rem;
 }
 
 .img__profile {
@@ -547,25 +555,25 @@ a :focus {
   height: 40px;
   width: 40px;
   z-index: 100;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .iconSmall {
   height: 20px;
   z-index: 100;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .iconMed {
   height: 40px;
   z-index: 100;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .iconBig {
   height: 60px;
   z-index: 100;
-  margin: 0 10px;
+  margin: 0 5pppx;
 }
 
 .social-media {
@@ -581,6 +589,9 @@ a :focus {
 .button {
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
+  display: grid;
+  place-items: center;
+  margin: 20px 0;
 }
 
 /* .form-field{
@@ -591,11 +602,11 @@ label {
   justify-content: space-between;
   position: relative;
   align-items: center;
+  box-shadow: 5px 5px 5px 0px #e6e6e6;
 }
 
 input {
   padding: 1em 0;
-  width: 90vw;
 }
 
 .border {
@@ -620,14 +631,19 @@ input {
   display: flex;
   flex-direction: column;
   padding-right: 25vw;
+  margin: 5px;
 }
 .event-card__block {
   padding: 0 5vw;
   margin: 0;
   width: 30vw;
+  padding: 25px;
 }
 .event-card__txt {
   color: #e6e6e6;
+}
+.event-card__img {
+  object-fit: cover;
 }
 
 .community-card {
@@ -824,6 +840,13 @@ section {
 
 .img__article {
   margin: 2.5vh 0;
+}
+
+.article__infos {
+  display: flex;
+}
+.article__txt {
+  margin-right: 10px;
 }
 
 /*

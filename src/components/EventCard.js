@@ -10,7 +10,6 @@ const EventCard = (props) => {
                 <p className="event-card__txt">{ props.venue }</p>
                 <p className="event-card__txt">{ props.links }</p>
                 <p className="event-card__txt">{ props.info }</p>
-                <img src={ props.img } alt="" />
             </div>
             <Button txt = "+ Info" className = "bg-white" />
         </div>

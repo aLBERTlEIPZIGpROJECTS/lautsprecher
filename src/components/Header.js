@@ -10,8 +10,8 @@ const Header = () => {
             <div className="header__top bg__orange"></div>
             <div className="header__med">
                 <div className="logo">
-                    <h2>Lautsprecher</h2>
-                    <p>Web Musik Magazine Leipzig</p>
+                    <h2 className="web-title">Lautsprecher</h2>
+                    <p className="web-subtitle">Web Musik Magazine Leipzig</p>
                 </div>
                 {/* <BurgerMenu /> */}
             </div>

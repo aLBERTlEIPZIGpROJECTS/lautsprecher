@@ -25,7 +25,13 @@
 
         When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
 
+    music player programmieren
 
+    cursor substitute
+
+    burger menu
+
+    extensible footer
 
 // PROBLEMS
 
@@ -46,6 +52,10 @@
     { inhaber[fname] } {inhaber[lname] }
 
     why is body in events overflowing?
+
+    eventcard img {overflow : hidden} not working?
+
+    input checkbox without border?? PLEASE?
     
 
 

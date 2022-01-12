@@ -20,8 +20,8 @@ const Contact = () => {
                     <p>Bist Du Veranstalter?</p>
                     <img src={ ArrowRight } alt="" className="iconSmall"/>
                 </div>
-                <FormField label = "I want to subscribe"  type = "checkbox"/>
-                <Button txt = "Send"  linkName = "send" />
+                <FormField label = "I want to subscribe"  type = "checkbox" />
+                <Button txt = "Send"  linkName = "send" className = "bg-orange" />
             </form>
         </div>
     )

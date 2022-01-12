@@ -7,11 +7,11 @@ const Contact = () => {
         <div className="contact">
             <h1>Contact</h1>
             <form action="">
-                <FormField pholder = "First Name" type = "text" border = "true"/> 
-                <FormField pholder = "Last Name"  type = "text"  border = "true"/>
-                <FormField pholder = "Mail"  type = "mail"  border = "true"/> 
-                <FormField pholder = "Phone"  type = "phone"  border = "true"/> 
-                <FormField pholder = "Message" type = "text"  border = "true" class = "txt-field"/>
+                <FormField pholder = "First Name" type = "text" border = "true" class="label-shadow" maxlength="30"/> 
+                <FormField pholder = "Last Name"  type = "text"  border = "true" class="label-shadow" maxlength="30"/>
+                <FormField pholder = "Mail"  type = "mail"  border = "true" class="label-shadow" maxlength="30"/> 
+                <FormField pholder = "Phone"  type = "phone"  border = "true" class="label-shadow" maxlength="30"/> 
+                <FormField pholder = "Message" type = "text"  border = "true" class = "txt-field" maxlength="1000"  cols="50" rows="6"/>
                 <div className="contact-option">
                     <p>Bist Du Musiker?</p>
                     <img src={ ArrowRight } alt="" className="iconSmall"/>

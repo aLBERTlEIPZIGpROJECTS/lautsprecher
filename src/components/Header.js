@@ -1,9 +1,9 @@
 import BurgerMenu from "./BurgerMenu"
 import ArrowDown from "../materials/icons/arrow-down.svg"
 import { Link } from "react-router-dom"
+import { useContext } from "react"
 
 const Header = () => {
-
 
     return(
         <div className="header">

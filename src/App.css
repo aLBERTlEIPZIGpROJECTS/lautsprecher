@@ -590,8 +590,12 @@ a :focus {
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
   display: grid;
-  place-items: center;
-  margin: 20px 0;
+}
+
+.event-button {
+  background-color: #e6e6e6;
+  padding: 0.5em 1em;
+  width: 40vw;
 }
 
 /* .form-field{
@@ -601,12 +605,17 @@ label {
   display: flex;
   justify-content: space-between;
   position: relative;
-  align-items: center;
+  margin-bottom: 5vh;
+}
+
+.label-shadow {
   box-shadow: 5px 5px 5px 0px #e6e6e6;
 }
 
 input {
   padding: 1em 0;
+  width: 100%;
+  height: 100%;
 }
 
 .border {
@@ -614,8 +623,13 @@ input {
 }
 
 .txt-field {
-  height: 20vh;
+  height: 25vh;
   width: 90vw;
+  box-shadow: 5px 5px 5px 0px #e6e6e6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  resize: none;
 }
 
 .contact-option {
@@ -625,25 +639,27 @@ input {
 }
 
 .event-card {
-  background: url("./materials/img/musicians/choir.jpg");
-  /* margin: 5vh 1vw; */
   width: 50vw;
-  display: flex;
-  flex-direction: column;
   padding-right: 25vw;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .event-card__block {
-  padding: 0 5vw;
   margin: 0;
-  width: 30vw;
-  padding: 25px;
+  padding: 5vh 10vw;
 }
 .event-card__txt {
   color: #e6e6e6;
+  padding-left: 1vw;
 }
 .event-card__img {
   object-fit: cover;
+}
+.event-card__bg {
+  background: url("./materials/img/musicians/choir.jpg");
+  background-size: cover;
 }
 
 .community-card {
@@ -720,6 +736,10 @@ input {
 
 .burger-menu {
   display: none;
+}
+
+.test {
+  z-index: 500;
 }
 
 .body {

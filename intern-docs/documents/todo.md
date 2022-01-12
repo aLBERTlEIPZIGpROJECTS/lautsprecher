@@ -1,7 +1,18 @@
 // ON THE TABLE
 
+    Donnerstag 13.
+        
+        css @media
+        @keyframes
+        useContext lernen / implementieren
+        restructure all-articles and history-articles, so it's a single component, with url as prop
 
-USE CONTEXT setHeaderColor
+
+    Freitag 14.
+        { verschoben }
+            msg field overflow
+            why is body in events overflowing?
+            event bg-img defined as style?
 
 @media    
     About
@@ -19,9 +30,14 @@ USE CONTEXT setHeaderColor
     SendEventForm
 
 
+
 // TEST LÖSUNG
 
     Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
+
+    Write start-instructions in package-json not working for scss
+
+    
 
 // TASKS
 
@@ -59,21 +75,7 @@ USE CONTEXT setHeaderColor
     // re-structure     "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig
 
 
-// CSS PROBLEMS
 
-    Articles => "Architechture and acoustic" ???
-
-    Single Article / HistorySingleArticle / Impressum => Problem #1 : text-block in Single Article / HistorySingleArticle / Impressum zu breit
-
-    Send Event Contact/ Form / MusicianSignForm / NonMusicianFormSignForm => input / label / lock width / lock btn width
-
-    why is body in events overflowing?
-
-    eventcard img {overflow : hidden} not working?
-
-    input checkbox without border?? PLEASE?
-    
-    Write start-instructions in package-json not working for scss
 
 
 

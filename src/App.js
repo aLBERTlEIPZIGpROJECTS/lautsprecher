@@ -9,7 +9,6 @@ import Events from "./pages/Events"
 import LandingPage from "./pages/LandingPage"
 import Impressum from "./pages/Impressum"
 import Community from "./pages/Community";
-import Musicians from "./pages/Musicians"
 import MusicianSignForm from "./pages/MusicianSignForm"
 import NonMusicianSignForm from "./pages/NonMusicianSignForm"
 import SendEventForm from './pages/SendEventForm';

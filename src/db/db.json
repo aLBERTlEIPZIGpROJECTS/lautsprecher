@@ -559,7 +559,7 @@
           {
             "id" : 0,
             "name" : "Gewandhaus",
-            "inhaber" : [
+            "inhaber" : [ 
               {
                 "fname" : "Stadt Leipzig",
                 "lname" : null
@@ -583,8 +583,8 @@
             "name" : "Opernhaus Leipzig",
             "inhaber" : [
               {
-                "fname" : null,
-                "lname" : null
+                "fname" : "GP",
+                "lname" : "Telemann"
               }
             ],
             "address" : "Augustuspl. 12, 04109 Leipzig",

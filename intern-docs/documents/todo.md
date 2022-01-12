@@ -1,5 +1,8 @@
 // ON THE TABLE
 
+
+USE CONTEXT setHeaderColor
+
 @media    
     About
     Articles
@@ -16,6 +19,9 @@
     SendEventForm
 
 
+// TEST LÖSUNG
+
+    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
 
 // TASKS
 
@@ -33,23 +39,33 @@
 
     extensible footer
 
-// PROBLEMS
+
+
+// STRUCTURE PROBLEMS
+
 
     Scss NOT CLONED! :O
 
-    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
+    { inhaber[fname] } {inhaber[lname] } working partially
 
-    Use State im Parent hin und zurück zu Child // useReducer
+    do calendar (look <Events />) (=> look library)
+
+    nested routes for a single component?
+
+    Intern Links in a website
+
+    do calendar (look <Events />) (=> look library)
+
+    // re-structure     "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig
+
+
+// CSS PROBLEMS
+
+    Articles => "Architechture and acoustic" ???
 
     Single Article / HistorySingleArticle / Impressum => Problem #1 : text-block in Single Article / HistorySingleArticle / Impressum zu breit
 
     Send Event Contact/ Form / MusicianSignForm / NonMusicianFormSignForm => input / label / lock width / lock btn width
-
-    LandingPage => setArticleSnippet(data[0].slice(10)) NOT WORKING
-
-    Articles => "Architechture and acoustic" ???
-
-    { inhaber[fname] } {inhaber[lname] }
 
     why is body in events overflowing?
 
@@ -57,29 +73,15 @@
 
     input checkbox without border?? PLEASE?
     
-
-
-// QUESTIONS
-    
-    Write start-instructions in package-json
-
-    Intern Links in a website
-
-    In case a musician already have a profile in the website, there's a link => if(musician.profile === true) => print link into an href (a)
-    
-    Are "tabs" in community a React Component?
-
-    do calendar (look <Events />) (=> look library)
-
-    ein Form - Component, oder 3 Components (ein für jede Variante)? => eventuell ein einziges Component haben, der ein map() durch die Eigenschaften macht
+    Write start-instructions in package-json not working for scss
 
 
 
-// Back-End Herausforderungen
+// BACK-END Herausforderungen
 
         // Link to concrete :id (articles)
-
-        // pictures in json => problem is: react component must import img in order to be able to render them. So: how do you run a "conditional import" based in a db?
+        
+// LOG IN KAPITEL
 
         // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
 
@@ -87,14 +89,14 @@
                 musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }.
             ]
 
-        // re-structure     
-
-                "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig, 
         
         // to publish an event you must to log in somehow (to login you must have a BE, etc)
 
         // How it's connected a Form with a POST request to db? (this changes how the component is written { props & co })
 
+        // In case a musician already have a profile in the website, there's a link => if(musician.profile === true) => print link into an href (a)
+
+        // When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
 
 
 // UNUSED COMPONENTS - Beware
@@ -108,33 +110,62 @@
 
 
 
+
+***************************************************************************************************
+
+
 // TIMING
-
-    Tag 4 - 5
-D.  HTML (JSX) + SCSS
+  
+    Donnerstag 13.
+        css @media
+        @keyframes
+        useContext lernen / implementieren
+        restructure all-articles and history-articles, so it's a single component, with url as prop
     
-    Tag 6
-E.  @media
-    
-    Tag 7
-F.  @keyframes
-    
-    Tag 8 - 9
-G.  testing
-H.  correction
+    Freitag 14.
+        Intern Links in a website
+        nested routes for a single component?
+        Link to concrete :id (articles)
+        create CDN 0.1 with pictures.
 
-2.  BACKEND
+    Samstag 15.
+        burger menu (klassische Fassung zuerst)
+        extensible footer (klassische Fassung zuerst)
 
-    Tag 10
-A.  JSON-Server => already a 1. version. We need a better version, see { Back-End Herausforderungen }
+    Sonntag 16.
+        music player programmieren
+        cursor substitute
+        animations (blob)
+        animations : 
+            send
+            load article
+            progressive input felder
+            buttons
+            placeholder
+        
+    Montag 17. 
+        footer / header interaction
+        burger menu
 
-    Tag 11 - 12
-B.  (if on extra time: learn { again } BE)
+    Dienstag 18.
 
-    Tag 13 - 14 
-C.  testing
+        Absolut BONUS LEVEL:
+            { inhaber[fname] } {inhaber[lname] } working partially
+            Calendar
+            Map
+            Log - in Kapitel
+            Scss NOT CLONED! :O
+            (if on extra time: learn { again } BE)
+            Deployment on firebase
+            Bundler
 
-    Tag 15
-3. PRESENTATION
+    Mittwoch 19.
 
-- besser deffinierte Mission
+        "Freier Tag"
+
+    Donnerstag 20.
+
+        Presentation vorbereiten / üben
+
+        - besser deffinierte Mission
+        - bessere Materialien

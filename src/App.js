@@ -41,6 +41,9 @@ function App() {
           <Route path="/non-musician-sign-form" element={<NonMusicianSignForm />} />
           <Route path="/send-event" element ={<SendEventForm />} />
           <Route path="/impressum" element={<Impressum />} />
+          <Route path="/musicians" element={<Community />} url = "http://localhost:8000/musicians" title = "Musicians" />
+          <Route path="/bands" element={<Community />} url = "http://localhost:8000/bands" title = "Bands" />
+          <Route path="/other" element={<Community />} url = "http://localhost:8000/veranstaltungsorte" title = "Other" />
         </Routes>
       </div>
       </main>

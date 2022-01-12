@@ -4,7 +4,7 @@ const ArticlePreview = (props) => {
     return(
         <div className="article-preview">
             <h2>{ props.title }</h2>
-            <p>{ props.body }</p>
+            <p>{ props.body.slice(0, 100) }</p>
             <Button txt = "Zum Artikel" link = { props.link } className="bg-purple"  />            
         </div>
     )

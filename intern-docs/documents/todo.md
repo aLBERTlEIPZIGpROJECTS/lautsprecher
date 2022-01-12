@@ -11,11 +11,10 @@
     LandingPage
     Impressum
 
-
-
     MusiciansSignForm
     NonMusiciansSignForm
     SendEventForm
+
 
 
 // TASKS
@@ -24,7 +23,8 @@
 
         {"tw" : ["@handle", true]}
 
-    When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
+        When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
+
 
 
 // PROBLEMS
@@ -48,6 +48,7 @@
     why is body in events overflowing?
     
 
+
 // QUESTIONS
     
     Write start-instructions in package-json
@@ -61,6 +62,7 @@
     do calendar (look <Events />) (=> look library)
 
     ein Form - Component, oder 3 Components (ein für jede Variante)? => eventuell ein einziges Component haben, der ein map() durch die Eigenschaften macht
+
 
 
 // Back-End Herausforderungen
@@ -84,6 +86,7 @@
         // How it's connected a Form with a POST request to db? (this changes how the component is written { props & co })
 
 
+
 // UNUSED COMPONENTS - Beware
 
     Tag =>  for every day in the calendar (=> events)
@@ -92,6 +95,7 @@
     Body
     EventsNov
     EventsList
+
 
 
 // TIMING

@@ -2,7 +2,7 @@ import FirstImg from "../materials/img/articles-history/firstImage.jpg"
 
 const SingleArticle = () => {
     return(
-        <div className="singlearticle">
+        <div className="single-article">
             <h1>Single Article Tittel</h1>
             <div className="article__infos">
                 <p className="article__txt">Author</p>

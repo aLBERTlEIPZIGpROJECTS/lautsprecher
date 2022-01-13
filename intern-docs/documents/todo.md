@@ -2,45 +2,32 @@
 
     Donnerstag 13.
         
-        css @media
-        @keyframes
         useContext lernen / implementieren
         restructure all-articles and history-articles, so it's a single component, with url as prop
+        @keyframes
 
 
     Freitag 14.
         { verschoben }
-            msg field overflow
-            why is body in events overflowing?
-            event bg-img defined as style?
+            
 
-@media    
-    About
-    Articles
-    SingleArticle / HistorySingleArticle
-    Community
-    Contact
-    Events
-    Musicians
-    LandingPage
-    Impressum
+@media 
 
-    MusiciansSignForm
-    NonMusiciansSignForm
-    SendEventForm
-
+1440 => still single article img (Richtung Landing Page)
 
 
 // TEST LÖSUNG
 
-    Header-BG-Color must be different for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
+    Header-BG-Color must be dicfferent for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
 
     Write start-instructions in package-json not working for scss
 
+    Scss NOT CLONED! => c + v
     
 
 // TASKS
 
+    about => objectives => wrap in a container, so you can do "display: flex"
     We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
 
         {"tw" : ["@handle", true]}
@@ -57,10 +44,17 @@
 
 
 
-// STRUCTURE PROBLEMS
+// PROBLEMS
+
+    { CSS }
+
+    events text overflow 
+    msg field overflow
+            why is body in events overflowing?
+            event bg-img defined as style? or how?
 
 
-    Scss NOT CLONED! :O
+    { STRUCTURE }
 
     { inhaber[fname] } {inhaber[lname] } working partially
 
@@ -73,9 +67,6 @@
     do calendar (look <Events />) (=> look library)
 
     // re-structure     "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig
-
-
-
 
 
 
@@ -99,6 +90,17 @@
         // In case a musician already have a profile in the website, there's a link => if(musician.profile === true) => print link into an href (a)
 
         // When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
+
+
+// REFINE
+
+    box-shadow as a scss variable
+    go-to-top button
+    landing page article-preview button width
+    landing page community-previe button width (768)
+    single-article => button "more articles" and "next article"
+    contact { .contact-option arrow => align}
+    team images different mask ?
 
 
 // UNUSED COMPONENTS - Beware

@@ -12,16 +12,18 @@ const Contact = () => {
                 <FormField pholder = "Mail"  type = "mail"  border = "true" class="label-shadow" maxlength="30"/> 
                 <FormField pholder = "Phone"  type = "phone"  border = "true" class="label-shadow" maxlength="30"/> 
                 <FormField pholder = "Message" type = "text"  border = "true" class = "txt-field" maxlength="1000"  cols="50" rows="6"/>
-                <div className="contact-option">
-                    <p>Bist Du Musiker?</p>
-                    <img src={ ArrowRight } alt="" className="iconSmall"/>
-                </div>
-                <div className="contact-option">
-                    <p>Bist Du Veranstalter?</p>
-                    <img src={ ArrowRight } alt="" className="iconSmall"/>
+                <div className="contact-option__container">
+                    <div className="contact-option">
+                        <p className="contact-option__txt">Bist Du Musiker?</p>
+                        <img src={ ArrowRight } alt="" className="iconSmall"/>
+                    </div>
+                    <div className="contact-option">
+                        <p className="contact-option__txt">Bist Du Veranstalter?</p>
+                        <img src={ ArrowRight } alt="" className="iconSmall"/>
+                    </div>
                 </div>
                 <FormField label = "I want to subscribe"  type = "checkbox" />
-                <Button txt = "Send"  linkName = "send" className = "bg-orange" />
+                <Button txt = "Send"  linkName = "send" className = "button__orange button__send" />
             </form>
         </div>
     )

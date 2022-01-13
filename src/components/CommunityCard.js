@@ -11,16 +11,21 @@ const CommunityCard = (props) =>{
              <img src= { props.img } alt={ props.name } className="img__band"/>
            
            <div className="community-card__txt">
-               <h3>{ props.name } { props.fname} {props.lname} </h3>
+               <div className="community-card__info">
+                <h3>{ props.name }</h3>
+                <p>{ props.fname} {props.lname}</p>
+                <p>{ props.rol } </p>
+               </div>
                <div className="community-card__content">
-                   <p>{ props.inhaber["fname"] }{ props.inhaber["lname"] }</p>
+                   {/* <p>{ props.inhaber["fname"] }{ props.inhaber["lname"] }</p> */}
                    <p>{ props.instrument }</p>
                    <p>{ props.style }</p>
-                   <p>{ props.rol }</p>
+                   
                    <p>{ props.member }</p>
                    <p>{ props.address }</p> {/* change it for a link to a map */}
                </div>
-               <div className="social-media-container">
+           </div>
+           <div className="social-media-container">
                    <img src={ fbIcon } alt="facebook" className="iconMed"/>
                    <img src={ twIcon } alt="twitter" className="iconMed"/>
                    <img src={ igIcon } alt="instagram" className="iconMed"/>
@@ -33,7 +38,6 @@ const CommunityCard = (props) =>{
                 {/*
                 <img src={ siteIcon } alt="site" className="iconMed"/> */}
                </div>
-           </div>
         </div>
     )
 }

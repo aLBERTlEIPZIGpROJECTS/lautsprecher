@@ -17,16 +17,20 @@ const Footer = () => {
                 <MusicPlayer />
             </div>
             <div className={`${footerClass}__bot`}>
-                <p className="footer-big__txt">Home</p>
-                <p className="footer-big__txt">Events</p>
-                <p className="footer-big__txt">Community</p>
-                <p className="footer-big__txt">Last Article</p>
-                <p className="footer-big__txt">All Articles</p>
-                <p className="footer-big__txt">History</p>
-                <p className="footer-big__txt">All History Articles</p>
-                <p className="footer-big__txt">Contact</p>
-                <p className="footer-big__txt">About us</p>
-                <p className="footer-big__txt">Impressum</p>
+                <div className={`${footerClass}__txt-container`}>
+                    <div className="sub-container">
+                        <p className="footer-big__txt">Home</p>
+                        <p className="footer-big__txt">Events</p>
+                        <p className="footer-big__txt">Community</p>
+                        <p className="footer-big__txt">Articles</p>
+                    </div>
+                    <div className="sub-container">
+                        <p className="footer-big__txt">History</p>
+                        <p className="footer-big__txt">Contact</p>
+                        <p className="footer-big__txt">About us</p>
+                        <p className="footer-big__txt">Impressum</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

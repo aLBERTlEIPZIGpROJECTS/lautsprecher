@@ -1,29 +1,18 @@
 // ON THE TABLE
 
 
-    Footer Burger Menu css
 
 
-    Donnerstag 13.
-        
-        
-            
 
-// TEST LÖSUNG
+
+// TASKS
 
     (AX-318)
             Header-BG-Color must be dicfferent for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
 
             Write start-instructions in package-json not working for scss
 
-
-// TASKS
-
-    footer Burger
-
     music player programmieren
-
-    extensible footer
 
     Scss NOT CLONED! => c + v
 
@@ -37,6 +26,8 @@
     msg field overflow
             why is body in events overflowing?
             event bg-img defined as style? or how?
+
+    css conflict between header and footer { on different sizes }
 
 
     { STRUCTURE }

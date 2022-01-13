@@ -925,6 +925,9 @@ input {
   right: -65vw;
   z-index: 0;
 }
+.footer-small__txt-container {
+  display: none;
+}
 
 .footer-big {
   position: fixed;
@@ -932,7 +935,7 @@ input {
   z-index: 200;
 }
 .footer-big__top {
-  height: 25vh;
+  height: 30vh;
   display: flex;
   justify-content: end;
   z-index: 100;
@@ -943,15 +946,24 @@ input {
   border-radius: 50%;
   background-color: #b3b3b3;
   width: 200vw;
-  height: 40vh;
+  height: 45vh;
   bottom: -12vh;
   right: -65vw;
-  z-index: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }
 .footer-big__txt {
   color: #1a1a1a;
+  font-size: 18px;
+}
+.footer-big__txt-container {
+  display: flex;
+  justify-content: center;
+  padding-right: 30vw;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 10vw 0 0;
 }
 
 .article__infos {

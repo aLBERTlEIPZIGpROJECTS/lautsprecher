@@ -1,9 +1,12 @@
 // ON THE TABLE
 
+
+    Footer Burger Menu css
+
+
     Donnerstag 13.
         
-        useContext lernen / implementieren (AX-318)
-        @keyframes
+        
             
 
 // TEST LÖSUNG
@@ -16,12 +19,9 @@
 
 // TASKS
 
-    
+    footer Burger
 
     music player programmieren
-
-
-    burger menu
 
     extensible footer
 
@@ -49,7 +49,9 @@
 
     nested routes for a single component?
 
-    Intern Links in a website
+    Intern Links in a website (Burger Menu)
+
+    @media for Burger
 
     do calendar (look <Events />) (=> look library)
 
@@ -114,25 +116,30 @@
 
 // TIMING
   
-    Donnerstag 13.
-        css @media
-        @keyframes
-        useContext lernen / implementieren
-        restructure all-articles and history-articles, so it's a single component, with url as prop
-    
     Freitag 14.
+
+        @keyframes
         Intern Links in a website
+            Burger Menu
+            Footer Burger Menu
+            Landing Page
+            About (social links)
+            articles and history articles (after BE)
+            community (social links + after BE => links between musicians & bands & veranstalter)
+            events (after BE => links between musicians & bands & veranstalter)
+            
+
         nested routes for a single component?
         Link to concrete :id (articles)
         create CDN 0.1 with pictures.
 
     Samstag 15.
-        burger menu (klassische Fassung zuerst)
-        extensible footer (klassische Fassung zuerst)
+        useContext lernen / implementieren (AX-318)
+        @keyframes
+        restructure all-articles and history-articles, so it's a single component, with url as prop
 
     Sonntag 16.
         music player programmieren
-        cursor substitute
         animations (blob)
         animations : 
             send
@@ -142,8 +149,7 @@
             placeholder
         
     Montag 17. 
-        footer / header interaction
-        burger menu
+        better burger menu & footer burger menu
 
     Dienstag 18.
 

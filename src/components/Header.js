@@ -15,11 +15,11 @@ const Header = () => {
                     <h2 className="web-title">Lautsprecher</h2>
                     <p className="web-subtitle">Web Musik Magazine Leipzig</p>
                 </div>
-                {/* <BurgerMenu /> */}
             </div>
             <div className="header__bot">
+                <BurgerMenu />
                 {/* hier müssen die Links sein */}
-                <img src={ ArrowDown } alt="" className="icon" />
+                {/* <img src={ ArrowDown } alt="" className="icon" /> */}
             </div>
             
         </div>

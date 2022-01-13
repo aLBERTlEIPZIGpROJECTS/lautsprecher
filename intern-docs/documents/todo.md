@@ -2,45 +2,30 @@
 
     Donnerstag 13.
         
-        useContext lernen / implementieren
-        restructure all-articles and history-articles, so it's a single component, with url as prop
+        useContext lernen / implementieren (AX-318)
         @keyframes
-
-
-    Freitag 14.
-        { verschoben }
             
-
-@media 
-
-1440 => still single article img (Richtung Landing Page)
-
 
 // TEST LÖSUNG
 
-    Header-BG-Color must be dicfferent for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
+    (AX-318)
+            Header-BG-Color must be dicfferent for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
 
-    Write start-instructions in package-json not working for scss
+            Write start-instructions in package-json not working for scss
 
-    Scss NOT CLONED! => c + v
-    
 
 // TASKS
 
-    about => objectives => wrap in a container, so you can do "display: flex"
-    We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
-
-        {"tw" : ["@handle", true]}
-
-        When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
+    
 
     music player programmieren
 
-    cursor substitute
 
     burger menu
 
     extensible footer
+
+    Scss NOT CLONED! => c + v
 
 
 
@@ -57,6 +42,8 @@
     { STRUCTURE }
 
     { inhaber[fname] } {inhaber[lname] } working partially
+
+    restructure all-articles and history-articles, so it's a single component, with url as prop
 
     do calendar (look <Events />) (=> look library)
 
@@ -101,6 +88,13 @@
     single-article => button "more articles" and "next article"
     contact { .contact-option arrow => align}
     team images different mask ?
+
+    PRE: to have a BE
+        We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
+
+        {"tw" : ["@handle", true]}
+
+        When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
 
 
 // UNUSED COMPONENTS - Beware

@@ -818,6 +818,7 @@ input {
 .body {
   margin-bottom: 12vh;
   overflow: hidden;
+  cursor: url("./materials/icons/mouse.svg"), auto;
 }
 
 .footer {
@@ -857,8 +858,12 @@ section {
   margin: 0 5vw;
 }
 
-.mission, .objectives {
+.mission {
   margin: 5vh 0 7.5vh;
+}
+
+.objectives {
+  width: fit-content;
 }
 
 .mission {
@@ -876,6 +881,11 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1vh;
+}
+
+.objective-container {
+  display: flex;
+  justify-content: center;
 }
 
 .article-card {
@@ -967,6 +977,10 @@ section {
   }
   .content-sec__btn {
     width: 30vw;
+  }
+
+  .header {
+    padding-right: 5vw;
   }
 }
 @media screen and (min-width: 768px) {

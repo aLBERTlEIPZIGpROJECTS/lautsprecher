@@ -17,7 +17,6 @@ import HistorySingleArticle from "./pages/HistorySingleArticle"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
-
 function App() {
   return (
     

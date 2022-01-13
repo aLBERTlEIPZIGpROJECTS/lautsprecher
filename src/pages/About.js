@@ -25,12 +25,14 @@ const About = () => {
                 <h2>Mission</h2>
                 <blockquote>Lorem ipsum dolor sit amet.</blockquote>
             </div>
-            <div className="objectives">
-                <h2>Objectives</h2>
-                <p>First Objective Lorem Ipsum</p>
-                <p>Second Objective Lorem Ipsum</p>
-                <p>Third Objective Lorem Ipsum</p>
-                <p>Fourth Objective Lorem Ipsum</p>
+            <div className="objective-container">
+                <div className="objectives">
+                    <h2>Objectives</h2>
+                    <p>First Objective Lorem Ipsum</p>
+                    <p>Second Objective Lorem Ipsum</p>
+                    <p>Third Objective Lorem Ipsum</p>
+                    <p>Fourth Objective Lorem Ipsum</p>
+                </div>
             </div>
 
                  <div className="team">

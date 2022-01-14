@@ -20,7 +20,7 @@ const EventsNow = () => {
                 <h2>Right Now</h2>
                 {
                     events.map((event) => (
-                        <EventCard eventName = { event.title } musician = { event.musician } date = { event.date } venue = { event.venue } cost = { event.cost } links = { event.links } info = { event.info } />
+                        <EventCard eventName = { event.title } musician = { event.musician } date = { event.date } venue = { event.venue } cost = { event.cost } links = { event.links } info = { event.info } key = { event.id }/>
                         ))
                 }
             </div>

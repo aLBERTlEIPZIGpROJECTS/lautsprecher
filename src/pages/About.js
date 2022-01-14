@@ -1,6 +1,7 @@
 import TeamCard from "../components/TeamCard"
 import { useState, useEffect } from "react"
 import CommunityCard from "../components/CommunityCard"
+import Blob from "../components/Blob";
 
 const About = () => {
     
@@ -19,7 +20,7 @@ const About = () => {
 
     return(
         <div className="about">
-            
+            <Blob class = "blob__blue"/>
             <h1>About Us</h1>
             <div className="mission">
                 <h2>Mission</h2>

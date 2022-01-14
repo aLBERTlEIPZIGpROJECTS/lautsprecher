@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Button from "../components/Button"
 import EventsNow from "../components/EventsNow"
 import ArticlePreview from "../components/ArticlePreview"
+import Blob from "../components/Blob"
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
 
     return(
         <div className="landing-page">
+            <Blob class = "blob__orange" />
             <h1>Lautsprecher</h1>
             <EventsNow className = "landing-events" />
            

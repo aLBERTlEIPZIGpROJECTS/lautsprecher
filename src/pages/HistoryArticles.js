@@ -1,6 +1,6 @@
 import ArticleCard from "../components/ArticleCard"
 import { useState, useEffect } from "react"
-
+import Blob from "../components/Blob"
 
 
 const HistoryArticles = () => {
@@ -17,15 +17,14 @@ const HistoryArticles = () => {
             })
     }, [])
     return(
-        <div className="articles__container">
+        <div className="articles__container content">
+            <Blob class = "blob__lightblue" />
             <h1>Alle History Article</h1>
-            <div className="articles__cards">
                 {
                    articles && articles.map((article) => (
-                        <ArticleCard title = { article.title } id = { article.id } author = { article.author } key = { article.id } />
+                        <ArticleCard title = { article.title } id = { article.id } key = { article.id } />
                     ))
                 }
-        </div>
     </div>
     )
 }

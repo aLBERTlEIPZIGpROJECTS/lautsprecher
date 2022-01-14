@@ -28,11 +28,13 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/articles" element={<Articles />} url = "http://localhost:8000/historyarticles" />
+          <Route path="/articles" element={<Articles />} />
           <Route path="/single-article" element = {<SingleArticle />} />
           <Route path="/history-articles" element = {<HistoryArticles />} />
           <Route path="/history-single-article" element = {<HistorySingleArticle />} />
           
+          <Route path ="/community" element={<Community />} />
+          <Route path = "/musicians" element={<Community />} />
           <Route path="/bands" element={<Community />} />
           <Route path="/other" element={<Community />} />
           

@@ -1,8 +1,11 @@
 import FirstImg from "../materials/img/articles-history/firstImage.jpg"
 import Button from "../components/Button"
+import Blob from "../components/Blob"
+
 const HistorySingleArticle = () => {
     return(
         <div className="history-single-article">
+            <Blob class = "lightblue" />
             <h1>Single History Article Tittel</h1>
             <div className="article__infos">
                 <p className="article__txt">Author</p>

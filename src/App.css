@@ -569,12 +569,29 @@ a :focus {
   height: 40px;
   z-index: 100;
   margin: 0 5px;
+  padding: 0;
+  border-radius: 50%;
+  padding: 5px;
+  transition: 300ms;
+}
+.iconMed:hover {
+  background-color: #ffbf00;
+}
+.iconMed:active {
+  outline: 2px solid #4d4d4d;
+  outline-offset: -2px;
+  background-color: none;
+}
+.iconMed:focus {
+  outline: 2px solid #ffbf00;
+  outline-offset: -2px;
+  background-color: #4d4d4d;
 }
 
 .iconBig {
   height: 60px;
   z-index: 100;
-  margin: 0 5pppx;
+  margin: 0 5px;
 }
 
 .social-media {
@@ -592,8 +609,10 @@ a :focus {
   color: #e6e6e6;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #cc0000;
+  outline-offset: -2px;
 }
 .button__orange {
   background-color: #ffbf00;
@@ -602,6 +621,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #ffbf00;
+  outline-offset: -2px;
 }
 .button__lightblue {
   background-color: #00AAAA;
@@ -610,6 +631,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #00AAAA;
+  outline-offset: -2px;
 }
 .button__violet {
   background-color: #5500AA;
@@ -618,6 +641,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #5500AA;
+  outline-offset: -2px;
 }
 .button__green {
   background-color: #00AA2A;
@@ -626,6 +651,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #00AA2A;
+  outline-offset: -2px;
 }
 .button__blue {
   background-color: #002BAA;
@@ -634,6 +661,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #002BAA;
+  outline-offset: -2px;
 }
 .button__lightgreen {
   background-color: #55AA00;
@@ -642,6 +671,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #55AA00;
+  outline-offset: -2px;
 }
 .button__white {
   background-color: #e6e6e6;
@@ -650,6 +681,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #e6e6e6;
+  outline-offset: -2px;
 }
 .button__black {
   background-color: #1a1a1a;
@@ -658,6 +691,8 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #1a1a1a;
+  outline-offset: -2px;
 }
 .button__purple {
   background-color: #AA0080;
@@ -666,11 +701,29 @@ a :focus {
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
   width: 100%;
+  outline: 2px solid #AA0080;
+  outline-offset: -2px;
 }
 .button__send {
   width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.btn__basic {
+  transition: 300ms;
+}
+.btn__basic:hover {
+  background-color: white;
+  color: #4d4d4d;
+}
+.btn__basic:active {
+  outline: 2px solid #4d4d4d;
+}
+.btn__basic:focus {
+  color: #e6e6e6;
+  outline: 2px solid #1a1a1a;
+  overflow: hidden;
 }
 
 /* .form-field{
@@ -754,6 +807,10 @@ input {
 .social-media-container {
   display: flex;
   padding-bottom: 3vh;
+}
+
+.community-card__content {
+  margin: 1vh 0 0 1vw;
 }
 
 .burger-menu {
@@ -939,6 +996,136 @@ input {
   display: flex;
 }
 
+.blob-container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 30vh;
+  inset: 0;
+  position: absolute;
+  z-index: -100;
+}
+
+.blob {
+  display: block;
+  position: absolute;
+  opacity: 0.1;
+  width: 50vw;
+  height: 50vw;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  /* background: linear-gradient(to right, #23D5AB, #23A6D5, #E73C7E, #EE7752, #DDD6F3); */
+  background-size: 500% 100%;
+  animation: blobber 120s 0s linear infinite, cobler 120s 0s linear infinite alternate;
+}
+
+.blob__purple {
+  background-color: #AA0080;
+}
+.blob__red {
+  background-color: #cc0000;
+}
+.blob__orange {
+  background-color: #ffbf00;
+}
+.blob__lightblue {
+  background-color: #00AAAA;
+}
+.blob__violet {
+  background-color: #5500AA;
+}
+.blob__green {
+  background-color: #00AA2A;
+}
+.blob__blue {
+  background-color: #002BAA;
+}
+.blob__lightgreen {
+  background-color: #55AA00;
+}
+
+@keyframes blobber {
+  0% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
+  5% {
+    border-radius: 48% 52% 41% 59%/66% 37% 63% 34%;
+  }
+  10% {
+    border-radius: 69% 31% 71% 29%/67% 31% 69% 33%;
+  }
+  15% {
+    border-radius: 60% 40% 71% 29%/63% 65% 35% 37%;
+  }
+  20% {
+    border-radius: 61% 39% 51% 49%/57% 58% 42% 43%;
+  }
+  25% {
+    border-radius: 66% 34% 25% 75%/47% 30% 70% 53%;
+  }
+  30% {
+    border-radius: 32% 68% 38% 62%/65% 60% 40% 35%;
+  }
+  35% {
+    border-radius: 63% 37% 41% 59%/35% 38% 62% 65%;
+  }
+  40% {
+    border-radius: 57% 43% 49% 51%/55% 71% 29% 45%;
+  }
+  45% {
+    border-radius: 47% 53% 34% 66%/65% 36% 64% 35%;
+  }
+  50% {
+    border-radius: 44% 56% 32% 68%/69% 26% 74% 31%;
+  }
+  55% {
+    border-radius: 28% 72% 37% 63%/71% 44% 56% 29%;
+  }
+  60% {
+    border-radius: 38% 62% 35% 65%/74% 53% 47% 26%;
+  }
+  65% {
+    border-radius: 73% 27% 46% 54%/54% 47% 53% 46%;
+  }
+  70% {
+    border-radius: 75% 25% 47% 53%/49% 53% 47% 51%;
+  }
+  75% {
+    border-radius: 62% 38% 43% 57%/55% 60% 40% 45%;
+  }
+  80% {
+    border-radius: 41% 59% 65% 35%/73% 50% 50% 27%;
+  }
+  85% {
+    border-radius: 55% 45% 57% 43%/73% 61% 39% 27%;
+  }
+  90% {
+    border-radius: 74% 26% 33% 67%/40% 65% 35% 60%;
+  }
+  95% {
+    border-radius: 58% 42% 57% 43%/53% 45% 55% 47%;
+  }
+  100% {
+    border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+  }
+}
+@keyframes cobler {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes wobbler {
+  0% {
+    transform: rotateZ(8deg);
+  }
+  100% {
+    transform: rotateZ(-8deg);
+  }
+}
 :root {
   font-size: 10px;
 }
@@ -1128,6 +1315,12 @@ section {
   margin: 5vh 0 10vh;
 }
 
+/* 
+.community-tab{
+    z-index: 100;
+    background-color: red;
+}
+ */
 .inactiveTab {
   display: none;
 }
@@ -1140,6 +1333,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 
 @keyframes alt-contact {

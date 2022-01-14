@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import BandCard from "../components/BandCard"
 
-const BandsTab = () => {
+const BandsTab = ( props ) => {
     const [bands, setBands] = useState(null)
 
     useEffect(() => {
@@ -15,8 +15,7 @@ const BandsTab = () => {
     })
 
     return(
-        <div className="musicians">
-            <h2>Bands</h2>
+        <div className= { props.class }>
             {
               bands &&  bands.map((musician) => (
                     <BandCard bandName = { musician.bandName } style = { musician.style} mail = { musician.mail } phone = { musician.phone } site = { musician.site } member = { musician.member } infos = { musician.infos }  key = { musician.id }/>

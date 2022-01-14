@@ -29,6 +29,7 @@
 
     css conflict between header and footer { on different sizes }
 
+    @media for Burger
 
     { STRUCTURE }
 
@@ -42,9 +43,11 @@
 
     Intern Links in a website (Burger Menu)
 
-    @media for Burger
+    tabs not working properly ( only "other" )
 
     do calendar (look <Events />) (=> look library)
+
+
 
     // re-structure     "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig
 
@@ -81,6 +84,7 @@
     single-article => button "more articles" and "next article"
     contact { .contact-option arrow => align}
     team images different mask ?
+    community / img addapt to info (or limit info)
 
     PRE: to have a BE
         We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
@@ -110,6 +114,9 @@
     Freitag 14.
 
         @keyframes
+            blobs
+            buttons
+
         Intern Links in a website
             Burger Menu
             Footer Burger Menu
@@ -118,7 +125,6 @@
             articles and history articles (after BE)
             community (social links + after BE => links between musicians & bands & veranstalter)
             events (after BE => links between musicians & bands & veranstalter)
-            
 
         nested routes for a single component?
         Link to concrete :id (articles)
@@ -126,7 +132,7 @@
 
     Samstag 15.
         useContext lernen / implementieren (AX-318)
-        @keyframes
+                                            implement in "Community", so is passes info to tab tittle - style
         restructure all-articles and history-articles, so it's a single component, with url as prop
 
     Sonntag 16.

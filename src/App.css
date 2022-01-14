@@ -742,6 +742,7 @@ input {
 .community-card__title {
   text-align: left;
   margin-left: 2.5vh;
+  padding-top: 2vh;
 }
 .community-card__txt {
   display: flex;
@@ -752,6 +753,7 @@ input {
 
 .social-media-container {
   display: flex;
+  padding-bottom: 3vh;
 }
 
 .burger-menu {
@@ -1029,6 +1031,20 @@ section {
   margin: 5vh 0 10vh;
 }
 
+.inactiveTab {
+  display: none;
+}
+
+.activeTab {
+  display: block;
+}
+
+.tittle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @keyframes alt-contact {
   0% {
     left: -100vw;
@@ -1126,12 +1142,13 @@ section {
   }
 
   .community-card {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .community-card__txt {
     flex-direction: column;
     margin: 0 4vw;
+    width: 50vw;
   }
 }
 @media screen and (min-width: 800px) {

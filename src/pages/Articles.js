@@ -3,11 +3,10 @@ import { useState, useEffect } from "react"
 
         
 const Articles = (props) => {
-
     const [articles, setArticles ] = useState(null)
 
     useEffect(() => {
-        fetch( "http://localhost:8000/articles")
+        fetch( props.url )
         .then(res => {
                 return res.json()
             })

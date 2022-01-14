@@ -14,6 +14,7 @@ import NonMusicianSignForm from "./pages/NonMusicianSignForm"
 import SendEventForm from './pages/SendEventForm';
 import HistoryArticles from './pages/HistoryArticles';
 import HistorySingleArticle from "./pages/HistorySingleArticle"
+/* import Musicians from "./pages/Musicians" */
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
@@ -27,21 +28,22 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/articles" element={<Articles />} />
+          <Route path="/articles" element={<Articles />} url = "http://localhost:8000/historyarticles" />
           <Route path="/single-article" element = {<SingleArticle />} />
-          <Route path="/community" element = {<Community />}/>
-          {/* <Route path="/musicians" element={<Musicians />} /> */}
           <Route path="/history-articles" element = {<HistoryArticles />} />
           <Route path="/history-single-article" element = {<HistorySingleArticle />} />
+          
+          <Route path="/bands" element={<Community />} />
+          <Route path="/other" element={<Community />} />
+          
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/impressum" element={<Impressum />} />
+          
+          
           <Route path="/musician-sign-form" element={<MusicianSignForm />} />
           <Route path="/non-musician-sign-form" element={<NonMusicianSignForm />} />
           <Route path="/send-event" element ={<SendEventForm />} />
-          <Route path="/impressum" element={<Impressum />} />
-          <Route path="/musicians" element={<Community />} url = "http://localhost:8000/musicians" title = "Musicians" />
-          <Route path="/bands" element={<Community />} url = "http://localhost:8000/bands" title = "Bands" />
-          <Route path="/other" element={<Community />} url = "http://localhost:8000/veranstaltungsorte" title = "Other" />
         </Routes>
       </div>
       </main>

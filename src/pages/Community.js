@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import CommunityTab from "../components/CommunityTab";
+import MusiciansTab from "../components/MusiciansTab";
+import BandsTab from "../components/BandsTab";
+import OtherTab from "../components/OtherTab";
+
 
 const Community = () => {
     const [tabs, setTabs] = useState(null)
@@ -14,18 +17,44 @@ const Community = () => {
                 setTabs(data)
             })
     })
+    
+    const [ musiciansClass, setMusiciansClass ] = useState("activeTab")
+
+    const activateMusicians = () => {
+        setMusiciansClass("activeTab")
+        setBandsClass('inactiveTab')
+        setOthersClass('inactiveTab')
+    }
+    
+    const [ bandsClass, setBandsClass ] = useState("inactiveTab")
+
+    const activateBands = () => {
+        setMusiciansClass('inactiveTab')
+        setBandsClass("activeTab")
+        setOthersClass('inactiveTab')
+    }
+    
+    const [ othersClass, setOthersClass ] = useState("inactiveTab")
+
+    const activateOthers = () => {
+        setMusiciansClass('inactiveTab')
+        setBandsClass('inactiveTab')
+        setOthersClass("activeTab")
+    }
+
 
     return(
         <div className="community">
             <h1>Community</h1>
+            <div className="tittle-container">
+                <h2 onClick={ activateMusicians } >Musicians</h2>
+                <h2 onClick={ activateBands }>Bands</h2>
+                <h2 onClick={ activateOthers }>Other</h2>
+            </div>
             <div className="tabs-container">
-        
-         
-{/* 
-                <CommunityTab url = "http://localhost:8000/musicians" title = "Musicians" />
-                 <CommunityTab url = "http://localhost:8000/bands" title = "Bands" />
-                <CommunityTab url = "http://localhost:8000/veranstaltungsorte" title = "Other" />
-*/}
+                <MusiciansTab class = { musiciansClass } />
+                <BandsTab  class = { bandsClass } />
+                <OtherTab  class = { othersClass }/>
             </div>
         </div>
     )

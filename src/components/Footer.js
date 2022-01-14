@@ -1,6 +1,7 @@
 import { useState } from "react"
 import arrowUp from "../materials/icons/arrow-up.svg"
 import MusicPlayer from "./MusicPlayer"
+import FooterBurgerMenu from "./FooterBurgerMenu"
 
 const Footer = () => {
 
@@ -13,8 +14,9 @@ const Footer = () => {
     return(
         <div className={footerClass}>
             <div className={`${footerClass}__top`}>
-                <img src={ arrowUp } alt="" className="icon" onClick={updateFooterClass}/>
-                <MusicPlayer />
+                <FooterBurgerMenu onClick={updateFooterClass}/>
+                {/* <img src={ arrowUp } alt="" className="icon" onClick={updateFooterClass}/> */}
+                {/* <MusicPlayer /> */}
             </div>
             <div className={`${footerClass}__bot`}>
                 <div className={`${footerClass}__txt-container`}>

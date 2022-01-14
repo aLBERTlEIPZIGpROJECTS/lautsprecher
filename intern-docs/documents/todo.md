@@ -1,6 +1,24 @@
 // ON THE TABLE
 
+Freitag 14.
 
+        @keyframes
+            blobs
+            buttons
+            social icons
+
+        Intern Links in a website
+            Burger Menu
+            Footer Burger Menu
+            Landing Page
+            About (social links)
+            articles and history articles (after BE)
+            community (social links + after BE => links between musicians & bands & veranstalter)
+            events (after BE => links between musicians & bands & veranstalter)
+
+        nested routes for a single component?
+        Link to concrete :id (articles)
+        create CDN 0.1 with pictures.
 
 
 
@@ -46,6 +64,8 @@
     tabs not working properly ( only "other" )
 
     do calendar (look <Events />) (=> look library)
+
+    footer - burger not showing content
 
 
 

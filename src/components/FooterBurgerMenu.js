@@ -20,7 +20,7 @@ const BurgerMenu = () => {
                 <Link to = "/events" className={`${burgerClass}__link`}>Events</ Link >
                 <Link to = "/community" className={`${burgerClass}__link`}>Community</ Link >
                 <Link to = "/articles" className={`${burgerClass}__link`}>Articles</ Link >
-                <Link to = "/history" className={`${burgerClass}__link`}>History</ Link >
+                <Link to = "/history-articles" className={`${burgerClass}__link`}>History</ Link >
                 <div className={ `${burgerClass}__social-media`}>
                     <img src={ fbIcon } alt="facebook" className="iconMed"/>
                     <img src={ twIcon } alt="twitter" className="iconMed"/>

@@ -1,11 +1,10 @@
 // ON THE TABLE
 
  Samstag 15.
-        useContext lernen / implementieren (AX-318)
-                                            implement in "Community", so is passes info to tab tittle - style
+        
 
+                substitute CDN for links from unsplash
 
-        create CDN 0.1 with pictures (cdn)
 
 
 
@@ -120,35 +119,18 @@
 
 // TIMING
 
-
-    Samstag 15.
-        useContext lernen / implementieren (AX-318)
-                                            implement in "Community", so is passes info to tab tittle - style
-        restructure all-articles and history-articles, so it's a single component, with url as prop
-        Intern Links in a website
-                    Burger Menu
-                    Footer Burger Menu
-                    Landing Page
-                    About (social links)
-                    articles and history articles (after BE)
-                    community (social links + after BE => links between musicians & bands & veranstalter)
-                    events (after BE => links between musicians & bands & veranstalter)
-
-        Link to concrete :id (articles)
-        create CDN 0.1 with pictures (cdn)
-
-
-
-
     Sonntag 16.
-        music player programmieren
-        animations (blob)
         animations : 
             send
             load article
             progressive input felder
-            buttons
             placeholder
+
+        useContext lernen / implementieren (AX-318)
+                                            implement in "Community", so is passes info to tab tittle - style
+        music player programmieren
+        substitute CDN for links from unsplash
+
         
     Montag 17. 
         better burger menu & footer burger menu

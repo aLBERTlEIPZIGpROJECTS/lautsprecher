@@ -1129,6 +1129,37 @@ input {
     transform: rotateZ(-8deg);
   }
 }
+.icon-player__on {
+  height: 40px;
+  z-index: 100;
+  margin: 0 5px;
+  padding: 0;
+  border-radius: 50%;
+  padding: 5px;
+  transition: 300ms;
+  background-color: red;
+}
+.icon-player__off {
+  height: 40px;
+  z-index: 100;
+  margin: 0 5px;
+  padding: 0;
+  border-radius: 50%;
+  padding: 5px;
+  transition: 300ms;
+  background-color: green;
+}
+
+.is-playing {
+  display: block;
+  background-color: purple;
+}
+
+.not-playing {
+  display: none;
+  background-color: yellow;
+}
+
 :root {
   font-size: 10px;
 }

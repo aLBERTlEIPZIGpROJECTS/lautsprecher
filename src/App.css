@@ -1010,9 +1010,9 @@ input {
 .blob {
   display: block;
   position: absolute;
-  opacity: 0.1;
-  width: 50vw;
-  height: 50vw;
+  opacity: 0.3;
+  width: 75vh;
+  height: 75vh;
   overflow: hidden;
   border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
   /* background: linear-gradient(to right, #23D5AB, #23A6D5, #E73C7E, #EE7752, #DDD6F3); */
@@ -1048,6 +1048,7 @@ input {
 @keyframes blobber {
   0% {
     border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+    transform: rotate(0);
   }
   5% {
     border-radius: 48% 52% 41% 59%/66% 37% 63% 34%;
@@ -1078,6 +1079,7 @@ input {
   }
   50% {
     border-radius: 44% 56% 32% 68%/69% 26% 74% 31%;
+    transform: rotate(180deg);
   }
   55% {
     border-radius: 28% 72% 37% 63%/71% 44% 56% 29%;
@@ -1108,6 +1110,7 @@ input {
   }
   100% {
     border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
+    transform: rotate(0);
   }
 }
 @keyframes cobler {
@@ -1413,6 +1416,11 @@ section {
   .header {
     padding-right: 5vw;
   }
+
+  .blob {
+    width: 60vh;
+    height: 60vh;
+  }
 }
 @media screen and (min-width: 768px) {
   .event-card {
@@ -1502,6 +1510,11 @@ section {
 
   .content-sec__btn {
     width: 20vw;
+  }
+
+  .blob {
+    width: 80vh;
+    height: 80vh;
   }
 }
 @media screen and (min-width: 1440px) {

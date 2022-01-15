@@ -1255,6 +1255,11 @@ input {
   margin: 10vh 10vw 0 0;
 }
 
+.player {
+  position: relative;
+  bottom: 20vh;
+}
+
 .article__infos {
   justify-content: flex-end;
 }

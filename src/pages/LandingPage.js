@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import Button from "../components/Button"
 import EventsNow from "../components/EventsNow"

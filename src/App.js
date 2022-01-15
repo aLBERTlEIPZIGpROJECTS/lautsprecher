@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import './App.css';
+
 import About from "./pages/About"
 import Articles from "./pages/Articles"
 import SingleArticle from './pages/SingleArticle';
@@ -13,11 +14,14 @@ import HistorySingleArticle from "./pages/HistorySingleArticle"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
+
 function App() {
   return (
     
     <div className="app">
-      <Header />
+      
+        <Header />
+      
       <main className="body">
       <div className="content">
         <Routes>
@@ -36,6 +40,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
+
         </Routes>
       </div>
       </main>

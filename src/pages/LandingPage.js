@@ -4,7 +4,7 @@ import Button from "../components/Button"
 import EventsNow from "../components/EventsNow"
 import ArticlePreview from "../components/ArticlePreview"
 import Blob from "../components/Blob"
-
+import MusicPlayer from "../components/MusicPlayer"
 const Home = () => {
 
     const [articleSnippet, setArticleSnippet] = useState(null)
@@ -27,6 +27,7 @@ const Home = () => {
             <EventsNow className = "landing-events" />
            
             <div className="content-main">
+                <MusicPlayer />
                 {
                     articleSnippet &&
                 <ArticlePreview title = { articleSnippet.title } body = { articleSnippet.body } link = "/single-article"  />

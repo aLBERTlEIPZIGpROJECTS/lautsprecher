@@ -442,23 +442,18 @@ blockquote ::after {
 }
 
 a {
-  color: gray;
+  color: #e6e6e6;
   font-size: 2.1333333333rem;
   text-decoration: none;
 }
 a:hover {
-  color: #e6e6e6;
-  background-color: #4d4d4d;
+  color: unset;
 }
-a :active {
+a:active {
   color: gray;
-  background-color: #e6e6e6;
-  border: 3px solid gray;
 }
-a :focus {
+a:focus {
   color: #e6e6e6;
-  background-color: #ffbf00;
-  border: 3px solid gray;
 }
 
 .web-title {
@@ -467,6 +462,11 @@ a :focus {
 
 .web-subtitle {
   font-size: 1.6rem;
+}
+
+::placeholder {
+  color: gray;
+  font-size: 2rem;
 }
 
 .img__profile {
@@ -714,8 +714,7 @@ a :focus {
   transition: 300ms;
 }
 .btn__basic:hover {
-  background-color: white;
-  color: #4d4d4d;
+  background-color: #1a1a1a;
 }
 .btn__basic:active {
   outline: 2px solid #4d4d4d;
@@ -729,6 +728,11 @@ a :focus {
 /* .form-field{
     background-color: $white;
 } */
+.form-container {
+  display: block;
+  margin: 0 auto;
+}
+
 label {
   display: flex;
   justify-content: space-between;
@@ -1373,6 +1377,22 @@ section {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+
+.show-field {
+  display: block;
+  background-color: red;
+}
+
+.hidden-field {
+  display: none;
+}
+
+.user-interaction {
+  font-size: 2.1333333333rem;
+  text-align: center;
+  background-color: white;
+  padding: 1.5em;
 }
 
 @keyframes alt-contact {

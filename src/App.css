@@ -847,7 +847,7 @@ input {
   margin: 2px 0;
   background-color: #b3b3b3;
 }
-.burger-small__txt {
+.burger-small__link {
   display: none;
 }
 
@@ -892,7 +892,7 @@ input {
   margin: 2px 0;
   background-color: #b3b3b3;
 }
-.burger-big__txt {
+.burger-big__link {
   display: block;
   color: #e6e6e6;
   margin-right: 10vw;
@@ -934,7 +934,7 @@ input {
   margin: 2px 0;
   background-color: #b3b3b3;
 }
-.footer-burger-small__txt {
+.footer-burger-small__link {
   display: none;
 }
 .footer-burger-small__social-media {
@@ -984,8 +984,8 @@ input {
   margin: 2px 0;
   background-color: #b3b3b3;
 }
-.footer-burger-big__txt {
-  display: inline-block;
+.footer-burger-big__link {
+  display: block;
   color: #e6e6e6;
   position: relative;
   bottom: 400px;

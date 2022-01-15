@@ -17,7 +17,7 @@ const MusicianSignForm = () => {
                 <FormField label = "Image"  /> 
                 <FormField label = "About"  /> 
                 <FormField label = "I want to subscribe"  />
-                <Button txt = "Send" linkName = "send"  />
+                {/* <Button txt = "Send" linkName = "send"  /> */}
             </form>
         </div>
 )}

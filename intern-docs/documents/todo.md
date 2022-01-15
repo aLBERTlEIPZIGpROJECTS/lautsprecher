@@ -1,18 +1,11 @@
 // ON THE TABLE
 
-Freitag 14.
+ Samstag 15.
+        useContext lernen / implementieren (AX-318)
+                                            implement in "Community", so is passes info to tab tittle - style
 
-        Intern Links in a website
-            Burger Menu
-            Footer Burger Menu
-            Landing Page
-            About (social links)
-            articles and history articles (after BE)
-            community (social links + after BE => links between musicians & bands & veranstalter)
-            events (after BE => links between musicians & bands & veranstalter)
 
-        Link to concrete :id (articles)
-        create CDN 0.1 with pictures.
+        create CDN 0.1 with pictures (cdn)
 
 
 
@@ -63,7 +56,7 @@ Freitag 14.
 
     all history articles not showing up
 
-
+    links in eventNow button and articlePreview Card, single-article
 
     // re-structure     "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig
 

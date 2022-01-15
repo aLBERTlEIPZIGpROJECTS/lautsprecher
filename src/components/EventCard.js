@@ -14,7 +14,7 @@ const EventCard = (props) => {
                 <p className="event-card__txt">{ props.links }</p>
                 <p className="event-card__txt">{ props.info }</p>
             </div>
-            <Button txt = "+ Info" className = "button__white" />
+            <Button txt = "+ Info" className = "button__white" link = "/" />
         </div>
     )
 }

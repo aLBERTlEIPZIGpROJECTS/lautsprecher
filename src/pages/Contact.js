@@ -25,7 +25,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <FormField label = "I want to subscribe"  type = "checkbox" />
-                <Button txt = "Send"  linkName = "send" className = "button__orange button__send" />
+               {/*  <Button txt = "Send"  linkName = "send" className = "button__orange button__send" /> */}
             </form>
         </div>
     )

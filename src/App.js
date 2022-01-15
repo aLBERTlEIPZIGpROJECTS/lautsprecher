@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom"
-/* import './assets/css/fonts.css'; */
 import './App.css';
 import About from "./pages/About"
 import Articles from "./pages/Articles"
@@ -9,12 +8,8 @@ import Events from "./pages/Events"
 import LandingPage from "./pages/LandingPage"
 import Impressum from "./pages/Impressum"
 import Community from "./pages/Community";
-import MusicianSignForm from "./pages/MusicianSignForm"
-import NonMusicianSignForm from "./pages/NonMusicianSignForm"
-import SendEventForm from './pages/SendEventForm';
 import HistoryArticles from './pages/HistoryArticles';
 import HistorySingleArticle from "./pages/HistorySingleArticle"
-/* import Musicians from "./pages/Musicians" */
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
@@ -41,11 +36,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
-          
-          
-          <Route path="/musician-sign-form" element={<MusicianSignForm />} />
-          <Route path="/non-musician-sign-form" element={<NonMusicianSignForm />} />
-          <Route path="/send-event" element ={<SendEventForm />} />
         </Routes>
       </div>
       </main>

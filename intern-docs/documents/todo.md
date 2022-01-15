@@ -1,24 +1,18 @@
 // ON THE TABLE
 
- Samstag 15.
+Sonntag 16.
         
+        progressive input felder => how make it progressive // a function listens the whole time
+        placeholder
 
-                substitute CDN for links from unsplash
+            Both depen on same property : reactive to a non-empty input field
 
+        useContext lernen / implementieren (AX-318)
+                                            implement in "Community", so is passes info to tab tittle - style
+                                                (AX-318)
+                                            Header-BG-Color must be dicfferent for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
+        music player programmieren
 
-
-
-
-// TASKS
-
-    (AX-318)
-            Header-BG-Color must be dicfferent for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
-
-            Write start-instructions in package-json not working for scss
-
-    music player programmieren
-
-    Scss NOT CLONED! => c + v
 
 
 
@@ -93,6 +87,8 @@
     contact { .contact-option arrow => align}
     team images different mask ?
     community / img addapt to info (or limit info)
+    wrap links around buttons (instead of buttons around links) and style accordingly
+    load article
 
     PRE: to have a BE
         We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
@@ -119,18 +115,6 @@
 
 // TIMING
 
-    Sonntag 16.
-        animations : 
-            send
-            load article
-            progressive input felder
-            placeholder
-
-        useContext lernen / implementieren (AX-318)
-                                            implement in "Community", so is passes info to tab tittle - style
-        music player programmieren
-        substitute CDN for links from unsplash
-
         
     Montag 17. 
         better burger menu & footer burger menu
@@ -142,10 +126,11 @@
             Calendar
             Map
             Log - in Kapitel
-            Scss NOT CLONED! :O
             (if on extra time: learn { again } BE)
             Deployment on firebase
             Bundler
+            Write start-instructions in package-json not working for scss
+            Scss NOT CLONED! => c + v
 
     Mittwoch 19.
 

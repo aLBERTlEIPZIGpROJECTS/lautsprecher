@@ -2,10 +2,45 @@
 
 Sonntag 16.
         
-        progressive input felder => how make it progressive // a function listens the whole time
-        placeholder
+********************************************************************************************************************************
 
-            Both depen on same property : reactive to a non-empty input field
+    BE
+
+    build a server 
+        GET
+        GET / :id
+
+    links to individual articles by :id
+
+    links from
+    
+                musicians to bands / events
+
+                bands to musicians / events
+
+                events to bands or musicians / places
+
+                places to events
+
+
+    { inhaber[fname] } {inhaber[lname] } working partially
+
+
+    links in eventNow button and articlePreview Card, single-article
+
+        // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
+
+            [ 
+                musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }.
+            ]
+
+        
+
+    make calendar (look <Events />) (=> look library)
+
+***************************************************************************************************************************
+
+
 
         useContext lernen / implementieren (AX-318)
                                             implement in "Community", so is passes info to tab tittle - style
@@ -21,60 +56,25 @@ Sonntag 16.
     { CSS }
 
     events text overflow 
+    events accordion
+
     msg field overflow
             why is body in events overflowing?
             event bg-img defined as style? or how?
 
     css conflict between header and footer { on different sizes }
 
-    @media for Burger
 
     { STRUCTURE }
 
-    { inhaber[fname] } {inhaber[lname] } working partially
-
-    restructure all-articles and history-articles, so it's a single component, with url as prop
-
-    do calendar (look <Events />) (=> look library)
-
-    nested routes for a single component?
-
-    Intern Links in a website (Burger Menu)
-
-    tabs not working properly ( only "other" )
-
-    do calendar (look <Events />) (=> look library)
-
-    footer - burger not showing content
-
-    all history articles not showing up
 
     links in eventNow button and articlePreview Card, single-article
 
-    // re-structure     "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig
+    all history articles not showing up
 
+    tabs not working properly ( only "other" )
 
-
-// BACK-END Herausforderungen
-
-        // Link to concrete :id (articles)
-        
-// LOG IN KAPITEL
-
-        // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
-
-            [ 
-                musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }.
-            ]
-
-        
-        // to publish an event you must to log in somehow (to login you must have a BE, etc)
-
-        // How it's connected a Form with a POST request to db? (this changes how the component is written { props & co })
-
-        // In case a musician already have a profile in the website, there's a link => if(musician.profile === true) => print link into an href (a)
-
-        // When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
+    footer - burger not showing content
 
 
 // REFINE
@@ -118,6 +118,10 @@ Sonntag 16.
         
     Montag 17. 
         better burger menu & footer burger menu
+        progressive input felder => how make it progressive // a function listens the whole time
+        placeholder
+
+            Both depen on same property : reactive to a non-empty input field
 
     Dienstag 18.
 
@@ -132,6 +136,10 @@ Sonntag 16.
             Write start-instructions in package-json not working for scss
             Scss NOT CLONED! => c + v
 
+
+            BONUS LEVEL GOD TIER:
+                BE with login (log as musician / other) / send events / 
+
     Mittwoch 19.
 
         "Freier Tag"
@@ -142,3 +150,13 @@ Sonntag 16.
 
         - besser deffinierte Mission
         - bessere Materialien
+
+// LOG IN KAPITEL
+
+        // to publish an event you must to log in somehow (to login you must have a BE, etc)
+
+        // How it's connected a Form with a POST request to db? (this changes how the component is written { props & co })
+
+        // In case a musician already have a profile in the website, there's a link => if(musician.profile === true) => print link into an href (a)
+
+        // When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)

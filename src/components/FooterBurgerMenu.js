@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import fbIcon from "../materials/icons/fbIcon.svg"
 import twIcon from "../materials/icons/twIcon.svg"
 import igIcon from "../materials/icons/igIcon.svg"
@@ -16,10 +17,10 @@ const BurgerMenu = () => {
     return(
         <div className= { burgerClass } onClick={ updateClass } >
             <div className={`${burgerClass}__top`}>
-                <p className={`${ burgerClass }__txt`}>Events</p>
-                <p className={`${ burgerClass }__txt`}>Community</p>
-                <p className={`${ burgerClass }__txt`}>Articles</p>
-                <p className={`${ burgerClass }__txt`}>History</p>
+                <Link to = "/events" className={`${burgerClass}__link`}>Events</ Link >
+                <Link to = "/community" className={`${burgerClass}__link`}>Community</ Link >
+                <Link to = "/articles" className={`${burgerClass}__link`}>Articles</ Link >
+                <Link to = "/history" className={`${burgerClass}__link`}>History</ Link >
                 <div className={ `${burgerClass}__social-media`}>
                     <img src={ fbIcon } alt="facebook" className="iconMed"/>
                     <img src={ twIcon } alt="twitter" className="iconMed"/>

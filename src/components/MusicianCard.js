@@ -11,7 +11,7 @@ const MusicianCard = (props) => {
             <img src={ portrait } alt={ props.name } className="img__band"/>
             
             <div className="community-card__txt">
-                <h3 className="community-card__title">{ props.fname } { props.lname }</h3>
+                <h3 className="community-card__tittle">{ props.fname } { props.lname }</h3>
                 <div className="community-card__content">
                     <p>{ props.instrument }</p>
                     <p>{ props.style }</p>

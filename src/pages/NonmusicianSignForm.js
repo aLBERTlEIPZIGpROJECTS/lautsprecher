@@ -18,7 +18,7 @@ const NonMusicianSignForm = () => {
                 <FormField label = "Company Profile Image" />
                 <FormField label = "Company Txt About You" />
                 <FormField label = "Subscribe to Newsletter" />
-                <Button txt = "Send" linkName = "send"  />
+                {/* <Button txt = "Send" linkName = "send"  /> */}
             </form>
         </div>
 )}

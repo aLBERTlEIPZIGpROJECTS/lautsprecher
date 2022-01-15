@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import BandCard from "../components/BandCard"
+import Blob from "../components/Blob"
 
 const BandsTab = ( props ) => {
     const [bands, setBands] = useState(null)
@@ -15,7 +16,8 @@ const BandsTab = ( props ) => {
     })
 
     return(
-        <div className= { props.class }>
+      <div className= "community-tab">
+          {/* <Blob class = "blob__red"/> */}
             {
               bands &&  bands.map((musician) => (
                     <BandCard bandName = { musician.bandName } style = { musician.style} mail = { musician.mail } phone = { musician.phone } site = { musician.site } member = { musician.member } infos = { musician.infos }  key = { musician.id }/>

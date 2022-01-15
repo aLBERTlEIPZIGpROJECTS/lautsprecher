@@ -3,7 +3,9 @@ const Button = (props) => {
     return(
         <div>
              {/* <Link to= {props.link} >{ props.linkName }</Link> */}
-            <button className={props.className}  >{ props.txt } </button>
+            <button className={`${props.className} btn__basic`}  > 
+                <Link to = {`${props.link}`}>{ props.txt }</Link>
+            </button>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import EventCard from "../components/EventCard"
 import { useState, useEffect } from "react"
+import Blob from "../components/Blob"
 
 const Events = () => {
 
@@ -20,6 +21,7 @@ const Events = () => {
 
     return(
         <div className="events">
+            <Blob class = "blob__orange"/>
             <h1>Events</h1>
             <h2>Right Now</h2>
             <div className="events__container">

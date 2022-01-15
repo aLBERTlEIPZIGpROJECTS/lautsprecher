@@ -13,7 +13,7 @@ const CommunityCard = (props) =>{
            <div className="community-card__txt">
                <div className="community-card__info">
                 <h3>{ props.name }</h3>
-                <p>{ props.fname} {props.lname}</p>
+                <p>{ props.fname } { props.lname }</p>
                 <p>{ props.rol } </p>
                </div>
                <div className="community-card__content">

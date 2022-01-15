@@ -3,20 +3,9 @@ import { Link } from "react-router-dom";
 import MusiciansTab from "../components/MusiciansTab";
 import BandsTab from "../components/BandsTab";
 import OtherTab from "../components/OtherTab";
-
+import Blob from "../components/Blob";
 
 const Community = () => {
-    const [tabs, setTabs] = useState(null)
-    
-    useEffect(() => {
-        fetch("http://localhost:8000/tabs")
-            .then(res => {
-                return res.json()
-            })
-            .then(data => {
-                setTabs(data)
-            })
-    })
     
     const [ musiciansClass, setMusiciansClass ] = useState("activeTab")
 
@@ -45,6 +34,7 @@ const Community = () => {
 
     return(
         <div className="community">
+            <Blob class = "blob__orange" />
             <h1>Community</h1>
             <div className="tittle-container">
                 <h2 onClick={ activateMusicians } >Musicians</h2>

@@ -1,7 +1,7 @@
 import MusicianCard from "../components/MusicianCard"
 import { useState, useEffect } from "react"
 
-const Musicians = () => {
+const Musicians = (props) => {
     const [musicians, setMusicians] = useState(null)
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const Musicians = () => {
     })
 
     return(
-        <div className="musicians">
+        <div className={`${props.class}`}>
             <h1>Musicians</h1>
             {
               musicians &&  musicians.map((musician) => (

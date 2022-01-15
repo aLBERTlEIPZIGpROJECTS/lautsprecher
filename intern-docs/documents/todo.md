@@ -1,24 +1,11 @@
 // ON THE TABLE
 
-Freitag 14.
+ Samstag 15.
+        useContext lernen / implementieren (AX-318)
+                                            implement in "Community", so is passes info to tab tittle - style
 
-        @keyframes
-            blobs
-            buttons
-            social icons
 
-        Intern Links in a website
-            Burger Menu
-            Footer Burger Menu
-            Landing Page
-            About (social links)
-            articles and history articles (after BE)
-            community (social links + after BE => links between musicians & bands & veranstalter)
-            events (after BE => links between musicians & bands & veranstalter)
-
-        nested routes for a single component?
-        Link to concrete :id (articles)
-        create CDN 0.1 with pictures.
+        create CDN 0.1 with pictures (cdn)
 
 
 
@@ -67,7 +54,9 @@ Freitag 14.
 
     footer - burger not showing content
 
+    all history articles not showing up
 
+    links in eventNow button and articlePreview Card, single-article
 
     // re-structure     "article" + "history-articles" =>  so you ONLY HAVE ONE COMPONENT!! => momentan lasse ich das beiseitig
 
@@ -130,30 +119,26 @@ Freitag 14.
 
 
 // TIMING
-  
-    Freitag 14.
 
-        @keyframes
-            blobs
-            buttons
-
-        Intern Links in a website
-            Burger Menu
-            Footer Burger Menu
-            Landing Page
-            About (social links)
-            articles and history articles (after BE)
-            community (social links + after BE => links between musicians & bands & veranstalter)
-            events (after BE => links between musicians & bands & veranstalter)
-
-        nested routes for a single component?
-        Link to concrete :id (articles)
-        create CDN 0.1 with pictures.
 
     Samstag 15.
         useContext lernen / implementieren (AX-318)
                                             implement in "Community", so is passes info to tab tittle - style
         restructure all-articles and history-articles, so it's a single component, with url as prop
+        Intern Links in a website
+                    Burger Menu
+                    Footer Burger Menu
+                    Landing Page
+                    About (social links)
+                    articles and history articles (after BE)
+                    community (social links + after BE => links between musicians & bands & veranstalter)
+                    events (after BE => links between musicians & bands & veranstalter)
+
+        Link to concrete :id (articles)
+        create CDN 0.1 with pictures (cdn)
+
+
+
 
     Sonntag 16.
         music player programmieren

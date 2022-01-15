@@ -16,7 +16,7 @@ const Footer = () => {
             <div className={`${footerClass}__top`}>
                 <FooterBurgerMenu onClick={updateFooterClass}/>
                 {/* <img src={ arrowUp } alt="" className="icon" onClick={updateFooterClass}/> */}
-                {/* <MusicPlayer /> */}
+                <MusicPlayer />
             </div>
             <div className={`${footerClass}__bot`}>
                 <div className={`${footerClass}__txt-container`}>

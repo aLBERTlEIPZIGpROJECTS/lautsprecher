@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const BurgerMenu = () => {
 
@@ -11,10 +12,10 @@ const BurgerMenu = () => {
     return(
         <div className= { burgerClass } onClick={ updateClass } >
             <div className={`${burgerClass}__top`}>
-                <p className={`${ burgerClass }__txt`}>Events</p>
-                <p className={`${ burgerClass }__txt`}>Community</p>
-                <p className={`${ burgerClass }__txt`}>Articles</p>
-                <p className={`${ burgerClass }__txt`}>History</p>
+                <Link to = "/events" className={`${burgerClass}__link`}>Events</ Link >
+                <Link to = "/community" className={`${burgerClass}__link`}>Community</ Link >
+                <Link to = "/articles" className={`${burgerClass}__link`}>Articles</ Link >
+                <Link to = "/history" className={`${burgerClass}__link`}>History</ Link >
             </div>
             <div className={`${burgerClass}__med`}>
             </div>

@@ -3,13 +3,13 @@ import './App.css';
 
 import About from "./pages/About"
 import Articles from "./pages/Articles"
-import SingleArticle from './pages/SingleArticle';
+import SingleArticle from './pages/SingleArticle'
 import Contact from "./pages/Contact"
 import Events from "./pages/Events"
 import LandingPage from "./pages/LandingPage"
 import Impressum from "./pages/Impressum"
-import Community from "./pages/Community";
-import HistoryArticles from './pages/HistoryArticles';
+import Community from "./pages/Community"
+import HistoryArticles from './pages/HistoryArticles'
 import HistorySingleArticle from "./pages/HistorySingleArticle"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
@@ -25,7 +25,7 @@ function App() {
       <main className="body">
       <div className="content">
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route exact path="/" element={<LandingPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/articles" element={<Articles />} />
           <Route path="/single-article/:id" element = {<SingleArticle />} />

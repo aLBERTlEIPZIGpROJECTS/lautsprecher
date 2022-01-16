@@ -1,35 +1,14 @@
 import { Link } from "react-router-dom"
-import ArticleCard from "../components/ArticleCard"
 import { useState, useEffect } from "react"
+import useFetch from "../useFetch"
+import ArticleCard from "../components/ArticleCard"
 import Blob from "../components/Blob"
 
         
 const Articles = () => {
     
+    const { data, isLoading, error } = useFetch("http://localhost:8000/articles")
 
-    const [ data, setData ] = useState(null)
-    const [ isLoading, setIsLoading ] = useState(true)
-    const [ error, setError ] = useState (null)
-    
-    useEffect(() => {
-        fetch( "http://localhost:8000/articles" )
-            .then(res => {
-                if (!res.ok){
-                    throw Error("something's funky in here")
-                }
-                return res.json()
-            })
-            .then(data => {
-                setData(data)
-                setIsLoading(false)
-                setError(null)
-            })
-            .catch(err=> {
-                setIsLoading(false)
-                setError(err.message)
-            })
-        }, [])
-     
     return (
         <div className="articles_container content">
             { error && <div>{ error }</div>}

@@ -1,6 +1,5 @@
 import MusicianCard from "../components/MusicianCard"
 import { useState, useEffect } from "react"
-import Blob from "../components/Blob"
 
 const MusiciansTab = ( props ) => {
     const [musicians, setMusicians] = useState(null)
@@ -17,10 +16,9 @@ const MusiciansTab = ( props ) => {
 
     return(
         <div className= {`${ props.class}`} >
-          {/* <Blob class = "blob__violet"/> */}
             {
               musicians &&  musicians.map((musician) => (
-                    <MusicianCard fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } bands = { musician.bands } socialLink = { musician.socialLink }  key = { musician.id }/>
+                    <MusicianCard fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } bands = { musician.bands } fb = { musician.fb } tw = { musician.tw} ig = { musician.ig} sc = { musician.sc }  key = { musician.id }/>
                 ))
             }
         </div>

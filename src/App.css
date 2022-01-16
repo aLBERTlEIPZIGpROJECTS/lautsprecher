@@ -402,6 +402,8 @@ h2 {
   line-height: 0.8em;
   font-family: "Rubik Mono One", sans-serif;
   text-align: center;
+  outline: 1px solid red;
+  padding: 1em 1.5em;
 }
 
 h3 {

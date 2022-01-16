@@ -2,49 +2,14 @@
 
 Sonntag 16.
         
-    BE
-
-    build a server 
-        GET
-        GET / :id
-
-    links to individual articles by :id
-
-    links from
-    
-                musicians to bands / events
-
-                bands to musicians / events
-
-                events to bands or musicians / places
-
-                places to events
 
 
-    { inhaber[fname] } {inhaber[lname] } working partially
 
 
-    links in eventNow button and articlePreview Card, single-article
-
-        // links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }
-
-            [ 
-                musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }.
-            ]
-
-        
-
-    make calendar (look <Events />) (=> look library)
 
 ***************************************************************************************************************************
 
 
-
-        useContext lernen / implementieren (AX-318)
-                                            implement in "Community", so is passes info to tab tittle - style
-                                                (AX-318)
-                                            Header-BG-Color must be dicfferent for every page. Als Prop weitergeben? Wie? Class-name (ein class nur für die Blob-BG Farbe als prop übergeben). Wie holt man diese Prop aus einem anderen Component? => durch "use context"?
-        music player programmieren
 
 
 
@@ -62,15 +27,22 @@ Sonntag 16.
 
     css conflict between header and footer { on different sizes }
 
+    footer - burger not showing content
+
 
     { STRUCTURE }
 
 
-    links in eventNow button and articlePreview Card, single-article
+    implement useFetch in:
+
+        Events
+        Community (Musician- Bands- & OtherTab)
+
+
+    history-single-article NOT DISPLAYING
 
     tabs not working properly ( only "other" )
 
-    footer - burger not showing content
 
 
 // REFINE
@@ -113,11 +85,32 @@ Sonntag 16.
 
         
     Montag 17. 
-        better burger menu & footer burger menu
-        progressive input felder => how make it progressive // a function listens the whole time
-        placeholder
 
-            Both depen on same property : reactive to a non-empty input field
+        * links from
+    
+                musicians to bands / events
+
+                bands to musicians / events
+
+                events to bands or musicians / places
+
+                places to events
+
+        * { inhaber[fname] } {inhaber[lname] } working partially
+
+        * links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }  ==>> [ musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }. ]
+
+        * better burger menu & footer burger menu
+
+        * reactive input felder   =>  a function listens the whole time
+          placeholder             =>  Both depen on same property : reactive to a non-empty input field
+    
+        * music player programmieren
+
+        * make calendar (look <Events />) (=> look library)
+
+*************************************************************************************************************************************************
+
 
     Dienstag 18.
 

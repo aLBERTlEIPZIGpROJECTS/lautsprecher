@@ -68,8 +68,6 @@ Sonntag 16.
 
     links in eventNow button and articlePreview Card, single-article
 
-    all history articles not showing up
-
     tabs not working properly ( only "other" )
 
     footer - burger not showing content

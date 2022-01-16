@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import ArticleCard from "../components/ArticleCard"
 import { useState, useEffect } from "react"
 import Blob from "../components/Blob"
@@ -5,26 +6,43 @@ import Blob from "../components/Blob"
         
 const Articles = () => {
     
-    const [articles, setArticles ] = useState(null)
 
+    const [ data, setData ] = useState(null)
+    const [ isLoading, setIsLoading ] = useState(true)
+    const [ error, setError ] = useState (null)
+    
     useEffect(() => {
         fetch( "http://localhost:8000/articles" )
-        .then(res => {
-            return res.json()
-        })
-        .then(data => {
-                setArticles(data)
+            .then(res => {
+                if (!res.ok){
+                    throw Error("something's funky in here")
+                }
+                return res.json()
             })
-    }, [])
+            .then(data => {
+                setData(data)
+                setIsLoading(false)
+                setError(null)
+            })
+            .catch(err=> {
+                setIsLoading(false)
+                setError(err.message)
+            })
+        }, [])
      
     return (
         <div className="articles_container content">
+            { error && <div>{ error }</div>}
+            { isLoading && <div>Loading...</div>}
+            
            <Blob class = "blob__purple" /> 
             <h1>Alle Artikel</h1>
             {
-                articles && articles.map((article) => (
+                data && data.map((article) => (
                     
-                    <ArticleCard title = { article.title} id = { article.id } key = { article. id } />
+                    <Link to = {`/single-article/${article.id}`} >
+                        <ArticleCard title = { article.title} id = { article.id } key = { article.id } />
+                    </Link>
                     
                 ))
             }

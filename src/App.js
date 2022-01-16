@@ -28,9 +28,9 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/events" element={<Events />} />
           <Route path="/articles" element={<Articles />} />
-          <Route path="/single-article" element = {<SingleArticle />} />
+          <Route path="/single-article/:id" element = {<SingleArticle />} />
           <Route path="/history-articles" element = {<HistoryArticles />} />
-          <Route path="/history-single-article" element = {<HistorySingleArticle />} />
+          <Route path="/history-single-article:/id" element = {<HistorySingleArticle />} />
           
           <Route path ="/community" element={<Community />} />
           <Route path = "/musicians" element={<Community />} />

@@ -29,7 +29,6 @@ Montag 17.
 
     implement useFetch in:
 
-        Events
         Community (Musician- Bands- & OtherTab)
 
 

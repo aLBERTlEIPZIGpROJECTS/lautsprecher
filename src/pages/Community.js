@@ -38,7 +38,7 @@ const Community = () => {
     return(
         <div className="community">
             <Blob class = "blob__orange" />
-            <MusicPlayer />
+            {/* <MusicPlayer /> */}
             <h1>Community</h1>
             <div className="tittle-container">
                 <h2 onClick={ activateMusicians } >Musicians</h2>

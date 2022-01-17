@@ -1,23 +1,17 @@
 import MusicianCard from "../components/MusicianCard"
 import { useState, useEffect } from "react"
+import useFetch from "../useFetch"
 
 const MusiciansTab = ( props ) => {
-    const [musicians, setMusicians] = useState(null)
 
-    useEffect(() => {
-      fetch("http://localhost:8000/musicians")
-        .then(res => {
-          return res.json()
-        })
-        .then(data => {
-          setMusicians(data)
-        })
-    })
+  const { data, isLoading, error } = useFetch("http://localhost:8000/musicians")
 
     return(
         <div className= {`${ props.class}`} >
+            { error && <div>{ error }</div>}
+            { isLoading && <div>Loading...</div>}
             {
-              musicians &&  musicians.map((musician) => (
+              data &&  data.map((musician) => (
                     <MusicianCard fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } bands = { musician.bands } fb = { musician.fb } tw = { musician.tw} ig = { musician.ig} sc = { musician.sc }  key = { musician.id }/>
                 ))
             }

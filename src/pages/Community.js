@@ -39,7 +39,6 @@ const Community = () => {
         <div className="community">
             <Blob class = "blob__orange" />
             <MusicPlayer />
-            <audio controls src= {track}></audio>
             <h1>Community</h1>
             <div className="tittle-container">
                 <button>

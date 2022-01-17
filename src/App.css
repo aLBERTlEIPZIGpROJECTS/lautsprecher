@@ -1136,12 +1136,10 @@ input {
   }
 }
 .music-player {
-  position: relative;
   outline: 1px solid red;
-  bottom: 20vh;
 }
 
-.icon-player__on {
+.icon-style__on {
   height: 40px;
   z-index: 100;
   margin: 0 5px;
@@ -1151,7 +1149,7 @@ input {
   transition: 300ms;
   background-color: red;
 }
-.icon-player__off {
+.icon-style__off {
   height: 40px;
   z-index: 100;
   margin: 0 5px;

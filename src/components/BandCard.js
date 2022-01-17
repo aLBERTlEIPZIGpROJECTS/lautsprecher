@@ -8,7 +8,8 @@ import siteIcon from "../materials/icons/siteIcon.svg"
 const BandCard = (props) => {
     return(
         <div className="community-card">
-            <img src={ portrait } alt={ props.name } className="img__band"/>
+            {/* <img src={ portrait } alt={ props.name } className="img__band"/> */}
+            <div className="community-card__img" style={{ background : (props.img)}}></div>
             
             <div className="community-card__txt">
                 <h3>{ props.bandName }</h3>

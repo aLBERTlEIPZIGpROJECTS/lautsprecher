@@ -26,15 +26,9 @@ Montag 17.
 
     { STRUCTURE }
 
-
-    implement useFetch in:
-
-        Community (Musician- Bands- & OtherTab)
-
-
     history-single-article NOT DISPLAYING
 
-    tabs not working properly ( only "other" )
+    "other" tab not working properly
 
 
 
@@ -43,7 +37,7 @@ Montag 17.
     box-shadow as a scss variable
     go-to-top button
     landing page article-preview button width
-    landing page community-previe button width (768)
+    landing page community-preview button width (768)
     single-article => button "more articles" and "next article"
     contact { .contact-option arrow => align}
     team images different mask ?

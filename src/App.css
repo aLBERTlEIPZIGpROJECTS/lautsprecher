@@ -715,15 +715,13 @@ a:focus {
   transition: 300ms;
 }
 .btn__basic:hover {
-  background-color: #1a1a1a;
+  outline: 1px solid #e6e6e6;
 }
 .btn__basic:active {
-  outline: 2px solid #4d4d4d;
+  outline: 1px solid #ffbf00;
 }
 .btn__basic:focus {
-  color: #e6e6e6;
-  outline: 2px solid #1a1a1a;
-  overflow: hidden;
+  outline: 1px solid #00AA2A;
 }
 
 /* .form-field{
@@ -772,7 +770,7 @@ input {
 }
 
 .event-card {
-  width: 40vw;
+  width: 50vw;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -807,6 +805,11 @@ input {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 2.5vh;
+}
+.community-card__img {
+  outline: 1px solid red;
+  width: 15vw;
+  height: 15vw;
 }
 
 .social-media-container {
@@ -1477,6 +1480,16 @@ section {
     width: 60vh;
     height: 60vh;
   }
+
+  .event-card {
+    width: 30vw;
+  }
+
+  /* 
+      .event-card{
+          padding-right: 10px;
+          margin: 0 10px;
+      } */
 }
 @media screen and (min-width: 768px) {
   .event-card {

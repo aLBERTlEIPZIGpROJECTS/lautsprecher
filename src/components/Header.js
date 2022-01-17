@@ -11,15 +11,15 @@ const Header = () => {
         <div className="header">
             <div className={`header__top ${bgClass}`}></div>
             <div className="header__med">
+            <Link to ="/">
                 <div className="logo">
                     <h2 className="web-title">Lautsprecher</h2>
                     <p className="web-subtitle">Web Musik Magazine Leipzig</p>
                 </div>
+            </Link>
             </div>
             <div className="header__bot">
                 <BurgerMenu />
-                {/* hier müssen die Links sein */}
-                {/* <img src={ ArrowDown } alt="" className="icon" /> */}
             </div>
             
         </div>

@@ -1135,6 +1135,12 @@ input {
     transform: rotateZ(-8deg);
   }
 }
+.music-player {
+  position: relative;
+  outline: 1px solid red;
+  bottom: 20vh;
+}
+
 .icon-player__on {
   height: 40px;
   z-index: 100;
@@ -1156,16 +1162,15 @@ input {
   background-color: green;
 }
 
-.is-playing {
-  display: block;
-  background-color: purple;
+/* 
+.is-playing{
+    display: block;
+    background-color: purple;
 }
-
-.not-playing {
-  display: none;
-  background-color: yellow;
-}
-
+.not-playing{
+    display: none;
+    background-color: yellow;
+} */
 :root {
   font-size: 10px;
 }
@@ -1290,11 +1295,6 @@ input {
   display: flex;
   flex-direction: column;
   margin: 10vh 10vw 0 0;
-}
-
-.player {
-  position: relative;
-  bottom: 20vh;
 }
 
 .article__infos {

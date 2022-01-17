@@ -1012,12 +1012,11 @@ input {
 
 .blob-container {
   display: grid;
-  place-items: center;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 30vh;
-  inset: 0;
-  position: absolute;
+  place-content: center;
+  width: 50vw;
+  height: 50vw;
+  top: 50vh;
+  position: fixed;
   z-index: -100;
 }
 
@@ -1025,8 +1024,8 @@ input {
   display: block;
   position: absolute;
   opacity: 0.3;
-  width: 75vh;
-  height: 75vh;
+  width: 50vh;
+  height: 50vh;
   overflow: hidden;
   border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
   /* background: linear-gradient(to right, #23D5AB, #23A6D5, #E73C7E, #EE7752, #DDD6F3); */
@@ -1243,7 +1242,7 @@ input {
 
 .footer-small {
   position: fixed;
-  inset: auto 0 0 0;
+  bottom: 0;
   z-index: 200;
 }
 .footer-small__top {

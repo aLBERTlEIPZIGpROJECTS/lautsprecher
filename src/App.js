@@ -23,26 +23,26 @@ function App() {
         <Header />
       
       <main className="body">
-      <div className="content">
-        <Routes>
-          <Route exact path="/" element={<LandingPage />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/single-article/:id" element = {<SingleArticle />} />
-          <Route path="/history-articles" element = {<HistoryArticles />} />
-          <Route path="/history-single-article:/id" element = {<HistorySingleArticle />} />
-          
-          <Route path ="/community" element={<Community />} />
-          <Route path = "/musicians" element={<Community />} />
-          <Route path="/bands" element={<Community />} />
-          <Route path="/other" element={<Community />} />
-          
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/impressum" element={<Impressum />} />
+        <div className="content">
+          <Routes>
+            <Route exact path="/" element={<LandingPage />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/articles" element={<Articles />} />
+            <Route path="/single-article/:id" element = {<SingleArticle />} />
+            <Route path="/history-articles" element = {<HistoryArticles />} />
+            <Route path="/history-single-article:/id" element = {<HistorySingleArticle />} />
+            
+            <Route path ="/community" element={<Community />} />
+            <Route path = "/musicians" element={<Community />} />
+            <Route path="/bands" element={<Community />} />
+            <Route path="/other" element={<Community />} />
+            
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/impressum" element={<Impressum />} />
 
-        </Routes>
-      </div>
+          </Routes>
+        </div>
       </main>
       <Footer />
     </div>

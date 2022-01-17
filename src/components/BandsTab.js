@@ -1,13 +1,9 @@
-import { useState, useEffect } from "react"
 import BandCard from "../components/BandCard"
-import Blob from "../components/Blob"
 import useFetch from "../useFetch"
 
 const BandsTab = ( props ) => {
-
   const { data, isLoading, error } = useFetch("http://localhost:8000/bands")
     
-
     return(
       <div className= "community-tab">
          { error && <div>{ error }</div>}

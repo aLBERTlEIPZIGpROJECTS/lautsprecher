@@ -29,7 +29,7 @@ const Home = () => {
             <div className="content-main">
                 {
                     articleSnippet &&
-                <ArticlePreview title = { articleSnippet.title } body = { articleSnippet.body } link = "/single-article"  />
+                <ArticlePreview title = { articleSnippet.title } body = { articleSnippet.body } link = "/single-article/0"  />
                 }
                 <div className="content-main__item community-preview card-shadow" >
                     <h2 className="content-main__title">Community</h2>

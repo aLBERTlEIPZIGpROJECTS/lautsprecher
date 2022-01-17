@@ -1,12 +1,11 @@
 import OtherCard from "../components/OtherCard"
-import { useState, useEffect } from "react"
 import useFetch from "../useFetch"
 
 const OtherTab = (props) => {
   const { data, isLoading, error } = useFetch("http://localhost:8000/veranstaltungsorte")
     
     return(
-      <div className= {`${ props.class}`} >
+      <div className= "other-tab" >
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             {

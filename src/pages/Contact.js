@@ -41,14 +41,15 @@ const Contact = () => {
 
             <form action="">
                 {/* First Field Group */}
-                <FormField pholder = "First Name" type = "text" border = "true" class="label-shadow" maxlength="30" required/> 
-                <FormField pholder = "Last Name"  type = "text"  border = "true" class="label-shadow" maxlength="30" required/>
+                <FormField pholder = "First Name" type = "text" border = "true" class="label-shadow" maxlength="30" required id="userfname"/> 
+                <FormField pholder = "Last Name"  type = "text"  border = "true" class="label-shadow" maxlength="30" required id="userlname"/>
                 
+                {
                 <div className= {display2FieldGroup}>
                     <FormField pholder = "Mail"  type = "mail"  border = "true" class="label-shadow" maxlength="30"/> 
                     <FormField pholder = "Phone"  type = "phone"  border = "true" class="label-shadow" maxlength="30"/> 
                 </div>
-                
+                }
                 <div className= {display3FieldGroup}>
                     <FormField pholder = "Message" type = "text"  border = "true" class = "txt-field" maxlength="1000"  cols="50" rows="6"/>
                 </div>

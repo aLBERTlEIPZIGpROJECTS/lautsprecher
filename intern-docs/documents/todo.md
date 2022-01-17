@@ -12,7 +12,6 @@ Montag 17.
 
     { CSS }
 
-    events text overflow 
     events accordion
 
     msg field overflow

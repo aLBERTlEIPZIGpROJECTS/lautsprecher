@@ -14,7 +14,7 @@ const Articles = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             
-           <Blob class = "blob__purple blob-low" /> 
+            <Blob class = "blob__purple blob-low" /> 
             <h1>Alle Artikel</h1>
             {
                 data && data.map((article) => (

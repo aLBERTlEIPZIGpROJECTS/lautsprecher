@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
-import FirstImg from "../materials/img/articles-history/firstImage.jpg"
 import Button from "../components/Button"
 import Blob from "../components/Blob"
 import useFetch from "../useFetch"
@@ -25,7 +24,7 @@ const SingleArticle = (props) => {
                             <p className="article__txt"> - </p>
                             <p className="article__txt">{data.date}</p>
                         </div>
-                        <img src={ FirstImg } alt="" className="img__article" />
+                        <img src={ data.img } alt="" className="img__article" />
                         <div className="article-btn-container">
                             <p className="article__txt"> {data.body} </p>
                             {/* 

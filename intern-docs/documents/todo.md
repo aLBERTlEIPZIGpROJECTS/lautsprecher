@@ -30,7 +30,6 @@
     single-article => button "more articles" and "next article"
     contact { .contact-option arrow => align}
     team images different mask ?
-    community / img addapt to info (or limit info)
     wrap links around buttons (instead of buttons around links) and style accordingly
     load article
     better burger menu & footer burger menu

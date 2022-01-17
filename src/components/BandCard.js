@@ -1,9 +1,6 @@
-import portrait from "../materials/img/team/cezanne.jpg"
 import fbIcon from "../materials/icons/fbIcon.svg"
 import twIcon from "../materials/icons/twIcon.svg"
 import igIcon from "../materials/icons/igIcon.svg"
-import mailIcon from "../materials/icons/mailIcon.svg"
-import siteIcon from "../materials/icons/siteIcon.svg"
 
 const BandCard = (props) => {
     return(

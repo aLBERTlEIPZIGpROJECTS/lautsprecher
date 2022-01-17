@@ -4,32 +4,45 @@ import Button from "../components/Button"
 import EventsNow from "../components/EventsNow"
 import ArticlePreview from "../components/ArticlePreview"
 import Blob from "../components/Blob"
+import useFetch from "../useFetch"
 
 const Home = () => {
 
-    const [articleSnippet, setArticleSnippet] = useState(null)
 
-    useEffect(() => {
-        fetch("http://localhost:8000/articles")
-            .then(res => {
-                console.log(res)
-                return res.json()
-            })
-            .then(data => {
-                setArticleSnippet(data[0])
-            })
-    }, [])
+    const { data, isLoading, error } = useFetch("http://localhost:8000/articles")
 
     return(
         <div className="landing-page">
+            { error && <div>{ error }</div>}
+            { isLoading && <div>Loading...</div>}
+
             <Blob class = "blob__orange blob-low" />
             <h1>Lautsprecher</h1>
+
             <EventsNow className = "landing-events" />
-           
+
             <div className="content-main">
                 {
-                    articleSnippet &&
-                <ArticlePreview title = { articleSnippet.title } body = { articleSnippet.body } link = "/single-article/0"  />
+                    data && (
+                    <ArticlePreview title = { data[0].title} body = { data[0].body } link = "/single-article/0"  />
+                    )
+                }
+                <div className="content-main__item community-preview card-shadow" >
+                    <h2 className="content-main__title">Community</h2>
+                    <Button txt = "Finde einen Musikern" link = "/musicians" className="button__red"/>
+                </div>
+            </div>
+
+
+            <div className="content-sec">
+                <Button txt = "Hi there" link = "/contact" className ="content-sec__btn button__lightblue card-shadow" />
+                <Button txt = "About us" link = "/about" className ="content-sec__btn button__lightgreen  card-shadow"  />
+            </div>
+           {/* 
+            <div className="content-main">
+                {
+                    data &&
+                <ArticlePreview title = { data.title } body = { data.body } link = "/single-article/0"  />
                 }
                 <div className="content-main__item community-preview card-shadow" >
                     <h2 className="content-main__title">Community</h2>
@@ -37,10 +50,8 @@ const Home = () => {
                 </div>
             </div>
            
-            <div className="content-sec">
-                <Button txt = "Hi there" link = "/contact" className ="content-sec__btn button__lightblue card-shadow" />
-                <Button txt = "About us" link = "/about" className ="content-sec__btn button__lightgreen  card-shadow"  />
-            </div>
+           
+             */}
         </div>
     )
 }

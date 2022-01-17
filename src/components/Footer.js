@@ -12,6 +12,7 @@ const Footer = () => {
     }
 
     return(
+        
         <div className={footerClass}>
             <div className={`${footerClass}__top`}>
                 <FooterBurgerMenu onClick={updateFooterClass}/>

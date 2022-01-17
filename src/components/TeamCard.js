@@ -3,8 +3,6 @@ import twIcon from "../materials/icons/twIcon.svg"
 import igIcon from "../materials/icons/igIcon.svg"
 import mailIcon from "../materials/icons/mailIcon.svg"
 
-import portrait from "../materials/img/team/cezanne.jpg"
-
 const TeamCard = (props) => {
     return(
         <div className="teamCard">

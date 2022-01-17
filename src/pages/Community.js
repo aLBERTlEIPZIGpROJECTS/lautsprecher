@@ -4,6 +4,9 @@ import MusiciansTab from "../components/MusiciansTab";
 import BandsTab from "../components/BandsTab";
 import OtherTab from "../components/OtherTab";
 import Blob from "../components/Blob";
+import MusicPlayer from "../components/MusicPlayer";
+import track from "../materials/tracks/Studio 2020 - Quincas Moreira.mp3"
+
 
 const Community = () => {
     
@@ -35,6 +38,7 @@ const Community = () => {
     return(
         <div className="community">
             <Blob class = "blob__orange" />
+            <MusicPlayer />
             <h1>Community</h1>
             <div className="tittle-container">
                 <button>

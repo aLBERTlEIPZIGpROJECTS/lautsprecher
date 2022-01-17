@@ -2,16 +2,18 @@
 
 Montag 17. 
 
-        * { inhaber[fname] } {inhaber[lname] } working partially
+        
 
         * reactive input felder   =>  a function listens the whole time
           placeholder             =>  Both depen on same property : reactive to a non-empty input field
     
-        * music player programmieren
-
         * make calendar (look <Events />) (=> look library)
+        
 
 
+        * { inhaber[fname] } {inhaber[lname] } working partially
+
+        * music player programmieren
 
 ***************************************************************************************************************************
 

@@ -1135,7 +1135,8 @@ input {
   }
 }
 .music-player {
-  outline: 1px solid red;
+  position: relative;
+  bottom: 5vh;
 }
 
 .icon-style__on {

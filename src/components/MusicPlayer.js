@@ -14,7 +14,7 @@ const MusicPlayer = () => {
     return(
         <div className="musicPlayer">
             <audio
-                controls autoplay
+                controls autoPlay
                 src= {track }  className="player">
             </audio>
         </div>

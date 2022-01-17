@@ -2,16 +2,7 @@
 
 Montag 17. 
 
-        * make calendar (look <Events />) (=> look library)
         
-
-
-        * reactive input felder   =>  a function listens the whole time
-          placeholder             =>  Both depen on same property : reactive to a non-empty input field
-    
-        * { inhaber[fname] } {inhaber[lname] } working partially
-
-        * music player programmieren
 
 ***************************************************************************************************************************
 
@@ -83,34 +74,32 @@ Montag 17.
     EventsList
 
 
-
-
 ***************************************************************************************************
-
-
-// TIMING
-
-        
     
+// TIMING
 
 *************************************************************************************************************************************************
 
+        * make calendar (look <Events />) (=> look library)
+        
+        * reactive input felder   =>  a function listens the whole time
+          placeholder             =>  Both depen on same property : reactive to a non-empty input field
+    
+        * { inhaber[fname] } {inhaber[lname] } working partially
+
+        * music player programmieren
 
     Dienstag 18.
 
         Absolut BONUS LEVEL:
-            { inhaber[fname] } {inhaber[lname] } working partially
-            Calendar
-            Map
-            Log - in Kapitel
-            (if on extra time: learn { again } BE)
-            Deployment on firebase
-            Bundler
-            Write start-instructions in package-json not working for scss
-            Scss NOT CLONED! => c + v
-
-
-            BONUS LEVEL GOD TIER:
+            * { inhaber[fname] } {inhaber[lname] } working partially
+            * Map
+            * Deployment on firebase
+            * Bundler
+            * Write start-instructions in package-json not working for scss
+            * Scss NOT CLONED! => c + v
+* 
+            * BONUS LEVEL GOD TIER:
                 BE with login (log as musician / other) / send events / 
 
     Mittwoch 19.

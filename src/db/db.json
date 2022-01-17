@@ -832,6 +832,17 @@
               "info" : "Werke von R. Strauss, R. Schumann u. E. Grieg",
               "img" : "https://images.unsplash.com/photo-1519683109079-d5f539e1542f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JjaGVzdHJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
               "links" : null
+          },
+          {
+              "id" : 5,
+              "title" : "",
+              "musician" : "Chor Bruckner",
+              "date" : ["17.01.2022", "13:23"],
+              "venue" : "Gewandhaus",
+              "cost" : 20,
+              "info" : "Werke von R. Strauss, R. Schumann u. E. Grieg",
+              "img" : "https://images.unsplash.com/photo-1519683109079-d5f539e1542f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b3JjaGVzdHJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+              "links" : null
           }
         ],
         "tabs" :[

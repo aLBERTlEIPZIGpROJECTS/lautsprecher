@@ -5,6 +5,7 @@ import Blob from "../components/Blob"
 const Events = () => {
 
     const [events, setEvents ] = useState(null)
+    const [ date, setDate ] = useState (null)
 
     useEffect(() => {
         fetch("http://localhost:8000/concerts")
@@ -13,29 +14,35 @@ const Events = () => {
             })
             .then (data => {
                 setEvents(data)
+                const date = new Date()
+                const today = date.getDate()
+                setDate(today)
             })
     })
-
-
-
 
     return(
         <div className="events">
             <Blob class = "blob__orange"/>
             <h1>Events</h1>
+
+                {/* 
             <h2>Right Now</h2>
             <div className="events__container">
+                {console.log("hello")} 
                 {
-                   events && events.map((event) => (
-                        <EventCard title = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } links = { event.links } id = { event.id } img = { event.img } key = { event.id} />
+                    events && events.map((event) => (
                         
-                        ))}
+                        <EventCard title = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } links = { event.links } id = { event.id } img = { event.img } key = { event.id} />
+                ))}
             </div>
+                */}
+            
             <h2>Heute</h2>
             <div className="events__container">
+            
             {
-            events && events.map((event) => (
-                <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } key = { event.id } />
+                events && events.map((event) => (
+                 <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } key = { event.id } />
             ))}
             </div>
             <div className="events-month">

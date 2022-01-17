@@ -7,6 +7,10 @@ const About = () => {
     
     const [team, setTeam] = useState(null)
 
+    const today = new Date()
+    const weekday = today.getDay()
+    console.log(weekday)
+
     useEffect(() => {
         fetch("http://localhost:8000/team")
             .then(res => {

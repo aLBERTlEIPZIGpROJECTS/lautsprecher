@@ -31,15 +31,15 @@ const Home = () => {
                     articleSnippet &&
                 <ArticlePreview title = { articleSnippet.title } body = { articleSnippet.body } link = "/single-article"  />
                 }
-                <div className="content-main__item community-preview" >
+                <div className="content-main__item community-preview card-shadow" >
                     <h2 className="content-main__title">Community</h2>
                     <Button txt = "Finde einen Musikern" link = "/musicians" className="button__red"/>
                 </div>
             </div>
            
             <div className="content-sec">
-                <Button txt = "Hi there" link = "/contact" className ="content-sec__btn button__lightblue" />
-                <Button txt = "About us" link = "/about" className ="content-sec__btn button__lightgreen"  />
+                <Button txt = "Hi there" link = "/contact" className ="content-sec__btn button__lightblue card-shadow" />
+                <Button txt = "About us" link = "/about" className ="content-sec__btn button__lightgreen  card-shadow"  />
             </div>
         </div>
     )

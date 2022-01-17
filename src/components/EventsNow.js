@@ -1,29 +1,26 @@
 import EventCard from "./EventCard"
 import { useState } from "react"
+import useFetch from "../useFetch"
 
 const EventsNow = () => {
 
-    const [events, setEvents ] = useState ([
-        {
-            id : 0,
-            title : "concert 1",
-            musician : "Papa Jones",
-            date : "10.02.2022, 22:00",
-            venue : "Tonellis",
-            cost : 10,
-            info : null
-        }
-    ])
+    const { data, isLoading, error } = useFetch("http://localhost:8000/concerts")
+
 
     return(
-        <div className="events-now">
-                <h2>Right Now</h2>
+        <div>
+             { error && <div>{ error }</div>}
+                { isLoading && <div>Loading...</div>}
+                <h2>Today</h2>
+
+            <div className="events__container">
                 {
-                    events.map((event) => (
+                    data && data.map((event) => (
                         <EventCard eventName = { event.title } musician = { event.musician } date = { event.date } venue = { event.venue } cost = { event.cost } links = { event.links } info = { event.info } key = { event.id }/>
                         ))
                 }
             </div>
+        </div>
     )
 }
 

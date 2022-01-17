@@ -712,16 +712,20 @@ a:focus {
 }
 
 .btn__basic {
+  width: fit-content;
   transition: 300ms;
 }
 .btn__basic:hover {
-  outline: 1px solid #e6e6e6;
+  background-color: #ffbf00;
+  outline: 1px solid gray;
 }
 .btn__basic:active {
-  outline: 1px solid #ffbf00;
+  background-color: #AA0080;
+  outline: 1px solid gray;
 }
 .btn__basic:focus {
-  outline: 1px solid #00AA2A;
+  background-color: #cc0000;
+  outline: 1px solid gray;
 }
 
 /* .form-field{
@@ -775,9 +779,12 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*    &__block{
-        outline: 1px solid yellow;
-    } */
+  align-items: flex-start;
+}
+.event-card__block {
+  outline: 1px solid yellow;
+  width: 20vw;
+  height: 40vw;
 }
 .event-card__txt {
   color: #e6e6e6;
@@ -1428,9 +1435,10 @@ section {
   font-size: 1.6rem;
 }
 
-.article-preview {
+.card-shadow {
   box-shadow: 5px 5px 5px 0px gray;
 }
+
 .article-preview__txt {
   padding: 0 50px;
 }
@@ -1494,6 +1502,7 @@ section {
 @media screen and (min-width: 768px) {
   .event-card {
     width: 20vw;
+    margin: 2vw;
   }
 
   .button__send {
@@ -1572,6 +1581,13 @@ section {
     padding: 0 23.25vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .event-card {
+    width: 20vw;
+    height: 20vw;
+    margin: 1.5vw;
+  }
+}
 @media screen and (min-width: 1280px) {
   .impressum, .single-article, .landing-page {
     padding: 0 15vw;
@@ -1593,6 +1609,12 @@ section {
 
   .community {
     padding: 0 20vw;
+  }
+
+  .event-card {
+    width: 20vw;
+    height: 10vw;
+    margin: 1.5vw;
   }
 }
 @media screen and (min-width: 1500px) {

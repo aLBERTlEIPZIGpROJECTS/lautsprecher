@@ -1,16 +1,19 @@
 // ON THE TABLE
 
-Sonntag 16.
-        
+Montag 17. 
 
+        * { inhaber[fname] } {inhaber[lname] } working partially
 
+        * reactive input felder   =>  a function listens the whole time
+          placeholder             =>  Both depen on same property : reactive to a non-empty input field
+    
+        * music player programmieren
+
+        * make calendar (look <Events />) (=> look library)
 
 
 
 ***************************************************************************************************************************
-
-
-
 
 
 
@@ -57,13 +60,17 @@ Sonntag 16.
     community / img addapt to info (or limit info)
     wrap links around buttons (instead of buttons around links) and style accordingly
     load article
+    better burger menu & footer burger menu
 
     PRE: to have a BE
-        We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
+        * We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
 
-        {"tw" : ["@handle", true]}
+        * {"tw" : ["@handle", true]}
 
-        When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
+        * When you send your contact info, you get the option to log as musician / veranstalter, which brings you into the "musician" or "veranstalter" page, which again must take your info (from the previous contact form)
+
+        
+        * links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }  ==>> [ musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }. ] => for that you need a single page for every musician, band, other and concert
 
 
 // UNUSED COMPONENTS - Beware
@@ -84,30 +91,7 @@ Sonntag 16.
 // TIMING
 
         
-    Montag 17. 
-
-        * links from
     
-                musicians to bands / events
-
-                bands to musicians / events
-
-                events to bands or musicians / places
-
-                places to events
-
-        * { inhaber[fname] } {inhaber[lname] } working partially
-
-        * links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }  ==>> [ musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }. ]
-
-        * better burger menu & footer burger menu
-
-        * reactive input felder   =>  a function listens the whole time
-          placeholder             =>  Both depen on same property : reactive to a non-empty input field
-    
-        * music player programmieren
-
-        * make calendar (look <Events />) (=> look library)
 
 *************************************************************************************************************************************************
 

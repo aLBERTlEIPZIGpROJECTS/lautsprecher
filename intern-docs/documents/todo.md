@@ -2,6 +2,8 @@
 
 Montag 17. 
 
+        * make calendar (look <Events />) (=> look library)
+        
         * { inhaber[fname] } {inhaber[lname] } working partially
 
         * reactive input felder   =>  a function listens the whole time
@@ -9,7 +11,6 @@ Montag 17.
     
         * music player programmieren
 
-        * make calendar (look <Events />) (=> look library)
 
 
 

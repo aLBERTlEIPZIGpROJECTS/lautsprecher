@@ -8,7 +8,7 @@ import portrait from "../materials/img/team/cezanne.jpg"
 const TeamCard = (props) => {
     return(
         <div className="teamCard">
-            <img src= { props.img }  alt={ props.fname } className="img__profile" />
+            <img src= { props.img }  alt={ props.fname } className="img__band" />
             <div className="team__info">
                 <p>{ props.fname } { props.lname }</p>
                 <p>{ props.rol }</p>

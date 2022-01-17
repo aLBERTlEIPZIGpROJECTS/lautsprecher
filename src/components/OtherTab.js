@@ -11,7 +11,7 @@ const OtherTab = (props) => {
             { isLoading && <div>Loading...</div>}
             {
               data &&  data.map((place) => (
-                    <OtherCard name = { place.name } address = {place.address} phone = { place.phone } site = { place.site } fb = { place.fb } tw = { place.tw } ig = { place.ig } mail = { place.mail } key = { place.id }/>
+                    <OtherCard name = { place.name } address = {place.address} phone = { place.phone } site = { place.site } fb = { place.fb } tw = { place.tw } ig = { place.ig } mail = { place.mail } img = { place.img } key = { place.id }/>
                 ))
             }
         </div>

@@ -6,7 +6,7 @@ const EventCard = (props) => {
     const { data, isLoading, error } = useFetch("http://localhost:8000/concerts")
 
     return(
-        <div className="event-card event-card__bg" >
+        <div className="event-card " >
                 <div className="event-card__block bg-black">
                     <h3 className="event-card__txt">{ props.title }</h3>
                     <p className="event-card__txt">{ props.musician }</p>

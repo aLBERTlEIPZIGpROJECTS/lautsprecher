@@ -24,7 +24,7 @@ const Events = () => {
             
             {
                 data && data.map((event) => (
-                 <EventCard eventName = { event.title} musician = { event.musician} date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } key = { event.id } />
+                 <EventCard eventName = { event.title} musician = { event.musician} img = { event.img } date = { event.date } venue = { event.venue } cost = { event.cost } info = { event.info } id = { event.id } key = { event.id } />
             ))}
             </div>
             <div className="events-month">

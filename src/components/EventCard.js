@@ -14,7 +14,6 @@ const EventCard = (props) => {
                     <p className="event-card__txt">{ props.date[1] }</p>
                     <p className="event-card__txt">{ props.venue }</p>
                     <p className="event-card__txt">{ props.links }</p>
-                    <p className="event-card__txt">{ props.info }</p>
                     <img src= { props.img } alt="" className="img__event" />
                     <Button txt = "+ Info" className = "button__black" link = "/" />
                 </div>

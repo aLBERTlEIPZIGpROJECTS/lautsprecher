@@ -1,6 +1,7 @@
 import EventCard from "./EventCard"
 import { useState } from "react"
 import useFetch from "../useFetch"
+import Button from "./Button"
 
 const EventsNow = () => {
 
@@ -8,10 +9,10 @@ const EventsNow = () => {
 
 
     return(
-        <div>
-             { error && <div>{ error }</div>}
-                { isLoading && <div>Loading...</div>}
-                <h2>Today</h2>
+        <div className="events-now">
+            { error && <div>{ error }</div>}
+            { isLoading && <div>Loading...</div>}
+            <h2>Today</h2>
 
             <div className="events__container">
                 {
@@ -20,6 +21,7 @@ const EventsNow = () => {
                         ))
                 }
             </div>
+            <Button txt = "+ events" link ="events" className="centered__btn button__orange" />
         </div>
     )
 }

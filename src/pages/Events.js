@@ -16,7 +16,7 @@ const Events = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             
-            <Blob class = "blob__orange"/>
+            <Blob class = "blob__orange blob-low"/>
             <h1>Events</h1>
             
             <h2>Heute</h2>

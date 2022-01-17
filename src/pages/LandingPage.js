@@ -22,7 +22,7 @@ const Home = () => {
 
     return(
         <div className="landing-page">
-            <Blob class = "blob__orange" />
+            <Blob class = "blob__orange blob-low" />
             <h1>Lautsprecher</h1>
             <EventsNow className = "landing-events" />
            

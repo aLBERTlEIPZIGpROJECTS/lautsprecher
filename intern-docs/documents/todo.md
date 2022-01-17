@@ -1,26 +1,18 @@
 // ON THE TABLE
 
-Montag 17. 
-
-        
 
 ***************************************************************************************************************************
-
 
 
 // PROBLEMS
 
     { CSS }
 
-    events accordion
+    * events accordion
 
-    msg field overflow
-            why is body in events overflowing?
-            event bg-img defined as style? or how?
+    * event bg-img defined as style? or how?
 
-    css conflict between header and footer { on different sizes }
-
-    footer - burger not showing content
+    * footer - burger not showing content
 
 
     { STRUCTURE }
@@ -35,8 +27,6 @@ Montag 17.
 
     box-shadow as a scss variable
     go-to-top button
-    landing page article-preview button width
-    landing page community-preview button width (768)
     single-article => button "more articles" and "next article"
     contact { .contact-option arrow => align}
     team images different mask ?
@@ -77,7 +67,7 @@ Montag 17.
         * reactive input felder   =>  a function listens the whole time
           placeholder             =>  Both depen on same property : reactive to a non-empty input field
     
-        * { inhaber[fname] } {inhaber[lname] } working partially
+        * { inhaber[fname] } {inhaber[lname] } not working
 
         * music player programmieren
 
@@ -86,11 +76,11 @@ Montag 17.
         Absolut BONUS LEVEL:
             * { inhaber[fname] } {inhaber[lname] } working partially
             * Map
-            * Deployment on firebase
+            * Deployment on firebase => 
             * Bundler
             * Write start-instructions in package-json not working for scss
             * Scss NOT CLONED! => c + v
-* 
+
             * BONUS LEVEL GOD TIER:
                 BE with login (log as musician / other) / send events / 
 

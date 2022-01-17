@@ -34,7 +34,7 @@ const Contact = () => {
 
     return(
         <div className="contact">
-            <Blob class = "blob__lightgreen"/>
+            <Blob class = "blob__lightgreen blob-high"/>
             <h1>Contact</h1>
             
             <div className="form-container">

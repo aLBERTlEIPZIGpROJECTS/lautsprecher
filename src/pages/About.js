@@ -24,7 +24,7 @@ const About = () => {
 
     return(
         <div className="about">
-            <Blob class = "blob__blue"/>
+            <Blob class = "blob__blue blob-high"/>
             <h1>About Us</h1>
             <div className="mission">
                 <h2>Mission</h2>

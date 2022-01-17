@@ -14,7 +14,7 @@ const HistorySingleArticle = (props) => {
         <div className="history-single-article">
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
-            <Blob class = "blob__lightblue" />
+            <Blob class = "blob__lightblue blob-low" />
             
             {
                 data && (

@@ -38,18 +38,12 @@ const Community = () => {
     return(
         <div className="community">
             <Blob class = "blob__orange" />
-            <MusicPlayer />
+            {/* <MusicPlayer /> */}
             <h1>Community</h1>
             <div className="tittle-container">
-                <button>
-                    <h2 onClick={ activateMusicians } >Musicians</h2>
-                </button>
-                <button>
-                    <h2 onClick={ activateBands }>Bands</h2>
-                </button>
-                <button>
-                    <h2 onClick={ activateOthers }>Other</h2>
-                </button>
+                <h2 onClick={ activateMusicians } >Musicians</h2>
+                <h2 onClick={ activateBands }>Bands</h2>
+                <h2 onClick={ activateOthers }>Other</h2>
             </div>
             <div className="tabs-container">
                 <MusiciansTab class = { musiciansClass } />

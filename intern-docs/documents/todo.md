@@ -5,6 +5,7 @@ Montag 17.
         * make calendar (look <Events />) (=> look library)
         
 
+
         * reactive input felder   =>  a function listens the whole time
           placeholder             =>  Both depen on same property : reactive to a non-empty input field
     

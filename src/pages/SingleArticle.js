@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Button from "../components/Button"
 import Blob from "../components/Blob"
 import useFetch from "../useFetch"
+import GoTopBtn from "../components/GoTopBtn"
 
 const SingleArticle = (props) => {
 
@@ -35,6 +36,7 @@ const SingleArticle = (props) => {
                     </article>
                 )
             }
+            <GoTopBtn />
             </div>
     )
 }

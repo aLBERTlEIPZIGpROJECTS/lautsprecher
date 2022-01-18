@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import Blob from "../components/Blob"
 import useFetch from "../useFetch"
 import EventsSection from "../components/EventsSection"
+import GoTopBtn from "../components/GoTopBtn"
 
 const Events = () => {
 
@@ -17,6 +18,7 @@ const Events = () => {
             <Blob class = "blob__orange blob-low"/>
             <h1>Events</h1>
             <EventsSection />
+            <GoTopBtn />
         </div>
     )
 }

@@ -8,7 +8,7 @@ const Header = () => {
     const [bgClass, setBgClass] = useState("bg__orange")
 
     return(
-        <div className="header">
+        <div className="header" id="header">
             <div className={`header__top ${bgClass}`}></div>
             <div className="header__med">
             <Link to ="/">

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import useFetch from "../useFetch"
 import ArticleCard from "../components/ArticleCard"
 import Blob from "../components/Blob"
+import GoTopBtn from "../components/GoTopBtn"
 
 
 const HistoryArticles = () => {
@@ -25,6 +26,7 @@ const HistoryArticles = () => {
                     </Link>
                     ))
                 }
+                <GoTopBtn />
         </div>
     )
 }

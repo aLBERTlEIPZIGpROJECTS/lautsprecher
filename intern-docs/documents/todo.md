@@ -1,5 +1,11 @@
 // ON THE TABLE
 
+    * go-top btn
+    * pop-up with info
+    * navigation between articles
+    * suchmaschine (musician - bands - events - other - articles)
+    * tabs working properly
+    
 
 ***************************************************************************************************************************
 
@@ -30,7 +36,7 @@
     events carousel
     event bg-img defined as style? or how?
 
-    PRE: to have a BE
+    PRE: you need a BE
         * We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
 
         * {"tw" : ["@handle", true]}
@@ -57,14 +63,7 @@
 
 *************************************************************************************************************************************************
 
-        * make calendar (look <Events />) (=> look library)
-        
-        * reactive input felder   =>  a function listens the whole time
-          placeholder             =>  Both depen on same property : reactive to a non-empty input field
-    
-        * { inhaber[fname] } {inhaber[lname] } not working
-
-        * music player programmieren
+      
 
     Dienstag 18.
 
@@ -82,6 +81,16 @@
     Mittwoch 19.
 
         "Freier Tag"
+        
+        * make calendar (look <Events />) (=> look library)
+        
+        * music player programmieren
+        
+        * reactive input felder   =>  a function listens the whole time
+          placeholder             =>  Both depen on same property : reactive to a non-empty input field
+    
+        * { inhaber[fname] } {inhaber[lname] } not working
+
 
     Donnerstag 20.
 

@@ -3,6 +3,7 @@ import FormField from "../components/FormField"
 import ArrowRight from "../materials/icons/arrow-right.png"
 import Blob from "../components/Blob"
 import { useState } from "react"
+import GoTopBtn from "../components/GoTopBtn"
 
 const Contact = () => {
 
@@ -77,6 +78,7 @@ const Contact = () => {
                 </div>
             </form>
             </div>
+            <GoTopBtn />
         </div>
     )
 }

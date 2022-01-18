@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import Button from "../components/Button"
 import Blob from "../components/Blob"
 import useFetch from "../useFetch"
+import GoTopBtn from "../components/GoTopBtn"
 
 
 const HistorySingleArticle = (props) => {
@@ -35,6 +36,7 @@ const HistorySingleArticle = (props) => {
                 </article>
                 )
             }
+            <GoTopBtn />
         </div>
     )
 }

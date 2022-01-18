@@ -737,6 +737,19 @@ a:focus {
   outline: 1px solid gray;
 }
 
+.go-top__container {
+  display: flex;
+  justify-content: end;
+}
+.go-top__btn {
+  border-radius: 50%;
+}
+.go-top__icon {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+
 /* .form-field{
     background-color: $white;
 } */

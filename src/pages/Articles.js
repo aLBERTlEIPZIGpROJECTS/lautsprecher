@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import useFetch from "../useFetch"
 import ArticleCard from "../components/ArticleCard"
 import Blob from "../components/Blob"
-
+import GoTopBtn from "../components/GoTopBtn"
         
 const Articles = () => {
     
@@ -14,7 +14,7 @@ const Articles = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             
-            <Blob class = "blob__purple blob-low" /> 
+            <Blob class = "blob__purple blob-up" /> 
             <h1>Alle Artikel</h1>
             {
                 data && data.map((article) => (
@@ -25,6 +25,7 @@ const Articles = () => {
                     
                 ))
             }
+            <GoTopBtn />
         </div>
     )
 }

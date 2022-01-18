@@ -1,5 +1,6 @@
 import MusicianCard from "../components/MusicianCard"
 import { useState, useEffect } from "react"
+import GoTopBtn from "../components/GoTopBtn"
 
 const Musicians = (props) => {
     const [musicians, setMusicians] = useState(null)
@@ -22,6 +23,7 @@ const Musicians = (props) => {
                     <MusicianCard bandName = { musician.bandName } fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } socialLink = { musician.socialLink }  key = { musician.id }/>
                 ))
             }
+          <GoTopBtn />
         </div>
     )
 }

@@ -2,6 +2,7 @@ import TeamCard from "../components/TeamCard"
 import { useState, useEffect } from "react"
 import CommunityCard from "../components/CommunityCard"
 import Blob from "../components/Blob";
+import GoTopBtn from "../components/GoTopBtn"
 
 const About = () => {
     
@@ -47,6 +48,7 @@ const About = () => {
                         <CommunityCard fname = { person.fname } lname = { person.lname } rol = { person.rol } id = { person.id } img = { person.img } key = { person.id }/>
                     ))}       
                 </div>
+            <GoTopBtn />
         </div>
     )
 }

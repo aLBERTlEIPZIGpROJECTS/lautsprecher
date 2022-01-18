@@ -6,6 +6,7 @@ import ArticlePreview from "../components/ArticlePreview"
 import Blob from "../components/Blob"
 import useFetch from "../useFetch"
 import EventsSection from "../components/EventsSection"
+import GoTopBtn from "../components/GoTopBtn"
 
 const Home = () => {
 
@@ -53,6 +54,7 @@ const Home = () => {
            
            
              */}
+             <GoTopBtn />
         </div>
     )
 }

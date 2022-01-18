@@ -6,6 +6,7 @@ import OtherTab from "../components/OtherTab";
 import Blob from "../components/Blob";
 import MusicPlayer from "../components/MusicPlayer";
 import track from "../materials/tracks/Studio 2020 - Quincas Moreira.mp3"
+import GoTopBtn from "../components/GoTopBtn"
 
 
 const Community = () => {
@@ -50,6 +51,7 @@ const Community = () => {
                 <BandsTab  class = { bandsClass } />
                 <OtherTab  class = { othersClass }/>
             </div>
+            <GoTopBtn />
         </div>
     )
 }

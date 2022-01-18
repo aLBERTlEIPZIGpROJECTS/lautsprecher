@@ -1,3 +1,5 @@
+import GoTopBtn from "../components/GoTopBtn"
+
 const Impressum = () => {
     return(
         <div className="impressum">
@@ -162,6 +164,7 @@ Zwischen uns und dem Hostingprovider besteht in der Regel ein Vertrag über die 
 Alle Texte sind urheberrechtlich geschützt.
 Quelle: Erstellt mit dem Datenschutz Generator von AdSimple
 </p>
+<GoTopBtn />
         </div>
     )
 }

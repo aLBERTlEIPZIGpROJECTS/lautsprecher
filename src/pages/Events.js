@@ -18,8 +18,6 @@ const Events = () => {
             
             <Blob class = "blob__orange blob-low"/>
             <h1>Events</h1>
-            
-            <h2>Heute</h2>
             <div className="events__container">
             
             {

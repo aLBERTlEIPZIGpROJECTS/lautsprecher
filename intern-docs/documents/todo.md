@@ -8,16 +8,9 @@
 
     { CSS }
 
-    * events accordion
-
-    * event bg-img defined as style? or how?
-
     * footer - burger not showing content
 
-
     { STRUCTURE }
-
-    history-single-article NOT DISPLAYING
 
     "other" tab not working properly
 
@@ -33,6 +26,8 @@
     wrap links around buttons (instead of buttons around links) and style accordingly
     load article
     better burger menu & footer burger menu
+    events carousel
+    event bg-img defined as style? or how?
 
     PRE: to have a BE
         * We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)

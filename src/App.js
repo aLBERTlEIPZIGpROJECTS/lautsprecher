@@ -29,7 +29,7 @@ function App() {
             <Route path="/articles" element={<Articles />} />
             <Route path="/history-articles" element = {<HistoryArticles />} />
             <Route path="/single-article/:id" element = {<SingleArticle />} />
-            <Route path="/history-single-article:/id" element = {<HistorySingleArticle />} />
+            <Route path="/history-single-article/:id" element = {<HistorySingleArticle />} />
             <Route path ="/community" element={<Community />} />
             <Route path = "/musicians" element={<Community />} />
             <Route path="/bands" element={<Community />} />

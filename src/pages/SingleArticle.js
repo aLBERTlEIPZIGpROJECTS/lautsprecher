@@ -25,8 +25,8 @@ const SingleArticle = (props) => {
                             <p className="article__txt">{data.date}</p>
                         </div>
                         <img src={ data.img } alt="" className="img__article" />
+                        <p className="article__txt"> {data.body} </p>
                         <div className="article-btn-container">
-                            <p className="article__txt"> {data.body} </p>
                             {/* 
                 <Button className = "button__orange" txt = "next article" />
                 <Button className = "button__purple" txt = "article library" /> 

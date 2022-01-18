@@ -13,12 +13,11 @@ const HistorySingleArticle = (props) => {
         <div className="history-single-article">
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
-            <Blob class = "blob__lightblue blob-low" />
+            <Blob class = "blob__light blue blob-low" />
             
             {
                 data && (
                     <article>
-                        <h1>Hello</h1>
                         <h1>{data.title}</h1>
                         <div className="article__infos">
                         <p className="article__txt">{ data.author }</p>
@@ -26,10 +25,12 @@ const HistorySingleArticle = (props) => {
                         <p className="article__txt">{ data.date }</p>
                         </div>
                         <img src={ data.img } alt="" className="img__article" />
-                        <p>{ data.body }</p>
+                        <p className="article__txt">{ data.body }</p>
                         <div className="article-btn-container">
-                        <Button className = "button__orange" txt = "next article" />
-                    <Button className = "button__purple" txt = "article library" />
+                        {/*
+                         <Button className = "button__orange" txt = "next article" />
+                        <Button className = "button__purple" txt = "article library" />
+                        */}
                     </div>
                 </article>
                 )

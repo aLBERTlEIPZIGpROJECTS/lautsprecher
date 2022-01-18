@@ -14,7 +14,7 @@ const EventsNow = () => {
             { isLoading && <div>Loading...</div>}
             <h2>Today</h2>
 
-            <div className="events__container">
+            <div className="events-now__container">
                 {
                     data && data.map((event) => (
                         <EventCard eventName = { event.title } musician = { event.musician } date = { event.date } venue = { event.venue } img = { event.img } cost = { event.cost } links = { event.links } info = { event.info } key = { event.id }/>

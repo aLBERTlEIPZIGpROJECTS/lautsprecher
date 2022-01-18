@@ -458,10 +458,12 @@ a:focus {
 }
 
 .web-title {
-  margin-bottom: 0.5em;
+  margin: -10px;
 }
 
 .web-subtitle {
+  margin: 0;
+  margin-left: 7vw;
   font-size: 1.6rem;
 }
 
@@ -1270,7 +1272,7 @@ input {
 }
 
 .body {
-  margin-bottom: 12vh;
+  margin: 5vh 0 12vh;
   overflow: hidden;
   cursor: url("./materials/icons/mouse.svg"), auto;
 }
@@ -1396,9 +1398,15 @@ section {
   align-items: left;
 }
 
-.events__container {
+.events-now__container {
   display: flex;
   margin-top: 5vh;
+  margin-bottom: 10vw;
+}
+
+.events__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* 
@@ -1506,6 +1514,16 @@ section {
   margin: 5px 0;
 }
 
+@media screen and (min-width: 360px) {
+  .web-subtitle {
+    margin-left: 6vw;
+  }
+}
+@media screen and (min-width: 411px) {
+  .web-subtitle {
+    margin-left: 5vw;
+  }
+}
 @media screen and (min-width: 600px) {
   .content-sec {
     justify-content: space-around;
@@ -1532,6 +1550,9 @@ section {
           padding-right: 10px;
           margin: 0 10px;
       } */
+  .web-subtitle {
+    margin-left: 4vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .event-card {
@@ -1561,6 +1582,10 @@ section {
     margin: 0 4vw;
     width: 50vw;
   }
+
+  .web-subtitle {
+    margin-left: 3vw;
+  }
 }
 @media screen and (min-width: 800px) {
   .mission, .objectives {
@@ -1586,6 +1611,10 @@ section {
 
   .community {
     padding: 0 10vw;
+  }
+
+  .web-subtitle {
+    margin-left: 3vw;
   }
 }
 @media screen and (min-width: 834px) {
@@ -1614,12 +1643,20 @@ section {
   .objectives {
     padding: 0 23.25vw;
   }
+
+  .web-subtitle {
+    margin-left: 3vw;
+  }
 }
 @media screen and (min-width: 1024px) {
   .event-card {
     width: 20vw;
     height: 20vw;
     margin: 1.5vw;
+  }
+
+  .web-subtitle {
+    margin-left: 2vw;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1635,6 +1672,10 @@ section {
     width: 80vh;
     height: 80vh;
   }
+
+  .web-subtitle {
+    margin-left: 1.5vw;
+  }
 }
 @media screen and (min-width: 1440px) {
   .button__send {
@@ -1649,6 +1690,10 @@ section {
     width: 20vw;
     height: 10vw;
     margin: 1.5vw;
+  }
+
+  .web-subtitle {
+    margin-left: 1.5vw;
   }
 }
 @media screen and (min-width: 1500px) {

@@ -1,8 +1,6 @@
 // ON THE TABLE
 
-    * go-top btn
     * pop-up with info
-    * navigation between articles
     * suchmaschine (musician - bands - events - other - articles)
     * tabs working properly
     

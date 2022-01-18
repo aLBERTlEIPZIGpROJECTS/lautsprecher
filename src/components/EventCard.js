@@ -8,7 +8,7 @@ const EventCard = (props) => {
     return(
         <div className="event-card " >
                 <div className="event-card__block">
-                    <h3 className="event-card__txt">{ props.title }</h3>
+                    <h3 className="event-card__title">{ props.title }</h3>
                     <p className="event-card__txt">{ props.musician }</p>
                     <p className="event-card__txt">{ props.date[0] }</p>
                     <p className="event-card__txt">{ props.date[1] }</p>

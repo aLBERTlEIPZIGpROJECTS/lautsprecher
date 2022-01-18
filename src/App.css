@@ -412,7 +412,7 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
-p, label, textarea {
+p, input, label, textarea {
   color: gray;
   font-size: 2rem;
   margin-bottom: 0.5em;
@@ -808,11 +808,20 @@ input {
   display: flex;
   flex-direction: column;
 }
+.event-card__title {
+  padding-top: 100px;
+  color: #e6e6e6;
+  font-size: 2.8444444444rem;
+  width: fit-content;
+  padding-left: 10px;
+  outline: 1px solid red;
+}
 .event-card__txt {
   color: #e6e6e6;
   font-size: 1.6rem;
   width: fit-content;
   padding-left: 10px;
+  outline: 1px solid blue;
 }
 .event-card__img {
   height: 40vw;
@@ -877,7 +886,12 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   position: absolute;
+  animation-name: bubble;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .burger-small__top {
   width: 30px;
@@ -904,6 +918,32 @@ input {
   display: none;
 }
 
+@keyframes bubble {
+  0% {
+    height: 80px;
+  }
+  35% {
+    height: 80px;
+  }
+  40% {
+    height: 95px;
+  }
+  45% {
+    height: 80px;
+  }
+  55% {
+    height: 80px;
+  }
+  60% {
+    height: 95px;
+  }
+  65% {
+    height: 80px;
+  }
+  100% {
+    height: 80px;
+  }
+}
 .burger-big {
   margin-left: 50vw;
   display: flex;
@@ -1458,7 +1498,6 @@ section {
 
 .show-field {
   display: block;
-  background-color: red;
 }
 
 .hidden-field {
@@ -1539,6 +1578,12 @@ section {
 
 .article-btn-container button {
   margin: 5px 0;
+}
+
+.article-btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
 }
 
 @media screen and (min-width: 360px) {

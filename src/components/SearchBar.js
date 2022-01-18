@@ -1,6 +1,11 @@
+import { useState } from "react"
+
 const SearchBar = () => {
+    
+    const [ searchTerm, setSearchTerm ] = useState("")
+    
     return(
-        <h3>Search Bar</h3>
+        <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
     )
 }
 

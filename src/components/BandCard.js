@@ -3,6 +3,8 @@ import twIcon from "../materials/icons/twIcon.svg"
 import igIcon from "../materials/icons/igIcon.svg"
 
 const BandCard = (props) => {
+
+
     return(
         <div className="community-card">
             <img src={ props.img } alt={ props.name } className="img__band"/>

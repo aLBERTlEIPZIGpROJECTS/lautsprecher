@@ -2,7 +2,19 @@
 
     * pop-up with info
     * tabs working properly
-    
+
+    Dienstag 18.
+
+        Absolut BONUS LEVEL:
+            * { inhaber[fname] } {inhaber[lname] } working partially
+            * Map
+            * Deployment on firebase => 
+            * Bundler
+            * Scss NOT CLONED! => c + v
+
+            * BONUS LEVEL GOD TIER:
+                BE with login (log as musician / other) / send events / 
+
 
 ***************************************************************************************************************************
 
@@ -32,6 +44,8 @@
     better burger menu & footer burger menu
     events carousel
     event bg-img defined as style? or how?
+    sort items in lists
+    Write start-instructions in package-json not working for scss
 
     PRE: you need a BE
         * We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)
@@ -59,21 +73,6 @@
 // TIMING
 
 *************************************************************************************************************************************************
-
-      
-
-    Dienstag 18.
-
-        Absolut BONUS LEVEL:
-            * { inhaber[fname] } {inhaber[lname] } working partially
-            * Map
-            * Deployment on firebase => 
-            * Bundler
-            * Write start-instructions in package-json not working for scss
-            * Scss NOT CLONED! => c + v
-
-            * BONUS LEVEL GOD TIER:
-                BE with login (log as musician / other) / send events / 
 
     Mittwoch 19.
 

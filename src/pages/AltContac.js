@@ -7,27 +7,31 @@ import GoTopBtn from "../components/GoTopBtn"
 
 const Contact = () => {
 
-    const [ display2FieldGroup, setDisplay2FieldGroup ] = useState("show-field")
+    const [ display2FieldGroup, setDisplay2FieldGroup ] = useState("hidden-field")
     const [ display3FieldGroup, setDisplay3FieldGroup ] = useState("hidden-field")
     const [ display4FieldGroup, setDisplay4FieldGroup ] = useState("hidden-field")
     const [ display5FieldGroup, setDisplay5FieldGroup ] = useState("hidden-field")
     const [ contactInteraction, setContactInteraction ] = useState("Hi, nice to meet you!")
 
 
-    /*
-    onChange{ function showField }
-    
-    function showField(){
-        
-        if(field1 && field2){
-            setNextField(true)
-        }
-
-        nextField && (
-            JSX
-        )
+    function show2Group () {
+        setDisplay2FieldGroup("show-field")
+        setContactInteraction("let us an email or phone to keep in touch")
     }
-    */
+    function show3Group () {
+        setDisplay3FieldGroup("show-field")
+        setContactInteraction("let us an email or phone to keep in touch")
+    }
+    function show4Group () {
+        setDisplay4FieldGroup("show-field")
+        setContactInteraction("let us an email or phone to keep in touch")
+    }
+    function show5Group () {
+        setDisplay5FieldGroup("show-field")
+        setContactInteraction("let us an email or phone to keep in touch")
+    }
+
+
 
     return(
         <div className="contact">

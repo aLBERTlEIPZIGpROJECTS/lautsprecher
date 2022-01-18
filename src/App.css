@@ -1550,6 +1550,12 @@ section {
   margin: 5px 0;
 }
 
+.article-btn-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+
 @media screen and (min-width: 360px) {
   .web-subtitle {
     margin-left: 6vw;

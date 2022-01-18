@@ -8,6 +8,7 @@ const About = () => {
     
     const [team, setTeam] = useState(null)
 
+
     const today = new Date()
     const weekday = today.getDay()
     console.log(weekday)

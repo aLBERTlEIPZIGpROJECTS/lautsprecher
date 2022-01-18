@@ -1,6 +1,6 @@
 // ON THE TABLE
 
-    * pop-up with info
+    * pop-up closing?
     * tabs working properly
 
     Dienstag 18.

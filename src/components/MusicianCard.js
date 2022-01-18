@@ -1,8 +1,14 @@
-import fbIcon from "../materials/icons/fbIcon.svg"
-import twIcon from "../materials/icons/twIcon.svg"
-import igIcon from "../materials/icons/igIcon.svg"
+import PopUp from "./PopUp"
+import { useState } from "react"
 
 const MusicianCard = (props) => {
+
+    const [ popClass, setPopClass ] = useState("pop-hide")
+
+    function changePopClass(){
+        popClass === "pop-hide" ? setPopClass("pop-show") : setPopClass("pop-hide")
+    }
+
     return(
         <div className="community-card">
             <img src={ props.img } alt={ props.name } className="img__band"/>
@@ -13,13 +19,9 @@ const MusicianCard = (props) => {
                     <p>{ props.instrument }</p>
                     <p>{ props.style }</p>
                 </div>
-                <div className="social-media-container">
-                    <img src={ fbIcon } alt="facebook" className="iconMed"/>
-                    <img src={ twIcon } alt="twitter" className="iconMed"/>
-                    <img src={ igIcon } alt="instagram" className="iconMed"/>
-                 {/*    <img src={ mailIcon } alt="mail" className="iconMed"/> */}
-                    {/* <img src={ siteIcon } alt="site" className="iconMed"/> */}
-                </div>
+                <button className="pop-switch" onClick={ changePopClass }>+Info</button>
+
+                <PopUp name = { props.name } fname = { props.fname } lname = { props.lname } rol = { props.rol } instrument = { props.instrument } style = { props.style } member = { props.member } address = { props.address } fb = { props.fb} tw = { props.tw } ig = { props.ig } site = { props.site} img = { props.img} class = {popClass}/>
             </div>
         </div>
     )

@@ -16,7 +16,7 @@ const HistoryArticles = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <Blob class = "blob__lightblue" />
+            <Blob class = "blob__lightblue blob-high" />
             <h1>Alle History Article</h1>
                 {
                    data && data.map((article) => (

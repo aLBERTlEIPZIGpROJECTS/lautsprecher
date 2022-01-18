@@ -1,7 +1,6 @@
 // ON THE TABLE
 
     * pop-up with info
-    * suchmaschine (musician - bands - events - other - articles)
     * tabs working properly
     
 

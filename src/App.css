@@ -886,7 +886,12 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   position: absolute;
+  animation-name: bubble;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .burger-small__top {
   width: 30px;
@@ -913,6 +918,32 @@ input {
   display: none;
 }
 
+@keyframes bubble {
+  0% {
+    height: 80px;
+  }
+  35% {
+    height: 80px;
+  }
+  40% {
+    height: 95px;
+  }
+  45% {
+    height: 80px;
+  }
+  55% {
+    height: 80px;
+  }
+  60% {
+    height: 95px;
+  }
+  65% {
+    height: 80px;
+  }
+  100% {
+    height: 80px;
+  }
+}
 .burger-big {
   margin-left: 50vw;
   display: flex;

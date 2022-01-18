@@ -18,7 +18,7 @@ const Home = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <Blob class = "blob__orange blob-low" />
+            <Blob class = "blob__orange blob-high" />
             <h1>Lautsprecher</h1>
 
             <EventsSection title = "Today"/>

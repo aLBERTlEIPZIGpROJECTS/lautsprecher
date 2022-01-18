@@ -15,7 +15,7 @@ const Articles = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             
-            <Blob class = "blob__purple blob-up" /> 
+            <Blob class = "blob__purple blob-high" /> 
             <h1>Alle Artikel</h1>
             <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
             {

@@ -38,7 +38,7 @@ const Community = () => {
 
     return(
         <div className="community">
-            <Blob class = "blob__orange blob-low" />
+            <Blob class = "blob__orange blob-high" />
             {/* <MusicPlayer /> */}
             <h1>Community</h1>
             <div className="tittle-container">

@@ -808,11 +808,20 @@ input {
   display: flex;
   flex-direction: column;
 }
+.event-card__title {
+  padding-top: 100px;
+  color: #e6e6e6;
+  font-size: 2.8444444444rem;
+  width: fit-content;
+  padding-left: 10px;
+  outline: 1px solid red;
+}
 .event-card__txt {
   color: #e6e6e6;
   font-size: 1.6rem;
   width: fit-content;
   padding-left: 10px;
+  outline: 1px solid blue;
 }
 .event-card__img {
   height: 40vw;

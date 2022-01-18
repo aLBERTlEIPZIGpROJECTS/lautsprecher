@@ -412,7 +412,7 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
-p, label, textarea {
+p, input, label, textarea {
   color: gray;
   font-size: 2rem;
   margin-bottom: 0.5em;

@@ -13,6 +13,7 @@
     { STRUCTURE }
 
     "other" tab not working properly
+    EventsSection h2 not showing
 
 
 

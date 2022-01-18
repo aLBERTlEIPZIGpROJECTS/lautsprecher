@@ -5,6 +5,7 @@ import EventsNow from "../components/EventsNow"
 import ArticlePreview from "../components/ArticlePreview"
 import Blob from "../components/Blob"
 import useFetch from "../useFetch"
+import EventsSection from "../components/EventsSection"
 
 const Home = () => {
 
@@ -19,7 +20,7 @@ const Home = () => {
             <Blob class = "blob__orange blob-low" />
             <h1>Lautsprecher</h1>
 
-            <EventsNow className = "landing-events" />
+            <EventsSection title = "Today"/>
 
             <div className="content-main">
                 {

@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom"
-import Button from "../components/Button"
 import useFetch from "../useFetch"
+
+import Button from "../components/Button"
 import Blob from "../components/Blob"
-import phone from "../materials/icons/binoculars-thin.svg"
 import mail from "../materials/icons/mailIcon.svg"
 import site from "../materials/icons/binoculars-thin.svg"
 import twitter from "../materials/icons/twIcon.svg"

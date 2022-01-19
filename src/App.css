@@ -726,15 +726,12 @@ a:focus {
 }
 .btn__basic:hover {
   background-color: #ffbf00;
-  outline: 1px solid gray;
 }
 .btn__basic:active {
   background-color: #AA0080;
-  outline: 1px solid gray;
 }
 .btn__basic:focus {
   background-color: #cc0000;
-  outline: 1px solid gray;
 }
 
 .go-top__container {
@@ -1644,13 +1641,16 @@ section {
 }
 
 .community-info__txt {
+  display: block;
   text-align: center;
+}
+.community-info__txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .community-info__links {
   margin: 5vh 0;
-}
-.community-info__btn {
-  margin: 0 30vw;
 }
 
 @media screen and (min-width: 360px) {

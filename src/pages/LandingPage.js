@@ -22,6 +22,7 @@ const Home = () => {
             <h1>Lautsprecher</h1>
 
             <EventsSection title = "Today"/>
+            <Button txt = "+ events" link ="/events" className="button__orange" />
 
             <div className="content-main">
                 {

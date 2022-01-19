@@ -1,4 +1,5 @@
 import Button from "../components/Button"
+import { Link } from "react-router-dom"
 
 const EventCard = (props) => {
 
@@ -14,7 +15,9 @@ const EventCard = (props) => {
                     <p className="event-card__txt">{ props.links }</p>
                     <img src= { props.img } alt="" className="event-card__img" />
                 </div>
-                    <Button txt = "+ Info" className = "event-card__btn" link = "/" />
+                <Link to = {`/event/${props.id}`} className = "event-card__btn">
+                    <p>+ Info</p>
+                </Link>
         </div>
     )
 }

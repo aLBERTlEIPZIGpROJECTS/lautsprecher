@@ -1,4 +1,5 @@
 import EventCard from "./EventCard"
+
 const EventsGroup = () => {
     return(
         <div className="events-group">

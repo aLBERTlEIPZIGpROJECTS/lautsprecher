@@ -1,5 +1,7 @@
 // ON THE TABLE
 
+    * events links and pages
+
     * footer burger not showing content
 
     * community-info txt not aligned center??
@@ -44,13 +46,6 @@
 ***************************************************************************************************************************
 
 
-// PROBLEMS
-
-    { CSS }
-
-
-
-
 // REFINE
 
     box-shadow as a scss variable
@@ -77,16 +72,6 @@
 
         
         * links between musicians / bands / events / veranstalter / venues (places) { it would be nice to provide the web the hability to match a musician, so the veranstalter can find them easy, in case this musician has a profile }  ==>> [ musicians + bands + veranstalter + venues must be linked by an id. Can you provide multiple id to a single element? => solution: write a function that evaluates => if(this I has a value [X, Y, Z]) { print this value into an p or li }. ] => for that you need a single page for every musician, band, other and concert
-
-
-// UNUSED COMPONENTS - Beware
-
-    Tag =>  for every day in the calendar (=> events)
-    Search Bar
-    BurgerMenu
-    Body
-    EventsNov
-    EventsList
 
 
 ***************************************************************************************************

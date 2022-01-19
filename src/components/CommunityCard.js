@@ -14,26 +14,17 @@ const CommunityCard = (props) =>{
                 <p>{ props.rol } </p>
                </div>
                <div className="community-card__content">
-                   {/* <p>{ props.inhaber["fname"] }{ props.inhaber["lname"] }</p> */}
                    <p>{ props.instrument }</p>
                    <p>{ props.style }</p>
                    
                    <p>{ props.member }</p>
-                   <p>{ props.address }</p> {/* change it for a link to a map */}
+                   <p>{ props.address }</p>
                </div>
            </div>
            <div className="social-media-container">
                    <img src={ fbIcon } alt="facebook" className="iconMed"/>
                    <img src={ twIcon } alt="twitter" className="iconMed"/>
                    <img src={ igIcon } alt="instagram" className="iconMed"/>
-                
-                {/*
-                <img src={ other icon! } alt="phone" className="iconMed"/>
-                */}
-                {/*
-                <img src={ mailIcon } alt="mail" className="iconMed"/> */}
-                {/*
-                <img src={ siteIcon } alt="site" className="iconMed"/> */}
                </div>
         </div>
     )

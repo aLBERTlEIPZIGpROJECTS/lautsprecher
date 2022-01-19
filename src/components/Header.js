@@ -1,7 +1,7 @@
-import BurgerMenu from "./BurgerMenu"
-import ArrowDown from "../materials/icons/arrow-down.svg"
+import { useState } from "react"
 import { Link } from "react-router-dom"
-import { useContext, useEffect, useState } from "react"
+
+import BurgerMenu from "./BurgerMenu"
 
 const Header = ( props ) => {
 

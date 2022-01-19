@@ -3,9 +3,6 @@ import { useState } from "react"
 const FormField = (props) => {
     const [ labelClass, setLabelClass ] = useState (props.class)
 
-    
-
-
     return(
 
         <div className="form-field">

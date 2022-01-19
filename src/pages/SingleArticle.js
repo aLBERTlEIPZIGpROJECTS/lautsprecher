@@ -17,7 +17,7 @@ const SingleArticle = (props) => {
         <div className="single-article">
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
-            <Blob class = "blob__purple blob-high" />
+            <Blob class = "blob__purple blob-low" />
 
             {
                 data && (

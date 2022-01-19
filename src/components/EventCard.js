@@ -1,12 +1,10 @@
 import Button from "../components/Button"
-import useFetch from "../useFetch"
 
 const EventCard = (props) => {
 
-    const { data, isLoading, error } = useFetch("http://localhost:8000/concerts")
-    console.log(props)
+
     return(
-        <div className="event-card " >
+                <div className="event-card " >
                 <div className="event-card__block">
                     <h3 className="event-card__title">{ props.eventName }</h3>
                     <p className="event-card__txt">{ props.musician }</p>

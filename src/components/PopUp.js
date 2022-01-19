@@ -1,10 +1,8 @@
-import { useState } from "react"
 import fbIcon from "../materials/icons/fbIcon.svg"
 import twIcon from "../materials/icons/twIcon.svg"
 import igIcon from "../materials/icons/igIcon.svg"
 
 const PopUp = ( props ) =>{
-
 
     return(
         <div className= { `${props.class} ` }>
@@ -29,13 +27,6 @@ const PopUp = ( props ) =>{
                     <img src={ fbIcon } alt="facebook" className="iconMed"/>
                     <img src={ twIcon } alt="twitter" className="iconMed"/>
                     <img src={ igIcon } alt="instagram" className="iconMed"/>
-                    {/*
-                    <img src={ other icon! } alt="phone" className="iconMed"/>
-                    */}
-                    {/*
-                    <img src={ mailIcon } alt="mail" className="iconMed"/> */}
-                    {/*
-                    <img src={ siteIcon } alt="site" className="iconMed"/> */}
                 </div>
             </div>
         </div>

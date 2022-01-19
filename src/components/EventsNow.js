@@ -1,6 +1,6 @@
-import EventCard from "./EventCard"
-import { useState } from "react"
 import useFetch from "../useFetch"
+
+import EventCard from "./EventCard"
 import Button from "./Button"
 
 const EventsNow = () => {

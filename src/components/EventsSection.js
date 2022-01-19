@@ -1,6 +1,7 @@
 import { useState } from "react"
-import EventCard from "./EventCard"
 import useFetch from "../useFetch"
+
+import EventCard from "./EventCard"
 import Button from "./Button"
 
 const EventsSection = (props) => {

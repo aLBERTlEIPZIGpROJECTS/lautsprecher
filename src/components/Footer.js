@@ -1,30 +1,36 @@
 import { useState } from "react"
 
-import FooterBurgerMenu from "./FooterBurgerMenu"
-
 const Footer = () => {
 
-    const [footerClass, setFooterClass] = useState("footer-small")
-
-    function updateFooterClass () {
-        footerClass === "footer-small" ? setFooterClass("footer-big") : setFooterClass ("footer-small") 
+    const [ footerClass, setFooterClass ] = useState("footer__small")
+    const [ maskClass, setMaskClass ] = useState("footer__small-mask")
+    const [ burgerAnimation, setBurgerAnimation ] = useState("animation-on")
+    
+    function updateFooter () {
+        footerClass === "footer__small" ? setFooterClass("footer__big") : setFooterClass ("footer__small") 
+        maskClass === "footer__small-mask" ? setMaskClass("footer__big-mask") : setMaskClass ("footer__small-mask")
+        burgerAnimation === "animation-on" ? setBurgerAnimation("") : setBurgerAnimation("animation-on")
     }
 
     return(
         
-        <div className={footerClass}>
-            <div className={`${footerClass}__top`}>
-                <FooterBurgerMenu onClick={updateFooterClass}/>
-            </div>
-            <div className={`${footerClass}__bot`}>
-                <div className={`${footerClass}__txt-container`}>
-                    <div className="sub-container">
+        <div >
+          <div className = { footerClass }>
+              <div className= { maskClass }>
+              </div>
+                  <div className={`footer-burger__container ${burgerAnimation}` }onClick={ updateFooter }>
+                    <div className="footer-burger__top"></div>
+                    <div className="footer-burger__med"></div>
+                    <div className="footer-burger__bot"></div>
+                  </div>
+                <div className={`footer__links-container`}>
+                    <div className="footer__links-sub-container">
                         <p className="footer-big__txt">Home</p>
                         <p className="footer-big__txt">Events</p>
                         <p className="footer-big__txt">Community</p>
                         <p className="footer-big__txt">Articles</p>
                     </div>
-                    <div className="sub-container">
+                    <div className="footer__links-sub-container">
                         <p className="footer-big__txt">History</p>
                         <p className="footer-big__txt">Contact</p>
                         <p className="footer-big__txt">About us</p>

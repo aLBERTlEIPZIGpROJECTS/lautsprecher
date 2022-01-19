@@ -1,4 +1,6 @@
  import { Routes, Route } from "react-router-dom"
+ import { useState } from "react"
+
 import './App.css';
 
 import About from "./pages/About"
@@ -19,11 +21,16 @@ import BandInfo from "./pages/BandInfo";
 import OtherInfo from "./pages/OtherInfo";
 
 function App() {
+
+  const [ headerClass, setHeaderClass ] = useState("")
+
+
+  
   return (
     
     <div className="app">
       
-        <Header />
+        <Header class = { headerClass } />
       
       <main className="body">
         <div className="content">

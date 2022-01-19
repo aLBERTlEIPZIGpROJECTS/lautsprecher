@@ -3,7 +3,7 @@ import ArrowDown from "../materials/icons/arrow-down.svg"
 import { Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 
-const Header = () => {
+const Header = ( props ) => {
 
     const [bgClass, setBgClass] = useState("bg__orange")
 

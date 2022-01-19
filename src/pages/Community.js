@@ -11,31 +11,20 @@ import GoTopBtn from "../components/GoTopBtn"
 
 const Community = () => {
     
-    const [ musiciansClass, setMusiciansClass ] = useState("activeTab")
-
+    const [ activeTab, setActiveTab ] = useState ("musicians")
+    
     const activateMusicians = () => {
-        setMusiciansClass("activeTab")
-        setBandsClass('inactiveTab')
-        setOthersClass('inactiveTab')
+        setActiveTab("musicians")
     }
     
-    const [ bandsClass, setBandsClass ] = useState("inactiveTab")
-
     const activateBands = () => {
-        setMusiciansClass('inactiveTab')
-        setBandsClass("activeTab")
-        setOthersClass('inactiveTab')
+        setActiveTab("bands")
     }
     
-    const [ othersClass, setOthersClass ] = useState("inactiveTab")
-
     const activateOthers = () => {
-        setMusiciansClass('inactiveTab')
-        setBandsClass('inactiveTab')
-        setOthersClass("activeTab")
+        setActiveTab("others")
     }
-
-
+    
     return(
         <div className="community">
             <Blob class = "blob__orange blob-high" />
@@ -47,9 +36,11 @@ const Community = () => {
                 <h2 onClick={ activateOthers }>Other</h2>
             </div>
             <div className="tabs-container">
-                <MusiciansTab class = { musiciansClass } />
-                <BandsTab  class = { bandsClass } />
-                <OtherTab  class = { othersClass }/>
+                { activeTab === "musicians" &&
+                    <MusiciansTab class = "activeTab" />
+                    }
+                { activeTab === "bands" && <BandsTab  class = "activeTab"/> }
+                { activeTab === "others" && <OtherTab  class = "activeTab"/> }
             </div>
             <GoTopBtn />
         </div>

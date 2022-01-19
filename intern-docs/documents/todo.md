@@ -1,14 +1,8 @@
 // ON THE TABLE
 
+    * footer burger not showing content
 
-    * tabs working properly
-
-    * event-card layout
-
-    * footer layout + not showing content
-
-    * reactive placeholder
-
+    * community-info txt not aligned center??
 
 
     **********************************************************************************************************************
@@ -54,12 +48,6 @@
 
     { CSS }
 
-    * footer - burger not showing content
-
-    { STRUCTURE }
-
-    "other" tab not working properly
-    EventsSection h2 not showing
 
 
 
@@ -77,6 +65,8 @@
     event bg-img defined as style? or how?
     sort items in lists
     Write start-instructions in package-json not working for scss
+    "next article" button should go to top
+    reactive placeholder
 
     PRE: you need a BE
         * We need a system to pick max (3?) links / icons (the user can mark which options are the main links, and they'll store a "important" key with the value "true" in the links)

@@ -4,11 +4,11 @@ import useFetch from "../useFetch"
 const EventCard = (props) => {
 
     const { data, isLoading, error } = useFetch("http://localhost:8000/concerts")
-
+    console.log(props)
     return(
         <div className="event-card " >
                 <div className="event-card__block">
-                    <h3 className="event-card__title">{ props.title }</h3>
+                    <h3 className="event-card__title">{ props.eventName }</h3>
                     <p className="event-card__txt">{ props.musician }</p>
                     <p className="event-card__txt">{ props.date[0] }</p>
                     <p className="event-card__txt">{ props.date[1] }</p>

@@ -26,22 +26,25 @@ const BandInfo = ( props ) => {
                 data && (
                     <article>
                         <img src={ data.img } alt="" className="img__article" />
-                        <h2>{ data.bandName } </h2>
-                        <p>{ data.style }</p>
-                        <p>{ data.member }</p>
-                        {/* { {data.phone} &&
-                            (<a href={ `tel:&{ data.phone }`}></a><img src={ phone } alt="phone" className="iconMed" />)
-                        } */}
-                        <a href={ `mailto:&{ data.mail }`}></a><img src={ mail } alt="mail" className="iconMed" />
-                        <a href={ data.site }></a><img src={ site } alt="site" className="iconMed" />
-                        <a href={ data.facebook }></a><img src={ facebook } alt="facebook" className="iconMed" />
-                        <a href={ data.twitter }></a><img src={ twitter } alt="twitter" className="iconMed" />
-                        <a href={ data.instagram }></a><img src={ instagram } alt="instagram" className="iconMed" />
-                        <a href={ data.soundcloud }></a><img src={ soundcloud } alt="soundcloud" className="iconMed" />
+                        <h2 className="community-info__title">{ data.bandName } </h2>
+                        <p className="community-info__txt">{ data.style }</p>
+                        <p className="community-info__txt">{ data.member }</p>
+                        <p className="community-info__txt">{ data.txt }</p>
+                        <div className="community-info__links">
+                            {/* { {data.phone} &&
+                                (<a href={ `tel:&{ data.phone }`}></a><img src={ phone } alt="phone" className="iconMed" />)
+                            } */}
+                            <a href={ `mailto:&{ data.mail }`}></a><img src={ mail } alt="mail" className="iconMed" />
+                            <a href={ data.site }></a><img src={ site } alt="site" className="iconMed" />
+                            <a href={ data.facebook }></a><img src={ facebook } alt="facebook" className="iconMed" />
+                            <a href={ data.twitter }></a><img src={ twitter } alt="twitter" className="iconMed" />
+                            <a href={ data.instagram }></a><img src={ instagram } alt="instagram" className="iconMed" />
+                            <a href={ data.soundcloud }></a><img src={ soundcloud } alt="soundcloud" className="iconMed" />
+                        </div>
                     </article>
                 )
             }
-            <Button txt = "Community" link = "/community"/>
+            <Button txt = "Community" link = "/community" className= "community-info__btn"/>
         </div>
     )
 }

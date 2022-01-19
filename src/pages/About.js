@@ -30,15 +30,16 @@ const About = () => {
             <h1>About Us</h1>
             <div className="mission">
                 <h2>Mission</h2>
-                <blockquote>Lorem ipsum dolor sit amet.</blockquote>
+                <blockquote>Musiker und Musikliebhaber in Leipzig verbinden</blockquote>
             </div>
             <div className="objective-container">
                 <div className="objectives">
-                    <h2>Objectives</h2>
-                    <p>First Objective Lorem Ipsum</p>
-                    <p>Second Objective Lorem Ipsum</p>
-                    <p>Third Objective Lorem Ipsum</p>
-                    <p>Fourth Objective Lorem Ipsum</p>
+                    <h2>Ziele</h2>
+                    <p>Platz für alle Stimme beschaffen</p>
+                    <p>Musikveranstaltungen aller Art bekann machen</p>
+                    <p>Das reiche Kulturlebens der Stadt aktivieren und ins Licht bringen</p>
+                    <p>Die Musiktradition der Stadt im Gegenwart und Zukunft bringen</p>
+                    <p>Die Gesellschaft stärken</p>
                 </div>
             </div>
 

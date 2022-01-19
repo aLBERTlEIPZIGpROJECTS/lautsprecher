@@ -814,14 +814,12 @@ input {
   font-size: 2.8444444444rem;
   width: fit-content;
   padding-left: 10px;
-  outline: 1px solid red;
 }
 .event-card__txt {
   color: #e6e6e6;
   font-size: 1.6rem;
   width: fit-content;
   padding-left: 10px;
-  outline: 1px solid blue;
 }
 .event-card__img {
   height: 40vw;
@@ -1007,7 +1005,11 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  position: relative;
+  left: 85vw;
+  /*  position: absolute;
+   bottom: 50vh;
+   right: 50vw; */
   z-index: 1500;
 }
 .footer-burger-small__bot {
@@ -1047,8 +1049,8 @@ input {
 }
 .footer-burger-big__bot {
   position: relative;
-  left: 150px;
-  top: -500px;
+  right: -150vw;
+  top: -50vh;
   width: 600px;
   height: 600px;
   border-radius: 50%;
@@ -1060,10 +1062,12 @@ input {
   justify-content: center;
   align-items: center;
   z-index: 100;
+  position: relative;
 }
 .footer-burger-big__med {
   position: relative;
-  /* left: 100px; */
+  right: -150vw;
+  top: -50vh;
   bottom: 500px;
   width: 40px;
   height: 40px;
@@ -1408,6 +1412,10 @@ input {
   overflow: hidden;
   cursor: url("./materials/icons/mouse.svg"), auto;
 }
+.body ::selection {
+  color: #e6e6e6;
+  background-color: #ffbf00;
+}
 
 .footer-small {
   position: fixed;
@@ -1641,6 +1649,16 @@ section {
   margin-top: 5vh;
 }
 
+.community-info__txt {
+  text-align: center;
+}
+.community-info__links {
+  margin: 5vh 0;
+}
+.community-info__btn {
+  margin: 0 30vw;
+}
+
 @media screen and (min-width: 360px) {
   .web-subtitle {
     margin-left: 6vw;
@@ -1747,6 +1765,11 @@ section {
   .web-subtitle {
     margin-left: 3vw;
   }
+
+  .img__article {
+    width: 80vw;
+    height: 30vw;
+  }
 }
 @media screen and (min-width: 834px) {
   p {
@@ -1765,6 +1788,7 @@ section {
     height: 45vw;
     width: 80vw;
     object-fit: cover;
+    margin-bottom: 5vh;
   }
 
   .article-card {
@@ -1787,6 +1811,11 @@ section {
     } */
   .web-subtitle {
     margin-left: 2vw;
+  }
+
+  .img__article {
+    width: 80vw;
+    height: 30vw;
   }
 }
 @media screen and (min-width: 1280px) {

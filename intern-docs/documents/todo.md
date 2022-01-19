@@ -1,19 +1,50 @@
 // ON THE TABLE
 
-    * pop-up closing?
+
     * tabs working properly
 
-    Dienstag 18.
+    * event-card layout
+
+    * footer layout + not showing content
+
+    * reactive placeholder
+
+
+
+    **********************************************************************************************************************
+
+    BONUS TRACK
+
+        
+        * make calendar (look <Events />) (=> look library)
+        
+        * music player programmieren
+        
+        * reactive input felder   =>  a function listens the whole time
+          placeholder             =>  Both depen on same property : reactive to a non-empty input field
+    
+        * { inhaber[fname] } {inhaber[lname] } not working
+
+        * order in array not working
+
+        * clean up code
+
+            - delete unused files
+            - delete unused imports
+            - order in files
+
 
         Absolut BONUS LEVEL:
-            * { inhaber[fname] } {inhaber[lname] } working partially
+
             * Map
+            
             * Deployment on firebase => 
+            
             * Bundler
+            
             * Scss NOT CLONED! => c + v
 
-            * BONUS LEVEL GOD TIER:
-                BE with login (log as musician / other) / send events / 
+            * BE with login (log as musician / other) / send events / 
 
 
 ***************************************************************************************************************************
@@ -73,19 +104,6 @@
 // TIMING
 
 *************************************************************************************************************************************************
-
-    Mittwoch 19.
-
-        "Freier Tag"
-        
-        * make calendar (look <Events />) (=> look library)
-        
-        * music player programmieren
-        
-        * reactive input felder   =>  a function listens the whole time
-          placeholder             =>  Both depen on same property : reactive to a non-empty input field
-    
-        * { inhaber[fname] } {inhaber[lname] } not working
 
 
     Donnerstag 20.

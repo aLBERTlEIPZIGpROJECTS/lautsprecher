@@ -13,7 +13,10 @@ import HistoryArticles from './pages/HistoryArticles'
 import HistorySingleArticle from "./pages/HistorySingleArticle"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-
+import CommunityInfo from "./pages/CommunityInfo";
+import MusicianInfo from "./pages/MusicianInfo";
+import BandInfo from "./pages/BandInfo";
+import OtherInfo from "./pages/OtherInfo";
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
             <Route path="/single-article/:id" element = {<SingleArticle />} />
             <Route path="/history-single-article/:id" element = {<HistorySingleArticle />} />
             <Route path ="/community" element={<Community />} />
+            <Route path = "/musician/:id" element = {<MusicianInfo />} />
+            <Route path = "/band/:id" element = {<BandInfo />} />
+            <Route path = "/other/:id" element = {<OtherInfo />} />
             <Route path = "/musicians" element={<Community />} />
             <Route path="/bands" element={<Community />} />
             <Route path="/other" element={<Community />} />

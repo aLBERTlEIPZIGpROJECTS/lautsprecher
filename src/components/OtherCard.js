@@ -1,6 +1,7 @@
 import fbIcon from "../materials/icons/fbIcon.svg"
 import twIcon from "../materials/icons/twIcon.svg"
 import igIcon from "../materials/icons/igIcon.svg"
+import { Link } from "react-router-dom"
 
 const OtherCard = (props) => {
     return(
@@ -18,9 +19,10 @@ const OtherCard = (props) => {
                     <img src={ fbIcon } alt="facebook" className="iconMed"/>
                     <img src={ twIcon } alt="twitter" className="iconMed"/>
                     <img src={ igIcon } alt="instagram" className="iconMed"/>
-                 {/*    <img src={ mailIcon } alt="mail" className="iconMed"/> */}
-                    {/* <img src={ siteIcon } alt="site" className="iconMed"/> */}
                 </div>
+                <Link to = {`/other/${props.id}`} >
+                    <p>+ Info</p>
+                </Link>
             </div>
             
         </div>

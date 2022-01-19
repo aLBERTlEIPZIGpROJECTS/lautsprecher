@@ -1,26 +1,28 @@
+import { useState } from "react"
 import fbIcon from "../materials/icons/fbIcon.svg"
 import twIcon from "../materials/icons/twIcon.svg"
 import igIcon from "../materials/icons/igIcon.svg"
 
 const PopUp = ( props ) =>{
+
+
     return(
-        <div className= {` ${props.class} popup-card `}>
+        <div className= { `${props.class} ` }>
             <div className="popup-card__img">
                 <img src={ props.img } alt="" className="popup-card__img" />
             </div>
+            <div className="popup-card__right-container">
                 <div className="popup-card__txt">
                     <div className="popup-card__info">
-                        <p className="popup-card__close" >X</p>
                         <h3 className="popup-card__title">{ props.name }</h3>
                         <p>{ props.fname } { props.lname }</p>
                     </div>
                     <div className="popup-card__content">
-                        {/* <p>{ props.inhaber["fname"] }{ props.inhaber["lname"] }</p> */}
                             <p>{ props.rol }</p>
                         <p>{ props.instrument }</p>
                         <p>{ props.style }</p>
                         <p>{ props.member }</p>
-                        <p>{ props.address }</p> {/* change it for a link to a map */}
+                        <p>{ props.address }</p>
                     </div>
                 </div>
                 <div className="social-media-container">
@@ -35,6 +37,7 @@ const PopUp = ( props ) =>{
                     {/*
                     <img src={ siteIcon } alt="site" className="iconMed"/> */}
                 </div>
+            </div>
         </div>
     )
 }

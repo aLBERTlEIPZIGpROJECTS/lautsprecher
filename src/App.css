@@ -443,18 +443,9 @@ blockquote ::after {
 }
 
 a {
-  color: #e6e6e6;
+  color: #4d4d4d;
   font-size: 2.1333333333rem;
   text-decoration: none;
-}
-a:hover {
-  color: unset;
-}
-a:active {
-  color: gray;
-}
-a:focus {
-  color: #e6e6e6;
 }
 
 .web-title {
@@ -615,8 +606,10 @@ a:focus {
 }
 
 .button__red {
-  background-color: #cc0000;
-  color: #e6e6e6;
+  /* background-color: $red; */
+  background-color: #e6e6e6;
+  outline: 1px solid #cc0000;
+  color: #4d4d4d;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
@@ -625,7 +618,9 @@ a:focus {
   outline-offset: -2px;
 }
 .button__orange {
-  background-color: #ffbf00;
+  /* background-color: $orange; */
+  background-color: #e6e6e6;
+  outline: 1px solid #ffbf00;
   color: #4d4d4d;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -635,7 +630,9 @@ a:focus {
   outline-offset: -2px;
 }
 .button__lightblue {
-  background-color: #00AAAA;
+  /* background-color: $lightblue; */
+  background-color: #e6e6e6;
+  outline: 1px solid #00AAAA;
   color: #e6e6e6;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -645,7 +642,9 @@ a:focus {
   outline-offset: -2px;
 }
 .button__violet {
-  background-color: #5500AA;
+  /* background-color: $violet; */
+  background-color: #e6e6e6;
+  outline: 1px solid #5500AA;
   color: #e6e6e6;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -655,7 +654,9 @@ a:focus {
   outline-offset: -2px;
 }
 .button__green {
-  background-color: #00AA2A;
+  /* background-color: $green; */
+  background-color: #e6e6e6;
+  outline: 1px solid #00AA2A;
   color: #e6e6e6;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -665,7 +666,9 @@ a:focus {
   outline-offset: -2px;
 }
 .button__blue {
-  background-color: #002BAA;
+  /* background-color: $blue; */
+  background-color: #e6e6e6;
+  outline: 1px solid #002BAA;
   color: #e6e6e6;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -675,7 +678,9 @@ a:focus {
   outline-offset: -2px;
 }
 .button__lightgreen {
-  background-color: #55AA00;
+  /* background-color: $lightgreen; */
+  background-color: #e6e6e6;
+  outline: 1px solid #55AA00;
   color: #e6e6e6;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -686,6 +691,7 @@ a:focus {
 }
 .button__white {
   background-color: #e6e6e6;
+  outline: 1px solid #1a1a1a;
   color: #4d4d4d;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -695,7 +701,9 @@ a:focus {
   outline-offset: -2px;
 }
 .button__black {
-  background-color: #1a1a1a;
+  /* background-color: $black; */
+  background-color: #e6e6e6;
+  outline: 1px solid #cc0000;
   color: #b3b3b3;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
@@ -705,8 +713,10 @@ a:focus {
   outline-offset: -2px;
 }
 .button__purple {
-  background-color: #AA0080;
-  color: #e6e6e6;
+  /* background-color: $purple; */
+  background-color: #e6e6e6;
+  outline: 1px solid #AA0080;
+  color: #4d4d4d;
   font-size: 2.1333333333rem;
   font-family: "Roboto", sans-serif;
   padding: 0.5em 1em;
@@ -728,10 +738,10 @@ a:focus {
   background-color: #ffbf00;
 }
 .btn__basic:active {
-  background-color: #AA0080;
+  background-color: #55AA00;
 }
 .btn__basic:focus {
-  background-color: #cc0000;
+  background-color: #AA0080;
 }
 
 .go-top__container {
@@ -997,14 +1007,12 @@ input {
 .footer-burger {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: absolute;
 }
 
 .footer-burger-small {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
   left: 85vw;
   z-index: 1500;
@@ -1449,7 +1457,7 @@ input {
   z-index: 100;
 }
 .footer__big {
-  height: 30vh;
+  height: 35vh;
   background-color: #ffbf00;
   position: fixed;
   inset: auto 0 0 0;
@@ -1471,7 +1479,7 @@ input {
   right: -20vw;
   border-radius: 50%;
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh;
 }
 .footer__links-container {
   display: flex;
@@ -1490,12 +1498,13 @@ input {
 .footer-burger__container {
   position: relative;
   bottom: 10vh;
-  left: 35vw;
+  left: 80vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   z-index: 1000;
+  width: 50px;
 }
 .footer-burger__top {
   height: 20px;
@@ -1713,6 +1722,10 @@ section {
   .web-subtitle {
     margin-left: 5vw;
   }
+
+  .footer__big {
+    padding: 0 5vw;
+  }
 }
 @media screen and (min-width: 600px) {
   .content-sec {
@@ -1741,6 +1754,10 @@ section {
       } */
   .web-subtitle {
     margin-left: 4vw;
+  }
+
+  .footer__big {
+    padding: 0 10vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1861,6 +1878,10 @@ section {
   .img__article {
     width: 80vw;
     height: 30vw;
+  }
+
+  .footer__big {
+    padding: 0 15vw;
   }
 }
 @media screen and (min-width: 1280px) {

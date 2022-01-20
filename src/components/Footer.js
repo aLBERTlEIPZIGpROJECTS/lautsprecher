@@ -1,5 +1,11 @@
 import { useState } from "react"
 
+import mail from "../materials/icons/mailIcon.svg"
+import twitter from "../materials/icons/twIcon.svg"
+import facebook from "../materials/icons/fbIcon.svg"
+import instagram from "../materials/icons/igIcon.svg"
+import soundcloud from "../materials/icons/arrow-up.svg"
+
 const Footer = () => {
 
     const [ footerClass, setFooterClass ] = useState("footer__small")
@@ -14,7 +20,7 @@ const Footer = () => {
 
     return(
         
-        <div >
+        <div className="footer">
           <div className = { footerClass }>
               <div className= { maskClass }>
               </div>
@@ -35,6 +41,13 @@ const Footer = () => {
                         <p className="footer-big__txt">Contact</p>
                         <p className="footer-big__txt">About us</p>
                         <p className="footer-big__txt">Impressum</p>
+                    </div>
+                    <div className="footer__links-sub-container">
+
+                        <a href="mailto:mail@lautsprecher.com"><img src={ mail } alt="mail" className="iconMed" /></a>
+                        <a href="https://twitter.com/" target= "_blank"><img src={ twitter } alt="twitter" className="iconMed" /></a>
+                        <a href="https://facebook.com" target= "_blank"><img src={ facebook } alt="facebook" className="iconMed" /></a>
+                        <a href="https://https://www.instagram.com/" target= "_blank"><img src={ instagram } alt="instagram" className="iconMed" /></a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 import mail from "../materials/icons/mailIcon.svg"
 import twitter from "../materials/icons/twIcon.svg"
@@ -31,19 +32,18 @@ const Footer = () => {
                   </div>
                 <div className={`footer__links-container`}>
                     <div className="footer__links-sub-container">
-                        <p className="footer-big__txt">Home</p>
-                        <p className="footer-big__txt">Events</p>
-                        <p className="footer-big__txt">Community</p>
-                        <p className="footer-big__txt">Articles</p>
+                        <Link to = "/" className="footer-big__txt">Home</Link>
+                        <Link to = "/events" className="footer-big__txt">Events</Link>
+                        <Link to = "/community" className="footer-big__txt">Community</Link>
+                        <Link to = "/articles" className="footer-big__txt">Articles</Link>
                     </div>
                     <div className="footer__links-sub-container">
-                        <p className="footer-big__txt">History</p>
-                        <p className="footer-big__txt">Contact</p>
-                        <p className="footer-big__txt">About us</p>
-                        <p className="footer-big__txt">Impressum</p>
+                        <Link to = "/history-articles" className="footer-big__txt">History</Link>
+                        <Link to = "/contact" className="footer-big__txt">Contact</Link>
+                        <Link to = "/about" className="footer-big__txt">About us</Link>
+                        <Link to = "/impressum" className="footer-big__txt">Impressum</Link>
                     </div>
                     <div className="footer__links-sub-container">
-
                         <a href="mailto:mail@lautsprecher.com"><img src={ mail } alt="mail" className="iconMed" /></a>
                         <a href="https://twitter.com/" target= "_blank"><img src={ twitter } alt="twitter" className="iconMed" /></a>
                         <a href="https://facebook.com" target= "_blank"><img src={ facebook } alt="facebook" className="iconMed" /></a>

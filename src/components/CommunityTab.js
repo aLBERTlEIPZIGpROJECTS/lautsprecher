@@ -8,7 +8,7 @@ const CommunityTab = (props) => {
 
 
     useEffect(() => {
-      fetch( props.url )
+      fetch( "http://localhost:4000/user1" )
         .then(res => {
           return res.json()
         })

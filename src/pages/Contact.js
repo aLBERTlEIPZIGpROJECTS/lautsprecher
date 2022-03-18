@@ -46,10 +46,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-{/* 
-                <div className="user-interaction">
-                    <p>Hi there</p>
-                </div> */}
+                <button>Send</button>
             </form>
             </div>
             <GoTopBtn />

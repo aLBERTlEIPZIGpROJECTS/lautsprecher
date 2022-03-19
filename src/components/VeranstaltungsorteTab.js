@@ -2,12 +2,12 @@ import { useState } from "react"
 import OtherCard from "../components/OtherCard"
 import useFetch from "../useFetch"
 
-const OtherTab = (props) => {
+const VeranstaltungsorteTab = (props) => {
     const { data, isLoading, error } = useFetch("http://localhost:8000/veranstaltungsorte")
     const [ searchTerm, setSearchTerm ] = useState ("")
     
     return(
-      <div className= "other-tab" >
+      <div className= "veranstaltungsorte-tab" >
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
@@ -26,4 +26,4 @@ const OtherTab = (props) => {
     )
 }
 
-export default OtherTab
+export default VeranstaltungsorteTab

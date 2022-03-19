@@ -26,6 +26,9 @@ import SignupVeranstaltungsort from "./pages/SignupVeranstaltungsort";
 import SignupMusicbusiness from "./pages/SignupMusicbusiness";
 import SignupBand from "./pages/SignupBand";
 import SignupTeamMember from "./pages/SignupTeamMember";
+import SingleMusicBusiness from "./pages/SingleMusicBusiness"
+import SingleMusicVeranstaltungsort from "./pages/SingleVeranstaltungsort";
+
 /* import CMS from "./pages/CMS" */
 
 function App() {
@@ -59,13 +62,15 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/impressum" element={<Impressum />} />
-            <Route exact path="/signupmusician" element={<SignupMusician />} />
-            <Route exact path="/signupmusicbusiness" element={<SignupMusicbusiness />} />
-            <Route exact path="/signupveranstaltungsort" element={<SignupVeranstaltungsort />} />
-            <Route exact path="/signupband" element={<SignupBand />} />
-            <Route exact path="/signupteammember" element={<SignupTeamMember />} />
-            <Route exact path="/writearticle" element={<WriteArticle />} />
-            <Route exact path="/postaconcert" element={<PostAConcert />} />
+            <Route path="/signupmusician" element={<SignupMusician />} />
+            <Route path="/signupmusicbusiness" element={<SignupMusicbusiness />} />
+            <Route path="/signupveranstaltungsort" element={<SignupVeranstaltungsort />} />
+            <Route path="/signupband" element={<SignupBand />} />
+            <Route path="/signupteammember" element={<SignupTeamMember />} />
+            <Route path="/writearticle" element={<WriteArticle />} />
+            <Route path="/postaconcert" element={<PostAConcert />} />
+            <Route path="/singlemusicbusiness" element={<SingleMusicBusiness />} />
+            <Route path="/singleveranstaltungsort" element={<SingleMusicVeranstaltungsort />} />
             {/* <Route exact path="/cms" element={<CMS />} /> */}
             <Route exact path="/" element={<LandingPage />} />
           </Routes>

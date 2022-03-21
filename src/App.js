@@ -4,22 +4,22 @@
 import './App.css';
 
 import About from "./pages/About"
-import Articles from "./pages/Articles"
+import Articles from "./pages/ActualArticlesList"
 import SingleArticle from './pages/SingleArticle'
 import Contact from "./pages/Contact"
-import Events from "./pages/Events"
+import Events from "./pages/ConcertsList.js"
 import LandingPage from "./pages/LandingPage"
 import Impressum from "./pages/Impressum"
 import Community from "./pages/Community"
-import HistoryArticles from './pages/HistoryArticles'
+import HistoryArticles from './pages/HistoryArticlesList'
 import HistorySingleArticle from "./pages/HistorySingleArticle"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import EventInfo from "./pages/EventInfo";
-import MusicianInfo from "./pages/MusicianInfo";
-import BandInfo from "./pages/BandInfo";
+import EventInfo from "./pages/SingleConcert";
+import MusicianInfo from "./pages/SingleMusician";
+import BandInfo from "./pages/SingleBand";
 import OtherInfo from "./pages/OtherInfo";
-import WriteArticle from "./pages/WriteArticle";
+import WriteArticle from "./pages/PostArticle";
 import PostAConcert from "./pages/PostAConcert";
 import SignupMusician from "./pages/SignupMusician";
 import SignupVeranstaltungsort from "./pages/SignupVeranstaltungsort";
@@ -28,6 +28,7 @@ import SignupBand from "./pages/SignupBand";
 import SignupTeamMember from "./pages/SignupTeamMember";
 import SingleMusicBusiness from "./pages/SingleMusicBusiness"
 import SingleMusicVeranstaltungsort from "./pages/SingleVeranstaltungsort";
+import TestPage from "./pages/TestPage";
 
 /* import CMS from "./pages/CMS" */
 
@@ -46,6 +47,7 @@ function App() {
       <main className="body">
         <div className="content">
           <Routes>
+            <Route path="/test" element={<TestPage />} />
             <Route path="/events" element={<Events />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/history-articles" element = {<HistoryArticles />} />
@@ -72,6 +74,7 @@ function App() {
             <Route path="/singlemusicbusiness" element={<SingleMusicBusiness />} />
             <Route path="/singleveranstaltungsort" element={<SingleMusicVeranstaltungsort />} />
             {/* <Route exact path="/cms" element={<CMS />} /> */}
+            <Route exact path="/test" element={<TestPage />} />
             <Route exact path="/" element={<LandingPage />} />
           </Routes>
         </div>

@@ -8,19 +8,18 @@ const About = () => {
     
     const [team, setTeam] = useState(null)
 
-
-    const today = new Date()
-    const weekday = today.getDay()
-    console.log(weekday)
-
+    
     useEffect(() => {
-        fetch("http://localhost:8000/team")
-            .then(res => {
-                return res.json()
-            })
-            .then (data => {
-                setTeam(data)
-            })
+        fetch("http://localhost:4000")
+        .then(res => {
+            res.json()
+        })
+        
+        .then(data => {
+            setTeam(data)
+        })
+        
+            .catch(err => console.log(err))
     }, [])
 
 
@@ -47,7 +46,7 @@ const About = () => {
                      <h2>Team</h2>
                  {
                     team && team.map((person) => (
-                        <CommunityCard fname = { person.fname } lname = { person.lname } rol = { person.rol } id = { person.id } img = { person.img } key = { person.id }/>
+                        <CommunityCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id } img = { person.img } key = { person.id }/>
                     ))}       
                 </div>
             <GoTopBtn />

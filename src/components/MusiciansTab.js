@@ -5,7 +5,7 @@ import MusicianCard from "../components/MusicianCard"
 
 const MusiciansTab = ( props ) => {
 
-    const { data, isLoading, error } = useFetch("http://localhost:8000/musicians")
+    const { data, isLoading, error } = useFetch("http://localhost:4000/api/musicians")
     const [ searchTerm, setSearchTerm ] = useState("")
 
     return(

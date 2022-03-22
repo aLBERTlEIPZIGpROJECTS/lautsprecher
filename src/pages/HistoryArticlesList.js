@@ -8,8 +8,9 @@ import GoTopBtn from "../components/GoTopBtn"
 
 const HistoryArticles = () => {
 
+    const url = "http://localhost:5000/api/historyarticle"
 
-    const { data, isLoading, error } = useFetch("http://localhost:5000/historyarticles")
+    const { data, isLoading, error } = useFetch(url)
 
     return(
         <div className="articles__container content">

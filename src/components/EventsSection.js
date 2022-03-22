@@ -5,7 +5,8 @@ import EventCard from "./EventCard"
 
 const EventsSection = (props) => {
 
-    const { data, isLoading, error } = useFetch("http://localhost:8000/concerts")
+    const url = "http://localhost:5000/api/concert"
+    const { data, isLoading, error } = useFetch(url)
     const [ searchTerm, setSearchTerm ] = useState("")
 
     return(

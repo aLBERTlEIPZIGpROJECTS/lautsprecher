@@ -5,7 +5,8 @@ import MusicianCard from "../components/MusicianCard"
 
 const MusiciansTab = ( props ) => {
 
-    const { data, isLoading, error } = useFetch("http://localhost:4000/api/musicians")
+    const url = "http://localhost:5000/api/musician"
+    const { data, isLoading, error } = useFetch(url)
     const [ searchTerm, setSearchTerm ] = useState("")
 
     return(
@@ -22,7 +23,7 @@ const MusiciansTab = ( props ) => {
                       return val
                   }
               }).map((musician) => (
-                    <MusicianCard fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } bands = { musician.bands } fb = { musician.fb } tw = { musician.tw} ig = { musician.ig} sc = { musician.sc }  key = { musician.id } img = { musician.img } id = { musician.id }/>
+                    <MusicianCard  key = { musician.id } fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } bands = { musician.bands } fb = { musician.fb } tw = { musician.tw} ig = { musician.ig} sc = { musician.sc }  img = { musician.img } id = { musician.id }/>
                 ))
             }
         </div>

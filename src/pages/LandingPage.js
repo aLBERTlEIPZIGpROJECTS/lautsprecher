@@ -10,8 +10,8 @@ import GoTopBtn from "../components/GoTopBtn"
 
 const Home = () => {
 
-
-    const { data, isLoading, error } = useFetch("http://localhost:8000/articles")
+    const url = "http://localhost:5000/api/actualarticle"
+    const { data, isLoading, error } = useFetch(url)
 
     return(
         <div className="landing-page">
@@ -21,7 +21,7 @@ const Home = () => {
             <Blob class = "blob__orange blob-high" />
             <h1>Lautsprecher</h1>
 
-            <EventsSection title = "Today"/>
+            {/* <EventsSection title = "Today"/> */}
             <Button txt = "+ events" link ="/events" className="button__orange" />
 
             <div className="content-main">

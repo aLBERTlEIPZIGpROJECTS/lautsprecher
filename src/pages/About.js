@@ -1,5 +1,6 @@
 import TeamCard from "../components/TeamCard"
 import { useState, useEffect } from "react"
+import useFetch from "../useFetch";
 import CommunityCard from "../components/CommunityCard"
 import Blob from "../components/Blob";
 import GoTopBtn from "../components/GoTopBtn"
@@ -8,20 +9,9 @@ const About = () => {
     
     const [team, setTeam] = useState(null)
 
-    
-    useEffect(() => {
-        fetch("http://localhost:4000")
-        .then(res => {
-            res.json()
-        })
-        
-        .then(data => {
-            setTeam(data)
-        })
-        
-            .catch(err => console.log(err))
-    }, [])
+    const url = "http://localhost:5000/api/team"
 
+    const { data, isLoading, error } = useFetch(url)
 
     return(
         <div className="about">
@@ -45,7 +35,7 @@ const About = () => {
                  <div className="team">
                      <h2>Team</h2>
                  {
-                    team && team.map((person) => (
+                    data && data.map((person) => (
                         <CommunityCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id } img = { person.img } key = { person.id }/>
                     ))}       
                 </div>

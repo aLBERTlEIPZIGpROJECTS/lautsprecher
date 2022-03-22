@@ -1,26 +1,33 @@
-import EventCard from "../components/EventCard"
-import { useState, useEffect } from "react"
-import Blob from "../components/Blob"
+import { useState } from "react"
 import useFetch from "../useFetch"
-import EventsSection from "../components/EventsSection"
-import GoTopBtn from "../components/GoTopBtn"
 
-const Events = () => {
+import EventCard from "../components/EventCard"
 
-    const { data, isLoading, error } = useFetch("http://localhost:8000/concerts")
-   
+const EventsList = ( props ) => {
+
+    const url = "http://localhost:5000/api/concert"
+    const { data, isLoading, error } = useFetch(url)
+    const [ searchTerm, setSearchTerm ] = useState("")
 
     return(
-        <div className="events">
+        <div className= {`${ props.class}`} >
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
-            
-            <Blob class = "blob__orange blob-high"/>
-            <h1>Events</h1>
-            <EventsSection />
-            <GoTopBtn />
+            <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
+
+            {
+              data &&  data.filter((val) => {
+                  if(searchTerm === ""){
+                      return val
+                  } else if(val.fname.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())){
+                      return val
+                  }
+              }).map((concert) => (
+                    <EventCard  key = { concert.id } concertTitle = {concert.title} bandName = { concert.band} musician = {concert.musician} style = { concert.style} place = { concert.place } time = { concert.time } duration = { concert.duration } cost = { concert.cost } tickets = { concert.tickets} image = { concert.image } id = { concert.id }/>
+                ))
+            }
         </div>
     )
 }
 
-export default Events
+export default EventsList

@@ -30,7 +30,7 @@ import SingleMusicBusiness from "./pages/SingleMusicBusiness"
 import SingleMusicVeranstaltungsort from "./pages/SingleVeranstaltungsort";
 import TestPage from "./pages/TestPage";
 
-/* import CMS from "./pages/CMS" */
+import CMS from "./pages/CMS"
 
 function App() {
 
@@ -73,7 +73,7 @@ function App() {
             <Route path="/postaconcert" element={<PostAConcert />} />
             <Route path="/singlemusicbusiness" element={<SingleMusicBusiness />} />
             <Route path="/singleveranstaltungsort" element={<SingleMusicVeranstaltungsort />} />
-            {/* <Route exact path="/cms" element={<CMS />} /> */}
+            <Route exact path="/cms" element={<CMS />} />
             <Route exact path="/test" element={<TestPage />} />
             <Route exact path="/" element={<LandingPage />} />
           </Routes>

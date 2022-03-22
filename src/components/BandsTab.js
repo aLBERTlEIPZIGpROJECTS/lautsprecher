@@ -4,7 +4,9 @@ import BandCard from "../components/BandCard"
 import useFetch from "../useFetch"
 
 const BandsTab = ( props ) => {
-    const { data, isLoading, error } = useFetch("http://localhost:8000/bands")
+
+    const url = "http://localhost:5000/api/band"
+    const { data, isLoading, error } = useFetch(url)
     const [ searchTerm, setSearchTerm ] = useState("")
 
     return(

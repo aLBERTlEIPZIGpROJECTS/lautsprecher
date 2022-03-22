@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import { Link } from "react-router-dom";
 import MusiciansTab from "../components/MusiciansTab";
 import BandsTab from "../components/BandsTab";
@@ -45,7 +46,7 @@ const Community = () => {
             <div className="tabs-container">
                 { activeTab === "musicians" && <MusiciansTab class = "activeTab" />}
                 { activeTab === "bands" && <BandsTab  class = "activeTab"/> }
-                { activeTab === "musicbusiness" && <MusicbusinessTab  class = "activeTab"/> }
+                { activeTab === "others" && <MusicbusinessTab  class = "activeTab"/> }
                 { activeTab === "veranstaltungsorte" && <VeranstaltungsorteTab  class = "activeTab"/> }
             </div>
             <GoTopBtn />

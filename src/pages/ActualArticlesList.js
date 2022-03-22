@@ -7,8 +7,11 @@ import GoTopBtn from "../components/GoTopBtn"
         
 const Articles = () => {
     
-    const { data, isLoading, error } = useFetch("http://localhost:8000/articles")
+    const url = "http://localhost:5000/api/actualarticle"
+    const { data, isLoading, error } = useFetch(url)
     const [ searchTerm, setSearchTerm ] = useState("")
+
+
 
     return (
         <div className="articles_container content">

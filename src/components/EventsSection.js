@@ -25,8 +25,8 @@ const EventsSection = (props) => {
                         } else if (val.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())){
                             return val
                         }
-                    }).map((event) => (
-                        <EventCard eventName = { event.title } musician = { event.musician } date = { event.date } venue = { event.venue } img = { event.img } cost = { event.cost } links = { event.links } info = { event.info } key = { event.id } id = { event.id }/>
+                    }).map((concert) => (
+                        <EventCard number={concert.number} PLZ={concert.PLZ} street={concert.street} veranstaltungsort={concert.veranstaltungsort} bands={concert.bands} concertTitle = { concert.concertTitle } cost = { concert.cost }  date = { concert.date } duration={concert.duration} image={concert.image} musicians = { concert.musicians } style={concert.style} tickets={concert.tickets} key = { concert.id } id = { concert.id }/>
                         ))
                 }
             </div>

@@ -33,16 +33,22 @@ const VeranstaltungsorteTab = (props) => {
           })
           .map((place) => (
             <OtherCard
-              name={place.name}
-              address={place.address}
-              phone={place.phone}
-              site={place.site}
-              fb={place.fb}
-              tw={place.tw}
-              ig={place.ig}
-              mail={place.mail}
-              img={place.img}
-              key={place.id}
+            street={place.street}
+            number={place.number}
+            PLZ={place.PLZ}
+            concerts={place.concerts}
+            image={place.image}
+            inhaber={place.inhaber}
+            mail={place.mail}
+            phone={place.phone}
+            placeName={place.name}
+            fb={place.fb}
+            ig={place.ig}
+            tw={place.tw}
+            sc={place.sc}
+            yt={place.yt}
+            twitch={place.twitch}
+            website={place.website}
             />
           ))}
     </div>

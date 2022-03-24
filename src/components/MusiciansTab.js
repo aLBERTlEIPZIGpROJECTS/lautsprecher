@@ -23,7 +23,7 @@ const MusiciansTab = ( props ) => {
                       return val
                   }
               }).map((musician) => (
-                    <MusicianCard  key = { musician.id } fname = {musician.fname} lname = { musician.lname} instrument = { musician.instrument } style = { musician.style} mail = { musician.mail } phone = { musician.phone } bands = { musician.bands } fb = { musician.fb } tw = { musician.tw} ig = { musician.ig} sc = { musician.sc }  img = { musician.img } id = { musician.id }/>
+                    <MusicianCard  key = { musician.id } fName = {musician.fName} lName = { musician.lName} instruments = { musician.instruments } style = { musician.style} email = { musician.email } phone = { musician.phone } bands = { musician.bands } fb = { musician.fb } tw = { musician.tw} ig = { musician.ig} sc = { musician.sc } yt = { musician.yt } in = { musician.sc } twitch = { musician.twitch } image = { musician.image } id = { musician.id }/>
                 ))
             }
         </div>

@@ -6,8 +6,8 @@ import Blob from "../components/Blob";
 import GoTopBtn from "../components/GoTopBtn";
 
 const Contact = () => {
-  const [fname, setFName] = useState("");
-  const [lname, setLName] = useState("");
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
   const [mail, setMail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
@@ -18,11 +18,14 @@ const Contact = () => {
   };
   
     const addSubscriber = async () => {
-        const url = "http://localhost:5000/api/subscriber"
+      /* const subscriber = { fName, lName, mail } */
+      /* console.log(subscriber) */
+
+        const url = "http://localhost:5000/api/subscribers"
         await fetch (url, {
             method : "POST",
             headers : { "Content-Type" : "application/json"},
-            body : JSON.stringify({ fname, lname, mail })
+            body : JSON.stringify({fName, lName, mail})
     })}
 
   return (
@@ -41,7 +44,9 @@ const Contact = () => {
             maxlength="30"
             required
             id="userfname"
+            value = {fName}
             onChange={(v) => setFName(v.target.value)}
+
           />
           <FormField
             pholder="Last Name"
@@ -51,6 +56,7 @@ const Contact = () => {
             maxlength="30"
             required
             id="userlname"
+            value={lName}
             onChange={(v) => setLName(v.target.value)}
           />
 
@@ -63,6 +69,8 @@ const Contact = () => {
                 class="label-shadow"
                 maxlength="30"
                 onChange={(v) => setMail(v.target.value)}
+                id="mail"
+                value={mail}
               />
               <FormField
                 pholder="Phone"
@@ -71,6 +79,8 @@ const Contact = () => {
                 class="label-shadow"
                 maxlength="30"
                 onChange={(v) => setPhone(v.target.value)}
+                id="phone"
+                value={phone}
               />
             </div>
           }
@@ -84,6 +94,8 @@ const Contact = () => {
               cols="50"
               rows="6"
               onChange={(v) => setMessage(v.target.value)}
+              id="message"
+              value={message}
             />
           </div>
 
@@ -97,7 +109,8 @@ const Contact = () => {
               txt="Send"
               linkName="send"
               className="button__orange button__send"
-              link=""
+              /* link="" */
+              onClick={addSubscriber}
             />
           </div>
 
@@ -113,9 +126,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <button type="submit" onClick={addSubscriber}>
+         {/*  <button type="submit" onClick={addSubscriber}>
             Send
-          </button>
+          </button> */}
         </form>
       </div>
       <GoTopBtn />

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-
+import LoginField from "./LoginField"
 import BurgerMenu from "./BurgerMenu"
 
 const Header = ( props ) => {
@@ -19,6 +19,7 @@ const Header = ( props ) => {
             </Link>
             </div>
             <div className="header__bot">
+                <LoginField />
                 <BurgerMenu />
             </div>
             

@@ -9,16 +9,14 @@ const CommunityCard = (props) =>{
            
            <div className="community-card__txt">
                <div className="community-card__info">
-                <h3>{ props.name }</h3>
+                <h3>{ props.businessName } { props.bandName } {props.placeName}</h3>
                 <p>{ props.fname } { props.lname }</p>
-                <p>{ props.rol } </p>
+                <p>{ props.role } </p>
                </div>
                <div className="community-card__content">
-                   <p>{ props.instrument }</p>
+                   <p>{ props.instruments }</p>
                    <p>{ props.style }</p>
-                   
-                   <p>{ props.member }</p>
-                   <p>{ props.address }</p>
+                   <p>{ props.street }, {props.number}, {props.PLZ}</p>
                </div>
            </div>
            <div className="social-media-container">

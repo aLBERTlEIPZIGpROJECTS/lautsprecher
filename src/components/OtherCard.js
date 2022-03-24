@@ -7,14 +7,14 @@ import igIcon from "../materials/icons/igIcon.svg";
 const OtherCard = (props) => {
   return (
     <div className="community-card" key={props.key}>
-      <img src={props.img} alt={props.name} className="img__band" />
+      <img src={props.image} alt={props.businessName} className="img__band" />
 
       <div className="community-card__txt">
-        <h3>{props.name}</h3>
+        <h3>{props.businessName}</h3>
         <div className="community-card__content">
-          <p>{props.address}</p>
+          <p>{props.street}{props.number}{props.PLZ}</p>
           <p>{props.phone}</p>
-          <p>{props.site}</p>
+          <p>{props.website}</p>
         </div>
         <div className="social-media-container">
           <img src={fbIcon} alt="facebook" className="iconMed" />

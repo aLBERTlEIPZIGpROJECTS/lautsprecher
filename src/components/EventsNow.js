@@ -16,8 +16,8 @@ const EventsNow = () => {
 
             <div className="events__card-container">
                 {
-                    data && data.map((event) => (
-                        <EventCard eventName = { event.title } musician = { event.musician } date = { event.date } venue = { event.venue } img = { event.img } cost = { event.cost } links = { event.links } info = { event.info } key = { event.id }/>
+                    data && data.map((concert) => (
+                        <EventCard concertTitle = { concert.concertTitle } number={concert.number} PLZ={concert.PLZ} street={concert.street} bands={concert.bands} veranstaltungsort={concert.veranstaltungsort} cost={concert.cost} date={concert.date} duration={concert.duration} image ={concert.image}  musicians = { concert.musicians } style={concert.style} tickets={concert.tickets} key = { concert.id }/>
                         ))
                 }
             </div>

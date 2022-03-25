@@ -46,7 +46,6 @@ function App() {
       <main className="body">
         <div className="content">
           <Routes>
-            <Route path="/test" element={<TestPage />} />
             <Route path="/events" element={<Events />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/history-articles" element = {<HistoryArticles />} />

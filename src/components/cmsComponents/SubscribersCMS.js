@@ -14,14 +14,12 @@ const BandsCMS = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <Blob className = "blob__lightblue blob-high" />
             <h1>All Bands</h1>
                 {
                    data && data.map((subscriber) => (
                         <CardCMS approved = {subscriber.approved} id = { subscriber.id } key = { subscriber.id } fName = {subscriber.fName} lName = {subscriber.lName} mail = {subscriber.mail} />
                     ))
                 }
-                <GoTopBtn />
 
         </div>
     )

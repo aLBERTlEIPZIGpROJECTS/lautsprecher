@@ -14,14 +14,12 @@ const BandsCMS = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <Blob className = "blob__lightblue blob-high" />
             <h1>All Concerts</h1>
                 {
                    data && data.map((concert) => (
                         <CardCMS approved = {concert.approved} id = { concert.id } key = { concert.id } address = {concert.address} concertTitle = {concert.concertTitle} cost = {concert.cost} date = {concert.date} duration={concert.duration} image={concert.image} musicians = {concert.musicians} style = {concert.style} tickets = {concert.tickets} veranstaltungsort = {concert.veranstaltungsort} />
                     ))
                 }
-                <GoTopBtn />
 
         </div>
     )

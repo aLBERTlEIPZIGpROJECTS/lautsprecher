@@ -19,7 +19,7 @@ const Header = ( props ) => {
             </Link>
             </div>
             <div className="header__bot">
-                <LoginField />
+                {/* <LoginField /> */}
                 <BurgerMenu />
             </div>
             

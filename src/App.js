@@ -29,7 +29,6 @@ import SignupTeamMember from "./pages/SignupTeamMember";
 import SingleMusicBusiness from "./pages/SingleMusicBusiness"
 import SingleMusicVeranstaltungsort from "./pages/SingleVeranstaltungsort";
 import TestPage from "./pages/TestPage";
-
 import CMS from "./pages/CMS"
 
 function App() {

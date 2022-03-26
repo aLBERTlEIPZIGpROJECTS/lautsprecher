@@ -22,7 +22,7 @@ const CommunityTab = (props) => {
       <h2>{ props.title }</h2>
       {
         data &&  data.map((person) => (
-              <CommunityCard fname = {person.fname} lname = { person.lname} instruments = { person.instruments } style = { person.style} number={person.number} PLZ={person.PLZ} street={person.street} mail = { person.mail } phone = { person.phone } fb = { person.fb } tw = { person.tw}  ig = { person.ig} sc = { person.sc} yt={person.yt} twitch={person.twitch} website = { person.website } image = { person.image }  key = { person.id } role={person.role}/>
+              <CommunityCard fName = {person.fName} lName = { person.lName} instruments = { person.instruments } style = { person.style} number={person.number} PLZ={person.PLZ} street={person.street} mail = { person.mail } phone = { person.phone } socialMedia = {person.socialMedia} website = { person.website } image = { person.image }  key = { person.id } role={person.role}/>
           ))
       }
   </div>

@@ -1381,6 +1381,10 @@ input {
   padding: 0 20px;
 }
 
+.login-field__input {
+  background-color: red;
+}
+
 :root {
   font-size: 10px;
 }
@@ -1713,6 +1717,27 @@ section {
   margin: 5vh 0;
 }
 
+.cms__select-category {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.cms__select-option {
+  margin: 0.5em 0;
+  background-color: white;
+}
+.cms__card {
+  border: 1px solid black;
+}
+.cms__field {
+  display: flex;
+  align-items: center;
+}
+.cms__edit-btn {
+  margin-left: 0.5em;
+  height: fit-content;
+}
+
 @media screen and (min-width: 360px) {
   .web-subtitle {
     margin-left: 6vw;
@@ -1942,4 +1967,4 @@ section {
     basic: Iphone5		320 
 */
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=App.css.map */

@@ -1,9 +1,8 @@
 const CMSField = (props) => {
     return(
-        <div className="cms-field">
+        <div className="cms__field">
             <p>{props.content}</p>
-            <button>edit</button>
-            <button>delete</button>
+            <button className="cms__edit-btn">edit</button>
         </div>
     )
 }

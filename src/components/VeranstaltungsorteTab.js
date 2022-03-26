@@ -42,12 +42,7 @@ const VeranstaltungsorteTab = (props) => {
             mail={place.mail}
             phone={place.phone}
             placeName={place.name}
-            fb={place.fb}
-            ig={place.ig}
-            tw={place.tw}
-            sc={place.sc}
-            yt={place.yt}
-            twitch={place.twitch}
+            socialMedia = {place.socialMedia}
             website={place.website}
             />
           ))}

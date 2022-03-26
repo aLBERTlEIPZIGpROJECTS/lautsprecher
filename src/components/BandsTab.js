@@ -24,7 +24,7 @@ const BandsTab = ( props ) => {
                   return val
                 }
               }).map((band) => (
-                    <BandCard bandName = { band.bandName } concert={band.concerts} style = { band.style} mail = { band.mail } phone = { band.phone } website = { band.website } musicians = { band.musicians } image = { band.image } key = { band.id } id = { band.id } fb={band.fb} ig={band.ig} tw={band.tw} sc={band.sc} yt={band.yt} in={band.in} twitch={band.twitch} vorsitzender={band.vorsitzender}  />
+                    <BandCard bandName = { band.bandName } concerts = {band.concerts} image = { band.image } mail = { band.mail } musicians = { band.musicians } socialMedia = {band.socialMedia}  style = { band.style} website = { band.website }  key = { band.id } id = { band.id } />
                 ))
             }
         </div>

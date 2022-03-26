@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom"
-
-import fbIcon from "../materials/icons/fbIcon.svg"
-import twIcon from "../materials/icons/twIcon.svg"
-import igIcon from "../materials/icons/igIcon.svg"
+import SocialMedia from "./SocialMedia"
 
 const BandCard = (props) => {
 
@@ -15,17 +12,14 @@ const BandCard = (props) => {
                 <h3>{ props.bandName }</h3>
             <div className="community-card__content">
                 <p>{ props.style }</p>
-                
+                <p>{props.musicians}</p>
+                <p>{props.concerts}</p>
             </div>
-            <div className="social-media-container">
-                    <img src={ fbIcon } alt="facebook" className="iconMed"/>
-                    <img src={ twIcon } alt="twitter" className="iconMed"/>
-                    <img src={ igIcon } alt="instagram" className="iconMed"/>
-          
-                </div>
-                <Link to = {`/band/${props.id}`} >
-                    <p>+ Info</p>
-                </Link>
+            <SocialMedia socialMedia = {props.socialMedia} />
+
+            <Link to = {`/band/${props.id}`} >
+                <p>+ Info</p>
+            </Link>
             </div>
             
         </div>

@@ -9,11 +9,10 @@ const EventCard = (props) => {
                 <div className="event-card__block">
                     <h3 className="event-card__title">{ props.concertTitle }</h3>
                     <p className="event-card__txt">{ props.veranstaltungsort }</p>
-                    <p className="event-card__txt">{ props.street }, {props.number}, {props.PLZ}</p>
+                    <p className="event-card__txt">{ props.street }, {props.number}, {props.PLZ}</p> {/* address */}
                     <p className="event-card__txt">{ props.bands }</p>
                     <p className="event-card__txt">{ props.musicians }</p>
                     <p className="event-card__txt">{ props.style }</p>
-                    <p className="event-card__txt">{ props.place }</p>
                     <p className="event-card__txt">{ props.date }</p>
                     <p className="event-card__txt">{ props.cost }</p>
                     <p className="event-card__txt">{ props.duration }</p>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import SocialMedia from "./SocialMedia"
 
 const MusicianCard = (props) => {
 
@@ -7,11 +8,16 @@ const MusicianCard = (props) => {
             <img src={ props.image } alt={ props.fName } className="img__band"/>
             
             <div className="community-card__txt">
-                <h3 className="community-card__tittle">{ props.fName } { props.lName }</h3>
+                <h2 className="community-card__tittle">{ props.fName } { props.lName }</h2>
                 <div className="community-card__content">
-                    <p>{ props.instruments }</p>
+
+                    {props.instruments && props.instruments.map((instrument) => (
+                        <p>instrument</p>
+                    ))}
                     <p>{ props.style }</p>
+                    <p>{props.bands}</p>
                 </div>
+                <SocialMedia socialMedia = {props.socialMedia} />
                  <Link to = {`/musician/${props.id}`} >
                     <p>+ Info</p>
                 </Link>

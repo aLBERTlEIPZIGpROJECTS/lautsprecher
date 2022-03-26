@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-
-import fbIcon from "../materials/icons/fbIcon.svg";
-import twIcon from "../materials/icons/twIcon.svg";
-import igIcon from "../materials/icons/igIcon.svg";
+import SocialMedia from "../components/SocialMedia"
+import webIcon from "../materials/icons/web-icon.svg"
+import mailIcon from "../materials/icons/mailIcon.svg"
 
 const OtherCard = (props) => {
   return (
@@ -15,12 +14,9 @@ const OtherCard = (props) => {
           <p>{props.street}{props.number}{props.PLZ}</p>
           <p>{props.phone}</p>
           <p>{props.website}</p>
+          <p>{props.mail}</p>
         </div>
-        <div className="social-media-container">
-          <img src={fbIcon} alt="facebook" className="iconMed" />
-          <img src={twIcon} alt="twitter" className="iconMed" />
-          <img src={igIcon} alt="instagram" className="iconMed" />
-        </div>
+        <SocialMedia socialMedia = {props.socialMedia} />
         <Link to={`/other/${props.id}`}>
           <p>+ Info</p>
         </Link>

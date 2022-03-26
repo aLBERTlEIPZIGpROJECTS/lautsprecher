@@ -1,6 +1,4 @@
-import fbIcon from "../materials/icons/fbIcon.svg"
-import twIcon from "../materials/icons/twIcon.svg"
-import igIcon from "../materials/icons/igIcon.svg"
+import SocialMedia from "./SocialMedia"
 
 const CommunityCard = (props) =>{
     return(
@@ -10,7 +8,7 @@ const CommunityCard = (props) =>{
            <div className="community-card__txt">
                <div className="community-card__info">
                 <h3>{ props.businessName } { props.bandName } {props.placeName}</h3>
-                <p>{ props.fname } { props.lname }</p>
+                <p>{ props.fName } { props.lName }</p>
                 <p>{ props.role } </p>
                </div>
                <div className="community-card__content">
@@ -19,11 +17,7 @@ const CommunityCard = (props) =>{
                    <p>{ props.street }, {props.number}, {props.PLZ}</p>
                </div>
            </div>
-           <div className="social-media-container">
-                   <img src={ fbIcon } alt="facebook" className="iconMed"/>
-                   <img src={ twIcon } alt="twitter" className="iconMed"/>
-                   <img src={ igIcon } alt="instagram" className="iconMed"/>
-               </div>
+           <SocialMedia socialMedia = {props.socialMedia} />
         </div>
     )
 }

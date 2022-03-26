@@ -72,7 +72,7 @@ function App() {
             <Route path="/singlemusicbusiness" element={<SingleMusicBusiness />} />
             <Route path="/singleveranstaltungsort" element={<SingleMusicVeranstaltungsort />} />
             <Route exact path="/cms" element={<CMS />} />
-            <Route exact path="/test" element={<TestPage />} />
+            {/* <Route exact path="/test" element={<TestPage />} /> */}
             <Route exact path="/" element={<LandingPage />} />
           </Routes>
         </div>

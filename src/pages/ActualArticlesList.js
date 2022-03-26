@@ -31,7 +31,7 @@ const Articles = () => {
                 }).map((article) => (
                     
                     <Link to = {`/single-article/${article.id}`} >
-                        <ArticleCard title = { article.title} id = { article.id } key = { article.id } />
+                        <ArticleCard title = { article.articleTitle} id = { article.id } key = { article.id } />
                     </Link>
                     
                 ))

@@ -23,7 +23,7 @@ const EventsList = ( props ) => {
                       return val
                   }
               }).map((concert) => (
-                    <EventCard  key = { concert.id } concertTitle = {concert.title} bandName = { concert.band} musician = {concert.musician} style = { concert.style} place = { concert.place } time = { concert.time } duration = { concert.duration } cost = { concert.cost } tickets = { concert.tickets} image = { concert.image } id = { concert.id }/>
+                    <EventCard  key = { concert.id } address = {concert.address}  concertTitle = {concert.title} bands = { concert.bands} cost = {concert.cost} date = {concert.date} duration = {concert.duration} image = {concert.image} musicians = {concert.musicians} style = {concert.style} tickets = { concert.tickets} id = { concert.id } veranstaltungsort = {concert.veransltaltungsort}/>
                 ))
             }
         </div>

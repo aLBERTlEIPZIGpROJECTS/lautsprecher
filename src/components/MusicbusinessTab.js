@@ -21,7 +21,7 @@ const OtherTab = (props) => {
                   return
                 }
               }).map((place) => (
-                    <OtherCard key = { place.id } name = { place.businessName } number = {place.number} PLZ = {place.PLZ} street = {place.street} phone = { place.phone } website = { place.site } fb = { place.fb } tw = { place.tw } ig = { place.ig } sc = { place.sc } yt = { place.yt } twitch = { place.twitch } mail = { place.mail } image = { place.image } />
+                    <OtherCard key = { place.id } businessName = { place.businessName } number = {place.number} PLZ = {place.PLZ} street = {place.street} phone = { place.phone } website = { place.site } socialMedia = {place.socialMedia} mail = { place.mail } image = { place.image } />
                 ))
             }
         </div>

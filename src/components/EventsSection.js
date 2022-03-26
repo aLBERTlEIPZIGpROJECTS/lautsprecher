@@ -26,7 +26,7 @@ const EventsSection = (props) => {
                             return val
                         }
                     }).map((concert) => (
-                        <EventCard number={concert.number} PLZ={concert.PLZ} street={concert.street} veranstaltungsort={concert.veranstaltungsort} bands={concert.bands} concertTitle = { concert.concertTitle } cost = { concert.cost }  date = { concert.date } duration={concert.duration} image={concert.image} musicians = { concert.musicians } style={concert.style} tickets={concert.tickets} key = { concert.id } id = { concert.id }/>
+                        <EventCard key = { concert.id } id = { concert.id } address = {concert.address} bands = {concert.bands} concertTitle = {concert.concertTitle} cost = {concert.cost} date = {concert.date} duration = {concert.duration} image = {concert.image} musicians = {concert.musicians} style = {concert.style} tickets = {concert.tickets} veranstaltungsort = {concert.veranstaltungsort}  />
                         ))
                 }
             </div>

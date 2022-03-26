@@ -4,7 +4,7 @@ import CardCMS from "./CardCMS.js"
 
 const BandsCMS = () => {
 
-    const url = "http://localhost:5000/api/subscriber"
+    const url = "http://localhost:5000/api/subscribers"
 
     const { data, isLoading, error } = useFetch(url)
 
@@ -14,7 +14,7 @@ const BandsCMS = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <h1>All Bands</h1>
+            <h1>All Subscribers</h1>
                 {
                    data && data.map((subscriber) => (
                         <CardCMS approved = {subscriber.approved} id = { subscriber.id } key = { subscriber.id } fName = {subscriber.fName} lName = {subscriber.lName} mail = {subscriber.mail} />

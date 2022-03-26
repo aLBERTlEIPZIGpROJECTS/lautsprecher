@@ -2,9 +2,9 @@ import { useState } from "react"
 import useFetch from "../../useFetch.js"
 import CardCMS from "./CardCMS.js"
 
-const BandsCMS = () => {
+const BandsCMS = (props) => {
 
-    const url = "http://localhost:5000/api/teamMember"
+    const url = "http://localhost:5000/api/historyarticle"
 
     const { data, isLoading, error } = useFetch(url)
 
@@ -14,10 +14,10 @@ const BandsCMS = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <h1>All Bands</h1>
+            <h1>history Articles</h1>
                 {
                    data && data.map((article) => (
-                    <CardCMS approved = {article.approved} id = { article.id } key = { article.id } articleTitle = {article.articleTitle} author = {article.author} body = {article.body} image = {article.image} tags={article.tags}/>
+                        <CardCMS approved = {article.approved} id = { article.id } key = { article.id } articleTitle = {article.articleTitle} author = {article.author} body = {article.body} image = {article.image} tags={article.tags}/>
                     ))
                 }
 

@@ -4,9 +4,9 @@ import CardCMS from "./CardCMS.js"
 
 
 
-const MessagesCMS = () => {
+const MessagesCMS = (props) => {
 
-    const url = "http://localhost:5000/api/historyarticle"
+    const url = "http://localhost:5000/api/messages"
 
     const { data, isLoading, error } = useFetch(url)
 
@@ -19,7 +19,7 @@ const MessagesCMS = () => {
             <h1>All Messages</h1>
                 {
                    data && data.map((message) => (
-                        <CardCMS approved = {message.approved} title = { message.title } id = { message.id } key = { message.id } fName = {message.fName} lName = {message.lName} message = {message.message} mail = {message.mail} phone = {message.phone} />
+                        <CardCMS approved = {message.approved} messageTitle = { message.messageTitle } id = { message.id } key = { message.id } fName = {message.fName} lName = {message.lName} messageBody = {message.messageBody} mail = {message.mail} phone = {message.phone} />
                     ))
                 }
 

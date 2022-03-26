@@ -36,7 +36,7 @@ const About = () => {
                      <h2>Team</h2>
                  {
                     data && data.map((person) => (
-                        <CommunityCard fname = { person.fname } lname = { person.lname } position = { person.position } id = { person.id } img = { person.img } key = { person.id }/>
+                        <TeamCard fName = { person.fName } lName = { person.lName } role = { person.role } id = { person.id } image = { person.image } key = { person.id }/>
                     ))}       
                 </div>
             <GoTopBtn />

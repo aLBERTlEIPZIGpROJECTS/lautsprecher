@@ -1,7 +1,4 @@
-import fbIcon from "../materials/icons/fbIcon.svg"
-import twIcon from "../materials/icons/twIcon.svg"
-import igIcon from "../materials/icons/igIcon.svg"
-import mailIcon from "../materials/icons/mailIcon.svg"
+import SocialMedia from "./SocialMedia"
 
 const TeamCard = (props) => {
     return(
@@ -11,12 +8,7 @@ const TeamCard = (props) => {
                 <p>{ props.fName } { props.lName }</p>
                 <p>{ props.role }</p>
             </div>
-            <div className="social">
-                <img src={ fbIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
-                <img src={ twIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
-                <img src={ igIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
-                <img src={ mailIcon } alt="" className="icon">{/* <a href=""></a> */}</img>
-            </div>
+            <SocialMedia socialMedia = {props.SocialMedia}  />
         </div>
     )
 }

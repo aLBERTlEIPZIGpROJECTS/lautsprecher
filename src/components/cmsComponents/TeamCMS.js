@@ -14,7 +14,6 @@ const BandsCMS = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <h1>Team</h1>
                 {
                    data && data.map((teamMember) => (
                         <CardCMS approved = {teamMember.approved} id = { teamMember.id } key = { teamMember.id } fName = {teamMember.fName} lName = {teamMember.lName} mail = {teamMember.mail} image = {teamMember.image} password = {teamMember.password} phone = {teamMember.phone} role = {teamMember.role} fb = {teamMember.fb} ig = {teamMember.ig} tw = {teamMember.tw} sc = {teamMember.sc} yt = {teamMember.yt} in = {teamMember.in} twitch = {teamMember.twitch} website ={teamMember.website} />

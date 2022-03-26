@@ -13,15 +13,15 @@ import VeranstaltungsortCMS from "../components/cmsComponents/VeranstaltungsortC
 
 const CMS = () => {
 
-    const [ category, setCategory ] = useState(undefined);
+    const [ category, setCategory ] = useState("CMS");
 
     const updateCategory = (v) => {
         setCategory(v)
     }
     return(
         <div className="cms">
-            <h1>CMS</h1>
-                <h2>{category}</h2>
+            <h1>{category}</h1>
+            <div className="cms__main">
 
             <div className="cms__select-category">
                 <button onClick={() => updateCategory("Musicians")} className = "cms__select-option">Musicians</button>
@@ -47,6 +47,7 @@ const CMS = () => {
                 {category === "History Articles" && <HistoryArticlesCMS />}
                 {category === "Subscribers" && <SubscribersCMS />}
                 {category === "Messages" && <MessagesCMS />}
+            </div>
             </div>
 
 

@@ -12,7 +12,6 @@ const BandsCMS = (props) => {
       {error && <div>{error}</div>}
       {isLoading && <div>Loading...</div>}
 
-      <h1>All Bands</h1>
       {data &&
         data.map((band) => (
           <CardCMS

@@ -14,7 +14,7 @@ import soundcloud from "../materials/icons/arrow-up.svg"
 const BandInfo = ( props ) => {
 
     const { id } = useParams()
-    const { data, isLoading, error } = useFetch(`http://localhost:8000/bands/${id}`)
+    const { data, isLoading, error } = useFetch(`http://localhost:5000/bands/${id}`)
 
     return(
         <div className="single-musician">

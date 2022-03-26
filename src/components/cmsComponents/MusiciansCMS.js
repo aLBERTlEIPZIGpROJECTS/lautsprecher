@@ -8,13 +8,11 @@ const BandsCMS = () => {
 
     const { data, isLoading, error } = useFetch(url)
 
-
+    
     return(
         <div className="cms__content">
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
-
-            <h1>All Musicians</h1>
                 {
                    data && data.map((musician) => (
                        <CardCMS id = {musician.id} 

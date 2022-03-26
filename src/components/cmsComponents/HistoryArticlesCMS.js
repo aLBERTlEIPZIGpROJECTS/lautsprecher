@@ -14,7 +14,6 @@ const BandsCMS = (props) => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <h1>history Articles</h1>
                 {
                    data && data.map((article) => (
                         <CardCMS approved = {article.approved} id = { article.id } key = { article.id } articleTitle = {article.articleTitle} author = {article.author} body = {article.body} image = {article.image} tags={article.tags}/>

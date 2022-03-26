@@ -14,7 +14,6 @@ const BandsCMS = () => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <h1>All Subscribers</h1>
                 {
                    data && data.map((subscriber) => (
                         <CardCMS approved = {subscriber.approved} id = { subscriber.id } key = { subscriber.id } fName = {subscriber.fName} lName = {subscriber.lName} mail = {subscriber.mail} />

@@ -16,7 +16,6 @@ const MessagesCMS = (props) => {
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
 
-            <h1>All Messages</h1>
                 {
                    data && data.map((message) => (
                         <CardCMS approved = {message.approved} messageTitle = { message.messageTitle } id = { message.id } key = { message.id } fName = {message.fName} lName = {message.lName} messageBody = {message.messageBody} mail = {message.mail} phone = {message.phone} />

@@ -10,15 +10,15 @@ import NextArticleBtn from "../components/NextArticleBtn"
 const SingleArticle = (props) => {
 
     const { id } = useParams()
+    console.log(id)
     const newId = parseInt(id[Object.keys(id)[0]]) + 1
-    const { data, isLoading, error } = useFetch(`http://localhost:8000/articles/${id}`)
+    const { data, isLoading, error } = useFetch(`http://localhost:5000/actualarticle/${id}`)
 
     return(
         <div className="single-article">
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             <Blob class = "blob__purple blob-low" />
-
             {
                 data && (
                     <article >

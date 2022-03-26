@@ -12,13 +12,13 @@ import instagram from "../materials/icons/igIcon.svg"
 import soundcloud from "../materials/icons/arrow-up.svg"
 
 
-const MusicianInfo = ( props ) => {
+const ConcertInfo = ( props ) => {
 
     const { id } = useParams()
-    const { data, isLoading, error } = useFetch(`http://localhost:8000/concerts/${id}`)
+    const { data, isLoading, error } = useFetch(`http://localhost:5000/concert/${id}`)
 
     return(
-        <div className="single-musician">
+        <div className="single-concert">
             { error && <div>{ error }</div>}
             { isLoading && <div>Loading...</div>}
             <Blob class = "blob__purple blob-high" />
@@ -54,4 +54,4 @@ const MusicianInfo = ( props ) => {
     )
 }
 
-export default MusicianInfo
+export default ConcertInfo

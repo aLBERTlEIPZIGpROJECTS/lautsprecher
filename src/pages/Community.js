@@ -38,10 +38,10 @@ const Community = () => {
             {/* <MusicPlayer /> */}
             <h1>Community</h1>
             <div className="tittle-container">
-                <h2 onClick={ activateMusicians } >Musicians</h2>
-                <h2 onClick={ activateBands }>Bands</h2>
-                <h2 onClick={ activateVeranstaltungsorte }>Veranstaltungsorte</h2>
-                <h2 onClick={ activateOthers }>Music Business</h2>
+                <h2 onClick={ () => setActiveTab("musicians") } >Musicians</h2>
+                <h2 onClick={ () => setActiveTab("bands")}>Bands</h2>
+                <h2 onClick={ () => setActiveTab("veranstaltungsorte") }>Veranstaltungsorte</h2>
+                <h2 onClick={ () => setActiveTab("others")}>Music Business</h2>
             </div>
             <div className="tabs-container">
                 { activeTab === "musicians" && <MusiciansTab class = "activeTab" />}

@@ -12,7 +12,7 @@ const SingleArticle = (props) => {
     const { id } = useParams()
     console.log(id)
     const newId = parseInt(id[Object.keys(id)[0]]) + 1
-    const { data, isLoading, error } = useFetch(`http://localhost:5000/actualarticle/${id}`)
+    const { data, isLoading, error } = useFetch(`http://localhost:5000/api/actualarticle/${id}`)
 
     return(
         <div className="single-article">

@@ -14,8 +14,10 @@ import soundcloud from "../materials/icons/arrow-up.svg"
 
 const MusicianInfo = ( props ) => {
 
+    
     const { id } = useParams()
-    const { data, isLoading, error } = useFetch(`http://localhost:8000/musicians/${id}`)
+    const url = `http://localhost:5000/api/musician/${id}`
+    const { data, isLoading, error } = useFetch(url)
 
     return(
         <div className="single-musician">
@@ -26,21 +28,13 @@ const MusicianInfo = ( props ) => {
             {
                 data && (
                     <article>
-                        <img src={ data.img } alt="" className="img__article" />
-                        <h2 className="community-info__title">{ data.fname } { data.lname }</h2>
-                        <p className="community-info__txt">{ data.instrument }</p>
-                        <p className="community-info__txt">{ data.style }</p>
+                        <img src={ data.image } alt="" className="img__article" />
+                        <h2 className="community-info__title">{ data.fName } { data.lName }</h2>
+                        <p className="community-info__txt">{ data.mail }</p>
                         <p className="community-info__txt">{ data.bands }</p>
-                        <p className="community-info__txt">{ data.txt }</p>
-                        <div className="community-info__links">
-                            { data.phone && <> <a href={ `tel:&{ data.phone }`}></a><img src={ phone } alt="phone" className="iconMed" /> </>}
-                            <a href={ `mailto:&{ data.mail }`}></a><img src={ mail } alt="mail" className="iconMed" />
-                            <a href={ data.site }></a><img src={ site } alt="site" className="iconMed" />
-                            <a href={ data.facebook }></a><img src={ facebook } alt="facebook" className="iconMed" />
-                            <a href={ data.twitter }></a><img src={ twitter } alt="twitter" className="iconMed" />
-                            <a href={ data.instagram }></a><img src={ instagram } alt="instagram" className="iconMed" />
-                            <a href={ data.soundcloud }></a><img src={ soundcloud } alt="soundcloud" className="iconMed" />
-                        </div>
+                        <p className="community-info__txt">{ data.instruments }</p>
+                        <p className="community-info__txt">{ data.style }</p>
+                        <p className="community-info__txt">{ data.website }</p>
                     </article>
                 )
             }

@@ -18,9 +18,9 @@ import SingleBand from "./pages/SingleBand"
 import SingleVeranstaltungsort from "./pages/SingleVeranstaltungsort";
 import SingleMusicBusiness from "./pages/SingleMusicBusiness"
 import ActualArticles from "./pages/ActualArticlesList"
-import SingleActualArticle from './pages/SingleArticle'
+import SingleActualArticle from './pages/SingleActualArticle'
 import HistoryArticles from './pages/HistoryArticlesList'
-import HistorySingleArticle from "./pages/HistorySingleArticle"
+import SingleHistoryArticle from "./pages/SingleHistoryArticle"
 import About from "./pages/About"
 import SingleTeamMember from "./pages/SingleTeamMember"
 
@@ -62,25 +62,25 @@ function App() {
             <Route path = "/musicians" element={<Community />} />
             <Route path = "/musician/:id" element = {<SingleMusician />} />
             <Route path = "/bands" element={<Community />} />
-            <Route path = "/bands/:id" element={<SingleBand />} />
+            <Route path = "/band/:id" element={<SingleBand />} />
             <Route path = "/veranstaltungsorte" element={<Community />} />
             <Route path = "/veranstaltungsort/:id" element = {<SingleVeranstaltungsort />} />
             <Route path = "/musicbusiness" element={<Community />} />
             <Route path = "/musicbusiness/:id" element = {<SingleMusicBusiness />} />
-            <Route path="/actualarticles" element={<ActualArticles />} />
-            <Route path="/actualarticle/:id" element = {<SingleActualArticle />} />
-            <Route path="/historyarticles" element = {<HistoryArticles />} />
-            <Route path="/historyarticles/:id" element = {<HistorySingleArticle />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/teammember" element={<SingleTeamMember />} />
-            <Route path="/w" element={<Contact />} />
-            <Route path="/postaconcert" element={<PostAConcert />} />
-            <Route path="/signupmusician" element={<SignupMusician />} />
-            <Route path="/signupveranstaltungsort" element={<SignupVeranstaltungsort />} />
-            <Route path="/signupmusicbusiness" element={<SignupMusicbusiness />} />
-            <Route path="/signupband" element={<SignupBand />} />
-            <Route path="/writearticle" element={<WriteArticle />} />
-            <Route path="/singlemusicbusiness" element={<SingleMusicBusiness />} />
+            <Route path= "/actualarticles" element={<ActualArticles />} />
+            <Route path= "/actualarticle/:id" element = {<SingleActualArticle />} />
+            <Route path= "/historyarticles" element = {<HistoryArticles />} />
+            <Route path= "/historyarticle/:id" element = {<SingleHistoryArticle />} />
+            <Route path= "/about" element={<About />} />
+            <Route path= "/teammember" element={<SingleTeamMember />} />
+            <Route path= "/contact" element={<Contact />} />
+            <Route path= "/postaconcert" element={<PostAConcert />} />
+            <Route path= "/signupmusician" element={<SignupMusician />} />
+            <Route path= "/signupveranstaltungsort" element={<SignupVeranstaltungsort />} />
+            <Route path= "/signupmusicbusiness" element={<SignupMusicbusiness />} />
+            <Route path= "/signupband" element={<SignupBand />} />
+            <Route path= "/writearticle" element={<WriteArticle />} />
+            <Route path= "/singlemusicbusiness" element={<SingleMusicBusiness />} />
             <Route exact path="/cms" element={<CMS />} />
             {/* <Route exact path="/test" element={<TestPage />} /> */}
           </Routes>
